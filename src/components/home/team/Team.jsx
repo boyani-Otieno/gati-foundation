@@ -13,14 +13,10 @@ const Team = () => {
           <div className='content mtop grid3'>
             {team.map((val, index) => (
               <div className='box' key={index}>
-                <button className='btn3'>{val.list} Listings</button>
                 <div className='details'>
                   <div className='img'>
                     <img src={val.cover} alt='' />
-                    <i className='fa-solid fa-circle-check'></i>
                   </div>
-                  <i className='fa fa-location-dot'></i>
-                  <label>{val.address}</label>
                   <h4>{val.name}</h4>
 
                   <ul>
@@ -29,13 +25,13 @@ const Team = () => {
                     ))}
                   </ul>
                   <div className='button flex'>
-                    <button>
+                    {/* <button>
                       <i className='fa fa-envelope'></i>
                       Message
                     </button>
                     <button className='btn4'>
                       <i className='fa fa-phone-alt'></i>
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>

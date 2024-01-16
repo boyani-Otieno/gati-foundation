@@ -8,7 +8,7 @@ const PriceCard = () => {
         {price.map((item, index) => (
           <div className='box shadow' key={index}>
             <div className='topbtn'>
-              <button className='btn3'>{item.best}</button>
+              {/* <button className='btn3'>{item.best}</button> */}
             </div>
             <h3>{item.plan}</h3>
             <h1>
@@ -39,10 +39,10 @@ const PriceCard = () => {
               className='btn5'
               style={{
                 background: item.plan === "Standard" ? "#27ae60" : "#fff",
-                color: item.plan === "Standard" ? "#fff" : "#27ae60",
+                color: item.plan === "Standard" ? "#fff" : "",
               }}
             >
-              Start {item.plan}
+              Support {item.plan}
             </button>
           </div>
         ))}

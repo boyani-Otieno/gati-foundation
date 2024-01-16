@@ -12,7 +12,6 @@ const Header = () => {
       <header>
         <div className='container flex'>
           <div className='logo'>
-
             <h1>Gati Foundation</h1>
           </div>
           <div className='nav'>
