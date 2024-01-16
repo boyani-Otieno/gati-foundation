@@ -1,5 +1,5 @@
 header {
-  background-color: #fff;
+  background-color: #4d0120;
   height: 10vh;
   box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
   padding: 15px 0;
@@ -16,12 +16,15 @@ header a {
   font-weight: 500;
 }
 header a:hover {
-  color: #27ae60;
+  color: #ecd8e0;
+}
+.logo h1{
+  color: whitesmoke;
 }
 header span {
   width: auto;
   padding: 0px 6px;
-  background: #27ae60;
+  background: #ecd8e0;
   border-radius: 50px;
   color: #ffffff;
   margin-right: 4px;
@@ -56,7 +59,7 @@ header .toggle {
     top: 10vh;
     left: 0;
     width: 100%;
-    background-color: #27ae60;
+    background-color: #ecd8e0;
     padding: 20px;
   }
   header li a {

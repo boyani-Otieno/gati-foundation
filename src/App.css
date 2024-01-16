@@ -19,7 +19,7 @@ body {
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: #ecd8e0;
   text-transform: capitalize;
 }
 ul {
@@ -28,7 +28,7 @@ ul {
 button {
   border-radius: 5px;
   padding: 17px 30px;
-  background: #595D2B;
+  background: #791127;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -43,13 +43,13 @@ button i {
   margin: auto;
 }
 .heading h1 {
-  color: #060D08;
+  color: #ecb1c0;
   font-weight: 600;
   text-transform: capitalize;
   font-size: 35px;
 }
 .heading p {
-  color: #1D2A10;
+  color: #c75c71;
 }
 textarea,
 input {
@@ -60,7 +60,7 @@ input {
 .background {
   padding: 80px 0;
   position: relative;
-  background: #CD8A39;
+  background: #4d0120;
 }
 
 .grid5 {
