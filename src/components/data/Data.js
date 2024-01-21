@@ -27,28 +27,28 @@ export const nav = [
 export const featured = [
   {
     cover: "../images/hero/h1.png",
-    name: "Protect the environment",
+    name: "Promoting climate change resilience",
     total: "climate change",
   },
   {
     cover: "../images/hero/h2.png",
-    name: "Housing for the homeless",
-    total: "shelter",
+    name: ".Empowering HIV-Affected Widows",
+    total: "health",
   },
   {
     cover: "../images/hero/h3.png",
-    name: "Put children through school",
-    total: "Sponsorships",
+    name: "Eradicating Female Genital Mutilation",
+    total: "protect",
   },
   {
     cover: "../images/hero/h4.png",
-    name: "Educate the community",
+    name: "Strengthening advocacy and collaborations",
     total: "Enlightenment",
   },
   {
     cover: "../images/hero/h6.png",
-    name: "Uplift the Community",
-    total: "Change",
+    name: "Preventing malnutrition among under fives",
+    total: "Live",
   },
 ]
 export const list = [
