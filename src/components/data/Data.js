@@ -32,7 +32,7 @@ export const featured = [
   },
   {
     cover: "../images/hero/h2.png",
-    name: ".Empowering HIV-Affected Widows",
+    name: "Empowering HIV-Affected Widows",
     total: "health",
   },
   {
@@ -60,12 +60,12 @@ export const list = [
   {
     id: 2,
     cover: "../images/list/two.jpg",
-    name: "changing lifes",
+    name: "Changing lifes",
   },
   {
     id: 3,
     cover: "../images/list/three.jpg",
-    name: "BSupporting communities",
+    name: "Supporting communities",
   },
   {
     id: 4,
