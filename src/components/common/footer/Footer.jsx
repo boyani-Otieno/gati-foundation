@@ -22,7 +22,7 @@ const Footer = () => {
           <div className='box'>
             <div className='logo'>
               {/* <img src='../images/logo-light.png' alt='' /> */}
-              <h1>Gati Foundation</h1>
+              <h1>Margaret Robi Foundation</h1>
               <h2>Do You Need Help With Anything?</h2>
               <p>Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month</p>
 
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className='legal'>
-        <span>© 2024 GATI FOUNDATION. Designd By boyani_codes.</span>
+        <span>© 2024 MARGARET ROBI FOUNDATION. Designd By boyani_codes.</span>
       </div>
     </>
   )
