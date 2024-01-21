@@ -18,7 +18,7 @@ header a {
 header a:hover {
   color: #ecd8e0;
 }
-.logo h1{
+.logo h3{
   color: whitesmoke;
 }
 header span {
@@ -59,7 +59,7 @@ header .toggle {
     top: 10vh;
     left: 0;
     width: 100%;
-    background-color: #ecd8e0;
+    background-color: maroon;
     padding: 20px;
   }
   header li a {
