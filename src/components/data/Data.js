@@ -172,7 +172,7 @@ export const team = [
   },
   {
     list: "80",
-    cover: "../images/customer/team-3.jpg",
+    cover: "../images/customer/prudence.jpeg",
     address: "Denever, USA",
     name: "Prudence: Co-Founder",
     icon: [<i class='fa-brands fa-facebook-f'></i>, <i class='fa-brands fa-linkedin'></i>, <i class='fa-brands fa-twitter'></i>, <i class='fa-brands fa-instagram'></i>],
