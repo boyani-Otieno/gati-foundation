@@ -1,5 +1,5 @@
 .footerContact {
-  background-color: #791127;
+  background-color: #522b5b;
   padding: 40px 0;
   color: #fff;
 }
@@ -7,7 +7,7 @@
   font-size: 40px;
 }
 footer {
-  background-color: #4d0120;
+  background-color: #2b124c;
   padding: 50px 0;
   color: #fff;
 }
@@ -47,7 +47,7 @@ footer ul li {
 .legal {
   text-align: center;
   padding: 20px;
-  background: #1d2636;
+  background: #190019;
   color: rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }

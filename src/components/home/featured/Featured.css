@@ -4,17 +4,16 @@
   text-align: center;
   padding: 30px;
   cursor: pointer;
-  color: whitesmoke
+  color: #190019;
 }
-/* .background{
-  background-color: #791127;
-} */
 
 .featured .box label{
-  color: #8e1450;
+  color: black;
 }
 .featured img {
   width: 65px;
-  height: 65px;
+  height: 65px;.fade-in {
+    animation: fadeIn 2s ease-in-out;
+  }
   margin: auto;
 }
