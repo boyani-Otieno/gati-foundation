@@ -24,8 +24,8 @@ const Header = () => {
             </ul>
           </div>
           <div className='button flex'>
-             <button className='btn1'><a href="/donate" alt="donate">
-              <h4>Champion Our Cause</h4></a>
+             <button className='btn1'><a className="champion" href="/donate" alt="donate">
+              <h3>Champion Our Cause</h3></a>
             </button>
           </div>
 

@@ -1,4 +1,5 @@
 import React from "react"
+import { GiInspiration } from "react-icons/gi";
 import Heading from "../../common/Heading"
 import "./hero.css"
 
@@ -26,7 +27,7 @@ const Hero = () => {
               <h4>Protect</h4>
             </div>
             <button className='btn1'>
-              <i className='fa fa-search'></i>
+            <GiInspiration />
             </button>
           </form>
         </div>

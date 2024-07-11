@@ -22,6 +22,11 @@ a {
   color: #190019; /* Updated color */
   text-transform: capitalize;
 }
+.champion{
+  text-decoration: none;
+  color: #190019; /* Updated color */
+  text-transform: capitalize;
+}
 ul {
   list-style-type: none;
 }

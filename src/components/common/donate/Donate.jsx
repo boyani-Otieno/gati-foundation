@@ -14,7 +14,7 @@ export default function Donate() {
 
   return (
     <PayPalScriptProvider options={initialOptions}>
-      <div>
+      <div className='paypal-body'>
          {/* <Category /> */}
         <h1>Support Our Projects</h1>
         {/* <button>Donate</button> */}
