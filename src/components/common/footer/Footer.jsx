@@ -5,7 +5,7 @@ import "./footer.css"
 const Footer = () => {
   return (
     <>
-      <section className='footerContact'>
+      {/* <section className='footerContact'>
         <div className='container'>
           <div className='send flex'>
             <div className='text'>
@@ -15,7 +15,7 @@ const Footer = () => {
             <button className='btn5'>Contact Us Today</button>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <footer>
         <div className='container'>
