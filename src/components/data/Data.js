@@ -8,8 +8,8 @@ export const nav = [
     path: "/about",
   },
   {
-    text: "Take Action",
-    path: "/action",
+    text: "Need",
+    path: "/services",
   },
   {
     text: "blog",
@@ -17,7 +17,7 @@ export const nav = [
   },
   {
     text: "Partners",
-    path: "/partners",
+    path: "/pricing",
   },
   {
     text: "contact",

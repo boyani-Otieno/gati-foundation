@@ -1,7 +1,7 @@
 import React from "react";
-import { GiInspiration } from "react-icons/gi";
 import Heading from "../../common/Heading";
 import { motion } from "framer-motion";
+import { Typewriter } from 'react-simple-typewriter';
 import "./hero.css";
 
 const Hero = () => {
@@ -16,11 +16,6 @@ const Hero = () => {
     },
   };
 
-  const textVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  };
-
   return (
     <section className='hero'>
       <div className='container'>
@@ -29,28 +24,20 @@ const Hero = () => {
           animate="visible"
           variants={containerVariants}
         >
-          <Heading title='Join the cause ' subtitle='Make a difference, No matter how small.' />
-
-          <form className='flex'>
-            <motion.div className='box' variants={textVariants}>
-              <span>Serve</span>
-              <input type='text' placeholder='Anywhere' />
-            </motion.div>
-            <motion.div className='box' variants={textVariants}>
-              <span>Inspire</span>
-              <input type='text' placeholder='Young ones' />
-            </motion.div>
-            <motion.div className='box' variants={textVariants}>
-              <span>Teach</span>
-              <input type='text' placeholder='Everyone' />
-            </motion.div>
-            <motion.div className='box' variants={textVariants}>
-              <h4>Protect</h4>
-            </motion.div>
-            <motion.button className='btn1' variants={textVariants}>
-              <GiInspiration />
-            </motion.button>
-          </form>
+          <Heading
+            title={
+              <Typewriter
+                words={['Join the cause']}
+                loop={1}
+                cursor
+                cursorStyle='_'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            }
+            subtitle='Make a difference, No matter how small.'
+          />
         </motion.div>
       </div>
     </section>
