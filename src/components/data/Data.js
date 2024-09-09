@@ -112,7 +112,7 @@ export const location = [
     Villas: "Kibera",
     Apartments: "Kasarani",
     Offices: "Mathare slums",
-    cover: "./images/location/city-1.png",
+    cover: "./images/location/pads.jpg",
   },
   {
     id: 2,
@@ -120,7 +120,7 @@ export const location = [
     Villas: "Kibera",
     Apartments: "Kuria",
     Offices: "Tanzania",
-    cover: "./images/location/city-2.png",
+    cover: "./images/location/future.jpg",
   },
   {
     id: 3,
@@ -128,7 +128,7 @@ export const location = [
     Villas: "Kuria",
     Apartments: "Kisii",
     Offices: "Nyanza",
-    cover: "./images/location/city-3.png",
+    cover: "./images/location/fgm2.jpg",
   },
   {
     id: 4,
@@ -136,7 +136,7 @@ export const location = [
     Villas: "Educacting the girl-child",
     Apartments: "Manda village",
     Offices: "Peponi",
-    cover: "./images/location/city-4.png",
+    cover: "./images/location/girls.jpg",
   },
   {
     id: 5,
@@ -144,7 +144,7 @@ export const location = [
     Villas: "Educating Communities",
     Apartments: "Inspiring",
     Offices: "Serving",
-    cover: "./images/location/city-5.png",
+    cover: "./images/location/mentor.jpg",
   },
   {
     id: 6,
@@ -152,7 +152,7 @@ export const location = [
     Villas: "Repairing Houses",
     Apartments: "Shelter",
     Offices: "Safe spaces",
-    cover: "./images/location/city-6.png",
+    cover: "./images/location/slums.jpg",
   },
 ]
 export const team = [

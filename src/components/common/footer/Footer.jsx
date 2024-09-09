@@ -43,7 +43,7 @@ const Footer = () => {
 
         <div className="footer-section">
           <h4>Contact Us</h4>
-          <p>Email: info@gatifoundtion.org</p>
+          <p>Email: info@margaretrobifoundtion.org</p>
           <p>Phone: +123 456 7890</p>
         </div>
       </div>
@@ -63,7 +63,7 @@ const Footer = () => {
       </div> */}
 
       <div className="footer-copyright">
-        <p>© 2024 GATI FOUNDATION. All rights reserved.</p>
+        <p>© 2024 MARGARET ROBI FOUNDATION. All rights reserved.</p>
       </div>
     </footer>
   );

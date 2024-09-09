@@ -176,4 +176,8 @@ img {
   .back {
     height: 30vh;
   }
+  .back .container {
+    color: #fff;
+    padding: 60px 0;
+  }
 }

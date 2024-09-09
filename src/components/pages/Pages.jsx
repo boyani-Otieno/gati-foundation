@@ -9,11 +9,13 @@ import Blog from "../blog/Blog"
 import Services from "../services/Services"
 import Contact from "../contact/Contact"
 import Donate from "../common/donate/Donate"
+import SmallNav from "../common/header/SmallNav"
 
 const Pages = () => {
   return (
     <>
       <Router>
+        <SmallNav />
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />

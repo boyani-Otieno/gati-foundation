@@ -1,0 +1,45 @@
+.small-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .contact-info {
+    flex: 1;
+  }
+  
+  .contact-info p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-media-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-media-icons a:hover {
+    color: #007bff; /* Change to your desired hover color */
+  }
+  
+  @media (max-width: 768px) {
+    .small-navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .contact-info {
+      margin-bottom: 10px;
+    }
+  }
+  

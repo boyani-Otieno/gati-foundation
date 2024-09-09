@@ -1,56 +1,39 @@
-.price {
-  text-align: center;
-  background-color: #c75c71;
-}
-.price .content .box {
-  width: 31.5%;
-  padding: 30px;
-  border-radius: 10px;
-}
-.price button {
-  margin-bottom: 20px;
-}
-.price .box:nth-child(1) .topbtn button,
-.price .box:nth-child(3) .topbtn button {
-  display: none;
-}
-.price h3 {
-  font-size: 22px;
-}
-.price h1 {
-  font-size: 60px;
-}
-.price h1 span {
-  font-size: 30px;
-  font-weight: 500;
-}
-.price ul {
-  margin-top: 40px;
-}
-.price ul li {
+.expert-views {
   display: flex;
-  margin-bottom: 20px;
-}
-.price label {
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 50%;
-  margin-right: 20px;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
 }
 
-.price .btn5 {
-  width: 100%;
+.article {
+  width: 30%; /* Adjust width as needed */
+  text-align: left;
 }
-@media screen and (max-width: 800px) {
-  .price .content {
+
+.article-image {
+  width: 100%;
+  height: auto;
+}
+
+.article-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+.article-description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Additional styling */
+@media (max-width: 768px) {
+  .expert-views {
     flex-direction: column;
   }
 
-  .price .content .box {
+  .article {
     width: 100%;
-    padding: 30px;
-    border-radius: 10px;
-    margin-bottom: 50px;
   }
 }
