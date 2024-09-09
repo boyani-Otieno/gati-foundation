@@ -19,19 +19,9 @@
 }
 
 @media screen and (max-width: 800px) {
-  .hero .container {
-    /* padding-top: 30%; */
-  }
-  form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  form .box {
-    border-left: none;
-  }
-  form input {
-    width: 100%;
-  }
+  /* .hero .container {
+    padding-top: 30%;
+  } */
 }
 
 
