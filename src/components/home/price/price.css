@@ -19,11 +19,12 @@
   font-size: 1.2rem;
   font-weight: bold;
   margin: 10px 0 5px 0;
+  color: #ec9c2d;
 }
 
 .article-description {
   font-size: 1rem;
-  color: #555;
+  color: #000;
   margin-top: 5px;
 }
 

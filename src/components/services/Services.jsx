@@ -22,12 +22,12 @@ const Service = () => {
     {
       title: 'HIV',
       icon: '💧', // Droplet emoji
-      text: 'Southern Nyanza kenya has the largest HIV-infected population in the kenya. It also has the third highest level of unmet need for anti-retroviral therapy in the world.',
+      text: 'Kuria, in kenya has a large no of HIV-infected population in the kenya. It also has the third highest level of unmet need for anti-retroviral therapy in the world.',
     },
     {
       title: 'FGM',
       icon: '👥', // Group of people emoji
-      text: '50,000 south nyanza kenyans, mostly women and girls are affected by fgm. And yet, most of these tragic deaths are preventable.',
+      text: '50,000 of the kuria kenyans, mostly women and girls are affected by fgm. And yet, most of these tragic deaths are preventable.',
     },
   ];
   return (
@@ -37,7 +37,7 @@ const Service = () => {
         <div className="hero-content">
           <h1>The Need</h1>
           <p>
-            Improving lives in Southern Kenya through education, healthcare, and more.
+            Improving lives in Kuria, Kenya through education, healthcare, and more.
           </p>
         </div>
       </section>

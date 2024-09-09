@@ -38,20 +38,20 @@
 .about-content h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #333;
+  color: #ec9c2d;
 }
 
 .about-content p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #555;
+  color: #000;
 }
 
 .about-content button {
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #fff;
-  color: #000;
+  background-color: #ec9c2d;
+  color: #fff;
   border: none;
   border-radius: 0px;
   font-size: 1rem;
@@ -62,7 +62,7 @@
 }
 
 .about-content button:hover {
-  color: #0056b3;
+  color: blue;
 }
 
 .about-content button svg {

@@ -49,7 +49,7 @@ const Hero = () => {
                 Volunteer, donate, or get involved in our initiatives to 
                 create positive change.
               </p>
-              <a href="/contribute" className="hero-btn clear-btn" target="_blank" rel="noreferrer">
+              <a href="/contribute" className="hero-btn clear-btn1" target="_blank" rel="noreferrer">
                 Get Invloved <IoArrowForward />
               </a>
             </div>

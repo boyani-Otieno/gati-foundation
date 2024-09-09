@@ -9,8 +9,8 @@ const About = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Jeridah Gati",
-      title: "Founder & CEO",
+      name: "Jerida Gati",
+      title: "Founder",
       image: "/images/jeda.jpeg",
     },
     {
@@ -27,9 +27,9 @@ const About = () => {
     },
     {
       id: 3,
-      name: "Prudence",
+      name: "Susan",
       title: "Co-Founder",
-      image: "/images/prudence.jpeg",
+      image: "/images/prudence.jpg",
     },
   ];
 
@@ -40,10 +40,18 @@ const About = () => {
         <div className='container flex mtop'>
           <div className='left row'>
             <Heading title='Our Story' subtitle='Check out our organizations story and work process' />
+             <h3>Who we are</h3>
+            Margaret Robi Foundation was founded in 2021 by Jerida Gati. Our aim is to transform cultural practices that have for the longest time marginalized Kuria community.
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-            {/* <button className='btn2'>More About Us</button> */}
+We set aside a percentage of our income as a 'fighting fund' that enables us to challenge the profound impact of retrogressive cultural practices like FGM, physical and sexual abuse that perpetuate injustice in the Kuria community. Our efforts concentrate on supporting young women and girls who are disproportionately affected.
+             <h3>Vision</h3>
+We believe in empowerment, equality and inclusivity. where cultural norms and practices no longer limit the rights and freedom of girls and women, but instead, celebrate their strength and contribution to the society.
+             <h3>Mission</h3>
+ We are working to address inequalities within the Kuria community, by focusing on uprooting the very cultural norms that breed gender inequality. It is about reshaping the culture to reflect values of equity, respect and dignity for all.
+ <h3>About US</h3>
+The foundation focuses on action and positive change in Kuria Community communities. Addressing gender - based violence and misogynistic attitudes are central to our work.
+We actively facilitate and champion the development of majorly women and girls by running participatory action activities and leadership roles.
+
           </div>
           <div className='right row'>
             <img src='./immio.jpg' alt='' />

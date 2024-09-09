@@ -83,11 +83,15 @@
 }
 
 .clear-btn {
-  background-color: transparent;
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+.clear-btn1 {
+  background-color: #ec9c2d;
   color: #fff;
   border-color: #fff;
 }
-
 .clear-btn:hover {
   background-color: #007bff;
   color: white;

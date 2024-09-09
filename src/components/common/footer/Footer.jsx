@@ -44,7 +44,7 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Contact Us</h4>
           <p>Email: info@margaretrobifoundtion.org</p>
-          <p>Phone: +123 456 7890</p>
+          <p>Phone: +254 727761064</p>
         </div>
       </div>
 

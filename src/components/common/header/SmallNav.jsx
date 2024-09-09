@@ -6,7 +6,7 @@ const SmallNavbar = () => {
   return (
     <div className="small-navbar">
       <div className="contact-info">
-        <p>Contact us: +1 234 567 890 | info@margaretrobi.com</p>
+        <p>Contact us: +254 727761064 | info@margaretrobi.com</p>
       </div>
       <div className="social-media-icons">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">

@@ -83,35 +83,13 @@ export const list = [
     name: "Inspiring lives",
   },
 ]
-export const awards = [
-  {
-    icon: <i class='fa-solid fa-trophy'></i>,
-    num: "32 M	",
-    name: "Blue Burmin Award",
-  },
-  {
-    icon: <i class='fa-solid fa-briefcase'></i>,
-    num: "43 M",
-    name: "Mimo X11 Award",
-  },
-  {
-    icon: <i class='fa-solid fa-lightbulb'></i>,
-    num: "51 M",
-    name: "Australian UGC Award",
-  },
-  {
-    icon: <i class='fa-solid fa-heart'></i>,
-    num: "42 M",
-    name: "IITCA Green Award",
-  },
-]
+
 export const location = [
   {
     id: 1,
     name: "Sharing Sanitary Pads",
     Villas: "Kibera",
     Apartments: "Kasarani",
-    Offices: "Mathare slums",
     cover: "./images/location/pads.jpg",
   },
   {
@@ -119,23 +97,18 @@ export const location = [
     name: "Sponsored children",
     Villas: "Kibera",
     Apartments: "Kuria",
-    Offices: "Tanzania",
     cover: "./images/location/future.jpg",
   },
   {
     id: 3,
     name: "Stopping FGM",
     Villas: "Kuria",
-    Apartments: "Kisii",
-    Offices: "Nyanza",
     cover: "./images/location/fgm2.jpg",
   },
   {
     id: 4,
-    name: "Tanzania",
+    name: "Having Fun",
     Villas: "Educacting the girl-child",
-    Apartments: "Manda village",
-    Offices: "Peponi",
     cover: "./images/location/girls.jpg",
   },
   {
@@ -143,7 +116,6 @@ export const location = [
     name: "Nairobi, Kenya",
     Villas: "Educating Communities",
     Apartments: "Inspiring",
-    Offices: "Serving",
     cover: "./images/location/mentor.jpg",
   },
   {
@@ -151,7 +123,6 @@ export const location = [
     name: "Nairobi Slums",
     Villas: "Repairing Houses",
     Apartments: "Shelter",
-    Offices: "Safe spaces",
     cover: "./images/location/slums.jpg",
   },
 ]
@@ -160,7 +131,7 @@ export const team = [
     list: "50",
     cover: "../images/customer/jeda.jpeg",
     address: "Liverpool, Canada",
-    name: "Jeridah: CEO & Founder",
+    name: "Jeridah: Founder",
     icon: [<i class='fa-brands fa-facebook-f'></i>, <i class='fa-brands fa-linkedin'></i>, <i class='fa-brands fa-twitter'></i>, <i class='fa-brands fa-instagram'></i>],
   },
   {
@@ -174,7 +145,7 @@ export const team = [
     list: "80",
     cover: "../images/customer/prudence.jpeg",
     address: "Denever, USA",
-    name: "Prudence: Co-Founder",
+    name: "Susan: Co-Founder",
     icon: [<i class='fa-brands fa-facebook-f'></i>, <i class='fa-brands fa-linkedin'></i>, <i class='fa-brands fa-twitter'></i>, <i class='fa-brands fa-instagram'></i>],
   },
 ]

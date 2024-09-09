@@ -1,7 +1,7 @@
 /* Footer.css */
 
 .footer {
-  background-color: #1a1a1a; /* Dark background */
+  background-color: #191919; /* Dark background */
   color: #fff; /* White text */
   padding: 40px 20px;
   display: flex;
@@ -43,7 +43,7 @@
 .footer-section h4 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #fff; /* Highlighted section titles */
+  color: #ea992d; /* Highlighted section titles */
 }
 
 .footer-section ul {
@@ -64,7 +64,7 @@
 }
 
 .footer-section ul li a:hover {
-  color: #b54f6c; /* Hover effect */
+  color: #fff; /* Hover effect */
 }
 
 .footer-social {
@@ -76,14 +76,14 @@
   display: flex;
   margin-left: 50px;
   margin: 2rem;
-  color: #fff;
+  color: #eb9a2e;
   font-size: 30px;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-social a:hover {
-  color: #b54f6c;
+  color: #fff;
 }
 
 .footer-newsletter {
@@ -94,7 +94,7 @@
 .footer-newsletter h4 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #b54f6c;
+  color: #fff;
 }
 
 .footer-newsletter form {
@@ -112,16 +112,13 @@
 .footer-newsletter button {
   padding: 8px 20px;
   border: none;
-  background-color: #b54f6c;
+  background-color: #ec9c2d;
   color: #1a1a1a;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.footer-newsletter button:hover {
-  background-color: #b54f6c;
-}
 
 .footer-copyright {
   text-align: center;
