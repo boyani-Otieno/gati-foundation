@@ -29,7 +29,7 @@ const Hero = () => {
             title={
               <Typewriter
                 words={['Join the cause']}
-                loop={1}
+                loop={99}
                 cursor
                 cursorStyle='_'
                 typeSpeed={70}
@@ -47,7 +47,8 @@ const Hero = () => {
               <p>
                 Your time and resources can help make a lasting impact. 
                 Volunteer, donate, or get involved in our initiatives to 
-                create positive change.
+                create positive change. Join us as we Uplift, Protect, and Mentor 
+                Communities in Kuria, Kenya
               </p>
               <a href="/contribute" className="hero-btn clear-btn1" target="_blank" rel="noreferrer">
                 Get Invloved <IoArrowForward />
