@@ -1,46 +1,35 @@
-import React from "react";
-import "./awards.css"; // Make sure to create and customize this CSS file
-import { FaUserMd, FaBaby, FaWheelchair } from "react-icons/fa"; // Example icons
+import React from 'react';
+import './awards.css';
 
-const AboutUs = () => {
+const CardsSection = () => {
   return (
-    <section className="about-us">
-      <div className="about-us-content">
-        <div className="about-us-text">
-          <h2>WHO WE ARE</h2>
-          <hr className="about-us-divider" />
-          <p>
-            We work tirelessly to improve the lives of vulnerable communities in
-            Kenya. Our special missions include healthcare, education, and
-            sustainable development projects across the country.
-          </p>
+    <section className="cards-section">
+      <h2>WHY DO ALL THESE MATTER</h2>
+      <div className="cards-container">
+        <div className="card">
+          <h3>FGM</h3>
+          <p>According to the recently released Kenya Demographic & Health Survey (KDHS) data 
+            for 2022, the prevalence of FGM is 15 percent in the country, meaning that 15 percent 
+            of girls and women aged 15 to 49 have been circumcised. This is much too high. Yet, 
+            progress is being made.</p>
         </div>
-
-        <div className="about-us-stats">
-          <div className="stat-item">
-            <FaUserMd className="stat-icon" />
-            <h3>52,000</h3>
-            <p>Women and children we've screened & treated for anemia</p>
-          </div>
-
-          <div className="stat-item">
-            <FaBaby className="stat-icon" />
-            <h3>34,000</h3>
-            <p>Women we've helped deliver healthy babies</p>
-          </div>
-
-          <div className="stat-item">
-            <FaWheelchair className="stat-icon" />
-            <h3>820</h3>
-            <p>
-              Received free hip & knee replacements, bone fracture repairs, or
-              minimally-invasive surgery
-            </p>
-          </div>
+        <div className="card">
+          <h3>HIV</h3>
+          <p>In Kenya, it is estimated that there are 1.6 million people living with HIV/AIDS and 1.1 
+            million children who are orphans due to AIDS. As a whole, more than six percent of the 
+            population is infected with HIV, but the epidemic has hit specific regions and vulnerable 
+            groups much more seriously.</p>
+        </div>
+        <div className="card">
+          <h3>CLIMATE</h3>
+          <p>Climate change in Kenya and across East Africa has led to more frequent droughts. These 
+            have caused wild animals, such as lions and elephants, to wander further in search of water 
+            and food. Lions have then come into conflict with humans when they kill sheep and goats in 
+            the villages near the national parks.</p>
         </div>
       </div>
     </section>
   );
 };
 
-export default AboutUs;
+export default CardsSection;
