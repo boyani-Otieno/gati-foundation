@@ -37,7 +37,7 @@ const Hero = () => {
                 delaySpeed={1000}
               />
             }
-            subtitle='Make a difference, No matter how small.'
+            subtitle='Make a difference, No matter how small for our communities in Kuria, Kenya.'
           />
 
           {/* Additional Information */}

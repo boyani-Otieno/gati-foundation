@@ -59,12 +59,12 @@ header .toggle {
     top: 10vh;
     left: 0;
     width: 100%;
-    background-color: #dfb6b2;
+    background-color: #ec9c2d;
     padding: 20px;
   }
   header li a {
     display: inline-block;
     margin-bottom: 20px;
-    color: #fff;
+    color: #000;
   }
 }
