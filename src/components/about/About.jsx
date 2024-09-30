@@ -29,7 +29,7 @@ const About = () => {
       id: 3,
       name: "Susan",
       title: "Co-Founder",
-      image: "/images/prudence.jpg",
+      image: "/images/susan.jpeg",
     },
   ];
 
