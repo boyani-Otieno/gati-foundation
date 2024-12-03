@@ -47,7 +47,7 @@ export const featured = [
   },
   {
     cover: "../images/hero/h6.png",
-    name: "Preventing malnutrition among under fives",
+    name: "Help in preventing malnutrition among infants and young children.",
     total: "Live",
   },
 ]
