@@ -68,10 +68,11 @@
   color: #333;
 }
 
-.team-member p {
+.abt-text {
   font-size: 16px;
   color: #777;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 /* Responsive design */
