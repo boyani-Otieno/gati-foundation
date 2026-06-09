@@ -1,7 +1,7 @@
 import React from "react"
 import Back from "../common/Back"
 import Heading from "../common/Heading"
-import img from "../images/about.jpg"
+import img from "../images/full-team.jpeg"
 import "./about.css"
 
 const About = () => {
@@ -25,7 +25,7 @@ const About = () => {
       id: 3,
       name: "Prudence Oloo",
       title: "Co-Founder",
-      text: "Prudence is a dedicated educator with a Bachelor's Degree in Education from Egerton University. Currently working at St Nicholas International School, Prudence combines her professional expertise with her passion for promoting education, particularly for women and girls. Her work focuses on empowering young minds and advocating for equitable access to education as a tool for transformation and growth. As a co-founder of the foundation Prudence plays a key role in driving initiatives that uplift marginalized communities, with a vision to create a future where education is inclusive and transformative.",
+      text: "Prudence is a dedicated educator with a Bachelor's Degree in Education from Egerton University. Previously worked at St Nicholas International School, Prudence combines her professional expertise with her passion for promoting education, particularly for women and girls. Her work focuses on empowering young minds and advocating for equitable access to education as a tool for transformation and growth. As a co-founder of the foundation Prudence plays a key role in driving initiatives that uplift marginalized communities, with a vision to create a future where education is inclusive and transformative.",
       image: "/images/prudence.jpeg",
     },
     {
@@ -57,7 +57,7 @@ We actively facilitate and champion the development of majorly women and girls b
 
           </div>
           <div className='right row'>
-            <img src='./immio.jpg' alt='' />
+            <img src='./full-team.jpeg' alt='' />
           </div>
         </div>
       </section>
