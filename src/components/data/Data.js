@@ -54,32 +54,32 @@ export const featured = [
 export const list = [
   {
     id: 1,
-    cover: "../images/list/one.jpg",
+    cover: "../images/list/mentor2.jpeg",
     name: "Educating children",
   },
   {
     id: 2,
-    cover: "../images/list/two.jpg",
+    cover: "../images/list/jeda.jpeg",
     name: "Changing lifes",
   },
   {
     id: 3,
-    cover: "../images/list/three.jpg",
+    cover: "../images/list/partners.jpeg",
     name: "Supporting communities",
   },
   {
     id: 4,
-    cover: "../images/list/four.jpg",
+    cover: "../images/list/wote.jpeg",
     name: "Growing together",
   },
   {
     id: 5,
-    cover: "../images/list/five.jpg",
+    cover: "../images/list/full-team.jpeg",
     name: "Brightening smiles",
   },
   {
     id: 6,
-    cover: "../images/list/one.jpg",
+    cover: "../images/list/bokep.jpeg",
     name: "Inspiring lives",
   },
 ]

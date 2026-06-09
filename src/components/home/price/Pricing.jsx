@@ -6,17 +6,17 @@ const ExpertViews = () => {
     {
       image: '/images/wembe.jpg', // Replace with your image path
       title: "Stop Female Genital Mutilation",
-      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      description: 'Real change begins with dialogue. Read how our community-led awareness campaigns are changing mindsets among elders and safely guiding young Kuria girls through alternative rites of passage without the cut',
     },
     {
-      image: '/images/girl.jpg', // Replace with your image path
+      image: '/images/smiles.jpeg', // Replace with your image path
       title: 'Protecting a Girl in Kuria, Kenya',
-      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      description: 'Meet the brave young women redefining their futures. This story highlights our rescue and shelter initiatives, providing education and safe havens for girls seeking protection and a chance to learn.',
     },
     {
-      image: '/images/girls.jpg', // Replace with your image path
+      image: '/images/smiles-2.jpeg', // Replace with your image path
       title: 'Empowering the Girl child',
-      description: '"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."',
+      description: 'Education is the ultimate equalizer. Discover how our sanitary pad distribution drives and school sponsorship programs keep girls in the classroom, healthy, confident, and focused on their dreams.',
     },
   ];
 

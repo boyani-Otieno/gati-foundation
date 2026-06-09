@@ -3,8 +3,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './team.css';
 import img from '../../../assets/images/customer/donate.jpg';
-import im3 from '../../../assets/images/customer/mentor.jpg';
-import im4 from '../../../assets/images/customer/future.jpg';
+import im3 from '../../../assets/images/customer/mentor.jpeg';
+import im4 from '../../../assets/images/customer/girl-child.jpeg';
 import { IoArrowForward } from "react-icons/io5";
 
 function Team() {
@@ -26,20 +26,8 @@ function Team() {
       <div data-aos="fade-left" className="about-column">
         <div className='about-content'>
           <h3>Donation Facilitation</h3>
-          <p>We all have our strengths. I’ve perfected
-          mine <br />so you can focus on yours. Get in touch
-          to find <br />out how I can help.
-          Because I'm experienced, reliable,
-          and focused on results, I've had the
-          privilege of working with a host of fantastic clients.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna 
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit 
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-          occaecat cupidatat non proident, sunt in culpa qui officia 
-          deserunt mollit anim id est laborum.
+          <p>Empowering Communities Together.
+            Every contribution brings us closer to a future where every girl is protected, every widow is empowered, and every child is healthy. We ensure that your donations directly fund essential supplies, medical support, and community workshops in Kuria. By partnering with us, you are investing in sustainable, community-led change.
           </p>
           <button>
           <a href="/contact" target="_blank" rel="noopener noreferrer">
@@ -50,23 +38,8 @@ function Team() {
       <div data-aos="fade-left" className="about-column">
         <div className='about-content'>
           <p><h3>Mentoring and Protecting</h3>
-          My business is more than just a job.
-          Each time I take on a new project,
-          I make sure it aligns with my core
-          set of values so I know I can deliver great results.
-          My curiosity makes me love learning, and added with my
-          perfectionism, I am able to come up with quality work.
-          Because I'm experienced, reliable,
-          and focused on results, I've had the
-          privilege of working with a host of fantastic clients.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna 
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit 
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-          occaecat cupidatat non proident, sunt in culpa qui officia 
-          deserunt mollit anim id est laborum.
+            Guiding the Next Generation.
+            Our core values drive us to step into the gaps where communities need us most. Through dedicated mentorship programs, we walk alongside young girls fleeing FGM and early marriages, giving them the emotional support, safety, and leadership tools they need to build a self-determined future.
           </p>
           <button>Learn More<IoArrowForward/></button>
         </div>
@@ -88,20 +61,8 @@ function Team() {
         <div className='about-content'>
           <p>
           <h3>Changing the Future</h3>
-          Because I'm experienced, reliable,
-          and focused on results, I've had the
-          privilege of working with a host of fantastic clients.
-          Because I'm experienced, reliable,
-          and focused on results, I've had the
-          privilege of working with a host of fantastic clients.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna 
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-          Duis aute irure dolor in reprehenderit in voluptate velit 
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-          occaecat cupidatat non proident, sunt in culpa qui officia 
-          deserunt mollit anim id est laborum.
+          Breaking Cycles, Building Hope.
+          True transformation happens when a community is enlightened and unified. By engaging local elders, training youth advocates, and collaborating with local healthcare providers, we are actively dismantling harmful traditions and replacing them with opportunities for growth, climate resilience, and economic independence.
           </p>
           <button>Learn More<IoArrowForward/></button>
         </div>
