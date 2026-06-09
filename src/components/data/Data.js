@@ -90,7 +90,7 @@ export const location = [
     name: "Sharing Sanitary Pads",
     Villas: "Kibera",
     Apartments: "Kasarani",
-    cover: "./images/location/pads.jpg",
+    cover: "./images/location/noshame.jpeg",
   },
   {
     id: 2,
