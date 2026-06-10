@@ -94,7 +94,7 @@ export const location = [
   },
   {
     id: 2,
-    name: "Sponsored children",
+    name: "Sponsoring children",
     Villas: "Kibera",
     Apartments: "Kuria",
     cover: "./images/location/future.jpg",
@@ -107,16 +107,16 @@ export const location = [
   },
   {
     id: 4,
-    name: "Having Fun",
-    Villas: "Educacting the girl-child",
-    cover: "./images/location/girls.jpg",
+    name: "Planting Trees",
+    Villas: "Plant a tree, plant a future",
+    cover: "./images/location/pboke.jpeg",
   },
   {
     id: 5,
     name: "Nairobi, Kenya",
-    Villas: "Educating Communities",
+    Villas: "Protecting the Environment",
     Apartments: "Inspiring",
-    cover: "./images/location/mentor.jpg",
+    cover: "./images/location/sisi-wote.jpeg",
   },
   {
     id: 6,
