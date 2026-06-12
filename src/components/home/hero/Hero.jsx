@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Typewriter } from 'react-simple-typewriter';
 import { IoArrowForward } from "react-icons/io5";
 import "./hero.css";
+import vida from "../../images/vida.mp4"; 
 
 const Hero = () => {
   const containerVariants = {
@@ -19,6 +20,21 @@ const Hero = () => {
 
   return (
     <section className='hero'>
+      {/* Background Video Element */}
+      <video 
+        autoPlay 
+        loop 
+        muted 
+        playsInline 
+        className="hero-video"
+      >
+        <source src={vida} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Dark Overlay to make sure white text is readable */}
+      <div className="hero-overlay"></div>
+
       <div className='container'>
         <motion.div
           initial="hidden"
@@ -37,7 +53,7 @@ const Hero = () => {
                 delaySpeed={1000}
               />
             }
-            subtitle='Make a difference, No matter how small for our communities in Kuria, Kenya.'
+            subtitle='Her Legacy. Their Future.'
           />
 
           {/* Additional Information */}
@@ -51,7 +67,7 @@ const Hero = () => {
                 Communities in Kuria, Kenya
               </p>
               <a href="/contribute" className="hero-btn clear-btn1" target="_blank" rel="noreferrer">
-                Get Invloved <IoArrowForward />
+                Get Involved <IoArrowForward />
               </a>
             </div>
 
