@@ -116,7 +116,7 @@ export const location = [
     name: "Nairobi, Kenya",
     Villas: "Protecting the Environment",
     Apartments: "Inspiring",
-    cover: "./images/location/sisi-wote.jpeg",
+    cover: "./images/location/boke-milly.jpeg",
   },
   {
     id: 6,
