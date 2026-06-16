@@ -47,12 +47,12 @@ const DonationPage = () => {
             className="hero-text"
           >
             <span className="badge">Transform Lives in Kuria, Kenya</span>
-            <h1>Be the Sanctuary They Arrive Seeking</h1>
-            <p>
+            <h1>Her Legacy. Their Future.</h1>
+            {/* <p>
               Your generosity provides immediate protection for young girls fleeing FGM, 
               sustains HIV-affected widows, and builds long-term climate resilience. 
               Change a trajectory today.
-            </p>
+            </p> */}
           </motion.div>
         </div>
       </header>
@@ -101,7 +101,7 @@ const DonationPage = () => {
 
           <div className="trust-footer">
             <IoShieldCheckmark className="trust-icon" />
-            <p><strong>Secure Contribution Platform:</strong> All transactions are encrypted. We will soon process donations seamlessly via PayPal for ultimate buyer protection.</p>
+            <p><strong>Secure Contribution Platform:</strong> All transactions are encrypted. Processing donations seamlessly via PayPal for ultimate buyer protection.</p>
           </div>
         </motion.div>
 

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Typewriter } from 'react-simple-typewriter';
 import { IoArrowForward } from "react-icons/io5";
 import "./hero.css";
-import vida from "../../images/vida.mp4"; 
+//import vida from "../../images/vida.mp4"; 
 
 const Hero = () => {
   const containerVariants = {
@@ -21,7 +21,7 @@ const Hero = () => {
   return (
     <section className='hero'>
       {/* Background Video Element */}
-      <video 
+      {/* <video 
         autoPlay 
         loop 
         muted 
@@ -30,7 +30,7 @@ const Hero = () => {
       >
         <source src={vida} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
 
       {/* Dark Overlay to make sure white text is readable */}
       <div className="hero-overlay"></div>
