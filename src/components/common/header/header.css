@@ -1,70 +1,302 @@
+/* =====================================
+   MARGARET ROBI FOUNDATION NAVBAR
+===================================== */
+
+:root {
+  --burgundy: #7A1E2C;
+  --burgundy-light: #9A3445;
+
+  --forest-green: #2F5D50;
+  --forest-green-light: #467A6B;
+
+  --cream: #FAF7F2;
+  --off-white: #FFFDFC;
+
+  --gold: #C7A35C;
+
+  --text-dark: #2C2C2C;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
 header {
-  background-color: #fff;
-  height: 15vh;
-  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
-  padding: 15px 0;
   position: sticky;
   top: 0;
-  z-index: 99999;
+  z-index: 1000;
+
+  background: var(--cream);
+
+  border-bottom: 3px solid var(--gold);
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
-header img {
-  width: 170px;
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 18px 25px;
 }
-header a {
-  margin-left: 30px;
-  transition: 0.5s;
-  font-weight: 500;
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-header a:hover {
-  color: #ec9c2d;
+
+/* =====================================
+   LOGO
+===================================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
-.logo h3{
-  color: #eb9a2e;
+
+.logo a {
+  text-decoration: none;
 }
-header span {
-  width: auto;
-  padding: 0px 6px;
-  background: #ecd8e0;
-  border-radius: 50px;
-  color: #ffffff;
-  margin-right: 4px;
-  font-weight: 400;
+
+.logoImage {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
 }
-header h4 {
-  font-weight: 500;
-  margin-right: 20px;
+
+.logoText {
+  color: var(--burgundy);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  transition: 0.3s ease;
 }
-header .toggle {
+
+.logoText:hover {
+  color: var(--forest-green);
+}
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav .flex {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav li {
+  position: relative;
+}
+
+.nav li a {
+  text-decoration: none;
+
+  color: var(--burgundy);
+
+  font-weight: 600;
+  font-size: 1rem;
+
+  transition: all 0.3s ease;
+
+  padding-bottom: 8px;
+}
+
+.nav li a:hover {
+  color: var(--forest-green);
+}
+
+/* Elegant Gold Underline */
+
+.nav li a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--gold);
+
+  transition: width 0.3s ease;
+}
+
+.nav li a:hover::after {
+  width: 100%;
+}
+
+/* =====================================
+   DONATE BUTTON
+===================================== */
+
+.button {
+  display: flex;
+  align-items: center;
+}
+
+.donateBtn {
+  text-decoration: none;
+
+  background: var(--forest-green);
+  color: white;
+
+  padding: 14px 30px;
+
+  border-radius: 8px;
+
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donateBtn:hover {
+  background: var(--forest-green-light);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(47, 93, 80, 0.25);
+}
+
+/* =====================================
+   MOBILE TOGGLE
+===================================== */
+
+.toggle {
   display: none;
 }
-@media screen and (max-width: 768px) {
-  header {
-    padding: 0;
+
+.toggle button {
+  background: transparent;
+  border: none;
+
+  color: var(--burgundy);
+
+  font-size: 1.8rem;
+
+  cursor: pointer;
+}
+
+/* =====================================
+   MOBILE MENU
+===================================== */
+
+.small {
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+
+  width: 100%;
+
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  padding: 25px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  border-top: 3px solid var(--gold);
+}
+
+.small li {
+  list-style: none;
+}
+
+.small li a {
+  color: var(--burgundy);
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  font-size: 1rem;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media screen and (max-width: 1024px) {
+
+  .logoText {
+    font-size: 1.25rem;
   }
-  header img {
-    margin-top: 30px;
+
+  .nav .flex {
+    gap: 22px;
   }
-  header .button {
+
+  .donateBtn {
+    padding: 12px 24px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .nav .flex {
     display: none;
   }
-  header .nav .flex {
-    display: none;
-  }
-  header .toggle {
+
+  .toggle {
     display: block;
-    margin-top: 20px;
   }
-  header .small {
-    position: absolute;
-    top: 10vh;
-    left: 0;
-    width: 100%;
-    background-color: #ec9c2d;
-    padding: 20px;
+
+  .button {
+    display: none;
   }
-  header li a {
-    display: inline-block;
-    margin-bottom: 20px;
-    color: #000;
+
+  .logoImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logoText {
+    font-size: 1.1rem;
+    max-width: 180px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .container {
+    padding: 14px 18px;
+  }
+
+  .logo {
+    gap: 10px;
+  }
+
+  .logoImage {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logoText {
+    font-size: 1rem;
+  }
+
+  .toggle button {
+    font-size: 1.6rem;
   }
 }

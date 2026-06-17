@@ -7,13 +7,13 @@ const About = () => {
     {
       id: 1,
       name: "Jerida Gati",
-      title: "Founder",
+      title: "Founder, Director",
       text: "Jerida holds a Bachelor of Arts in Education from Egerton University and is currently pursuing a Master's Degree in Gender and Development Studies, equipping her with advanced expertise to address gender inequalities. With extensive experience, including serving as a community coordinator in Mathare slums through Darajania Organization, Jerida is passionate about women's empowerment, mentorship, and leadership. She founded the organization in 2021 to combat practices like FGM and gender-based violence while fostering inclusivity and equality. Guided by her vision to reshape societal norms, Jerida leads initiatives that empower women and girls to become leaders and agents of change, promoting a future rooted in equity, respect, and dignity for all.",
       image: "/images/jeda.jpeg",
     },
     {
       id: 2,
-      name: "Martha Boke",
+      name: "Martha Boke, Nutrition Expert and Climate Change Champion",
       title: "Co-Founder",
       text: "Martha Boke is a passionate advocate for women's and girls' health and nutrition. She holds a Bachelor's Degree in Nutrition and Dietetics from the Technical University of Kenya and has gained extensive experience working with leading health institutions, including the Nutrition department at Kuria District Hospital, Mama Lucy Hospital, and Kenyatta National Hospital. Currently, Martha offers her expertise to Spur Africa Organization, focusing on health and nutrition programs. Martha's dedication to improving the well-being of women and girls drives her work at the Margaret Robi Foundation, where she leads initiatives aimed at addressing nutritional challenges and promoting healthy lifestyles within marginalized communities. Her vision is to create a future where women and girls have equitable access to healthcare and nutritional resources, enabling them to thrive and contribute to society.",
       image: "/images/boke.jpeg",
@@ -21,7 +21,7 @@ const About = () => {
     {
       id: 3,
       name: "Prudence Oloo",
-      title: "Co-Founder",
+      title: "Co-Founder, Co-ordinator Academic Affairs",
       text: "Prudence is a dedicated educator with a Bachelor's Degree in Education from Egerton University. Previously having worked at St Nicholas International School, Prudence combines her professional expertise with her passion for promoting education, particularly for women and girls. Her work focuses on empowering young minds and advocating for equitable access to education as a tool for transformation and growth. As a co-founder of the foundation, Prudence plays a key role in driving initiatives that uplift marginalized communities, with a vision to create a future where education is inclusive and transformative.",
       image: "/images/prudence.jpeg",
     },
