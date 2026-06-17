@@ -1,135 +1,202 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --cream: #F8F3E7;
+  --burgundy: #7A1F2B;
+  --green: #1F4D3A;
+  --gold: #C9A227;
+  --dark: #2B2B2B;
+  --white: #ffffff;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #fff; /* Updated color */
+  background-color: var(--cream);
+  color: var(--dark);
 }
+
 .container {
   max-width: 80%;
   margin: auto;
 }
+
 .flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+
 a {
   text-decoration: none;
-  color: #000; /* Updated color */
+  color: var(--burgundy);
   text-transform: capitalize;
 }
-.champion{
+
+.champion {
   text-decoration: none;
-  color: #fff; /* Updated color */
+  color: var(--white);
   text-transform: capitalize;
 }
+
+
 ul {
   list-style-type: none;
 }
+
+
 button {
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 17px 30px;
-  background: #ec9c2d; /* Updated color */
+  background: var(--green);
   border: none;
-  color: #fff;
+  color: var(--white);
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
+
+button:hover {
+  background: var(--burgundy);
+}
+
+
 button i {
   margin-right: 5px;
 }
+
+
 .heading {
   text-align: center;
   width: 60%;
   margin: auto;
 }
+
+
 .heading h1 {
-  color: #ea992d; /* Updated color */
-  font-weight: 600;
+  color: var(--burgundy);
+  font-weight: 700;
   text-transform: capitalize;
   font-size: 35px;
 }
+
+
 .heading p {
-  color: #000; /* Updated color */
+  color: var(--dark);
 }
+
+
 textarea,
 input {
   border: none;
   outline: none;
   background: none;
 }
+
+
 .background {
   padding: 80px 0;
   position: relative;
-  background: #fff; /* Updated color */
+  background: var(--cream);
 }
+
 
 .grid5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 30px;
 }
+
+
 label {
-  color: #ea992d;
+  color: var(--green);
   font-size: 14px;
 }
+
+
 .mtop {
   margin-top: 50px;
 }
+
+
 h4 {
   font-weight: 500;
   margin-top: 10px;
 }
+
+
 .shadow {
-  box-shadow: 0px 0px 10px #190019; /* Updated color */
+  box-shadow: 0px 5px 20px rgba(122, 31, 43, 0.15);
 }
+
+
 .padding {
   padding: 80px 0;
 }
+
+
 .grid3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
 }
+
+
 img {
   width: 100%;
   height: 100%;
   cursor: pointer;
 }
+
+
 .btn2 {
   border-radius: 50px;
   font-size: 20px;
 }
+
+
 .grid4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
 }
+
+
 .btn3 {
-  background: #ec9c2d; /* Updated color */
+  background: var(--gold);
   border-radius: 50px;
 }
+
+
 .btn4 {
-  background-color: #ec9c2d;
-  color: #fff;
+  background-color: var(--burgundy);
+  color: var(--white);
 }
+
+
 .btn5 {
   border-radius: 50px;
   padding: 20px 40px;
-  color: #fff; /* Updated color */
+  color: var(--white);
   font-size: 20px;
-  font-weight: 400;
-  border: 5px solid #fff; /* Updated color */
-  background: #ec9c2d; /* Updated color */
+  font-weight: 500;
+  border: 4px solid var(--white);
+  background: var(--green);
 }
+
+
 .back {
   height: 40vh;
   position: relative;
 }
+
+
 .back img {
   height: 40vh;
   position: absolute;
@@ -138,47 +205,71 @@ img {
   z-index: -1;
   object-fit: cover;
 }
+
+
 .back::after {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 40vh;
-  background: #060D08;
+
+  background: rgba(31,77,58,0.85);
+
   z-index: -1;
 }
+
+
 .back .container {
-  color: #fff;
+  color: var(--white);
   padding: 120px 0;
 }
+
+
 .back h1 {
   font-size: 40px;
-  font-weight: 500;
-  color: #ec9c2d;
+  font-weight: 600;
+  color: var(--gold);
 }
+
+
 .mb {
   margin-bottom: 80px;
 }
+
+
+
 @media screen and (max-width: 800px) {
+
   .grid4,
   .grid3,
   .grid5 {
     grid-template-columns: repeat(1, 1fr);
   }
+
+
   .heading {
     width: 100%;
   }
+
+
   .container {
     max-width: 90%;
   }
+
+
   .back::after,
   .back img,
   .back {
     height: 30vh;
   }
+
+
   .back .container {
-    color: #fff;
+    color: var(--white);
     padding: 60px 0;
   }
+
 }
