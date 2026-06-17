@@ -1,8 +1,5 @@
 import React from "react"
-//import Back from "../common/Back"
-//import Heading from "../common/Heading"
-//import img from "../images/full-team.jpeg"
-import styles from "./about.module.css" // Successfully switched to localized modules
+import styles from "./about.module.css" 
 
 const About = () => {
 
@@ -29,7 +26,7 @@ const About = () => {
       image: "/images/prudence.jpeg",
     },
     {
-      id: 4, // Cleaned duplicate id bug
+      id: 4, 
       name: "Susan",
       title: "Co-Founder",
       text: "Co-founder of the Margaret Robi Foundation, dedicated to collaborative strategic planning, local community advocacy, and driving long-term socio-economic progress for women and marginalized families across the region.",
@@ -42,13 +39,14 @@ const About = () => {
       <section className={styles.aboutSection}>        
         <div className={styles.storyContainer}>
           <div className={styles.leftRow}> 
-            <h1>About Us</h1>           
-            <h3>Who is Margaret Robi</h3>
+            <h1 className={styles.pageTitle}>About Us</h1>           
+            
             <p className={styles.storyText}>
               Margaret Robi was a woman of extraordinary courage, resilience, and hope. Raised in the Kuria community, she experienced firsthand the realities that continue to limit the lives of many girls and women today, including Female Genital Mutilation (FGM), gender discrimination, and the denial of educational opportunities. Yet she refused to believe that a girl's future should be determined by her circumstances, culture, or gender. She understood that when women are denied choices, communities are denied progress, and when girls are silenced, generations lose their potential. Despite the opportunities she never had, Margaret remained steadfast in her belief that education, dignity, and empowerment could transform lives.
+            </p>
 
-Inspired by her mother's strength, values, and unwavering faith in the power of education, Jerida Gati founded the Margaret Robi Foundation to carry forward her legacy. Today, the Foundation works to ensure that girls and young women are not defined by the barriers they face but by the possibilities they can create. Through education, leadership development, advocacy, and the fight against harmful cultural practices, we are building a future where every girl and young woman has the freedom to choose, the confidence to lead, and the opportunity to thrive.
-              The Margaret Robi Foundation was founded in 2021 by Jerida Gati. Our aim is to transform cultural practices that have for the longest time marginalized the Kuria community.
+            <p className={styles.storyText}>
+              Inspired by her mother's strength, values, and unwavering faith in the power of education, <strong>Jerida Gati</strong> founded the Margaret Robi Foundation to carry forward her legacy. Today, the Foundation works to ensure that girls and young women are not defined by the barriers they face but by the possibilities they can create. Through education, leadership development, advocacy, and the fight against harmful cultural practices, we are building a future where every girl and young woman has the freedom to choose, the confidence to lead, and the opportunity to thrive. The Margaret Robi Foundation was founded in <strong>2021 by Jerida Gati</strong>. Our aim is to transform cultural practices that have for the longest time marginalized the Kuria community.
             </p>
 
             <div className={styles.highlightBlock}>
@@ -71,10 +69,6 @@ Inspired by her mother's strength, values, and unwavering faith in the power of 
             <p className={styles.storyText}>
               The foundation focuses on structural action and positive change in Kuria communities. Addressing gender-based violence and misogynistic attitudes are central to our work. We actively facilitate and champion the development of women and girls by running participatory action activities and creating leadership opportunities.
             </p>
-          </div>
-
-          <div className={styles.rightRow}>
-            <img src='./full-team.jpeg' alt='Margaret Robi Foundation Team Gathering' className={styles.sideHeroImage} />
           </div>
         </div>
       </section>
