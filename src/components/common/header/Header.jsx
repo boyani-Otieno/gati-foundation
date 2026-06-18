@@ -14,14 +14,10 @@ const Header = () => {
         <div className="logo">
           <Link to="/">
             <img
-              src="/images/gati-logo.png"
-              alt="MRB"
+              src="/images/maroon-logo.png"
+              alt="Margaret Robi Foundation"
               className="logoImage"
             />
-          </Link>
-
-          <Link to="/" className="logoText">
-            Margaret Robi Foundation
           </Link>
         </div>
 
@@ -43,14 +39,21 @@ const Header = () => {
 
         {/* Donate Button */}
         <div className="button">
-          <Link to="/donate" className="donateBtn">
+          <Link
+            to="/donate"
+            className="donateBtn"
+            onClick={() => setNavList(false)}
+          >
             Donate
           </Link>
         </div>
 
         {/* Mobile Toggle */}
         <div className="toggle">
-          <button onClick={() => setNavList(!navList)}>
+          <button
+            className="menuToggle"
+            onClick={() => setNavList(!navList)}
+          >
             {navList ? (
               <i className="fa fa-times"></i>
             ) : (

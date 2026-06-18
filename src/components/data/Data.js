@@ -12,6 +12,10 @@ export const nav = [
     path: "/services",
   },
   {
+    text: "gallery",
+    path: "/gallery",
+  },
+  {
     text: "blog",
     path: "/blog",
   },
@@ -27,27 +31,37 @@ export const nav = [
 export const featured = [
   {
     cover: "../images/hero/h1.png",
-    name: "Promoting climate change resilience",
+    name: "Mitigating Female Genital Mutilation and Gender-Based Violence",
     total: "climate change",
   },
   {
     cover: "../images/hero/h2.png",
-    name: "Empowering HIV-Affected Widows",
+    name: "Championing Education Access for Girls and Young Women",
     total: "health",
   },
   {
     cover: "../images/hero/h3.png",
-    name: "Eradicating Female Genital Mutilation",
+    name: "Rebuilding Livelihoods for Young Widows of Conflict",
     total: "protect",
   },
   {
     cover: "../images/hero/h4.png",
-    name: "Strengthening advocacy and collaborations",
+    name: "Advancing Health Equity for HIV-Affected Women and Mothers",
     total: "Enlightenment",
   },
   {
     cover: "../images/hero/h6.png",
-    name: "Help in preventing malnutrition among infants and young children.",
+    name: "Preventing Malnutrition in Vulnerable Children Under 5",
+    total: "Live",
+  },
+  {
+    cover: "../images/hero/h6.png",
+    name: "Building Capacity for Climate Change and Agriculture",
+    total: "Live",
+  },
+  {
+    cover: "../images/hero/h6.png",
+    name: "Building Partnerships for Community Change",
     total: "Live",
   },
 ]

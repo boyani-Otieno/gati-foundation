@@ -1,261 +1,86 @@
-/* =====================================
-   MARGARET ROBI FOUNDATION NAVBAR
-===================================== */
-
-:root {
-  --burgundy: #7A1E2C;
-  --burgundy-light: #9A3445;
-
-  --forest-green: #2F5D50;
-  --forest-green-light: #467A6B;
-
-  --cream: #FAF7F2;
-  --off-white: #FFFDFC;
-
-  --gold: #C7A35C;
-
-  --text-dark: #2C2C2C;
-}
-
-/* =====================================
-   HEADER
-===================================== */
-
 header {
+  background: #F8F3E7;
+  border-bottom: 2px solid #C9A227;
   position: sticky;
   top: 0;
-  z-index: 1000;
-
-  background: var(--cream);
-
-  border-bottom: 3px solid var(--gold);
-
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  z-index: 999;
 }
 
-.container {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 18px 25px;
+header .container {
+  height: 90px;
 }
 
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* =====================================
-   LOGO
-===================================== */
+/* LOGO */
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 14px;
 }
 
 .logo a {
-  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .logoImage {
-  width: 58px;
-  height: 58px;
+  height: 75px;
+  width: auto;
   object-fit: contain;
+  display: block;
 }
 
-.logoText {
-  color: var(--burgundy);
-
-  font-size: 1.5rem;
-  font-weight: 700;
-
-  transition: 0.3s ease;
-}
-
-.logoText:hover {
-  color: var(--forest-green);
-}
-
-/* =====================================
-   NAVIGATION
-===================================== */
+/* NAVIGATION */
 
 .nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 30px;
 }
 
-.nav .flex {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-}
-
-.nav li {
-  position: relative;
-}
-
-.nav li a {
-  text-decoration: none;
-
-  color: var(--burgundy);
-
+.nav ul li a {
+  color: #7A1F2B;
   font-weight: 600;
-  font-size: 1rem;
-
-  transition: all 0.3s ease;
-
-  padding-bottom: 8px;
+  font-size: 15px;
+  transition: 0.3s;
 }
 
-.nav li a:hover {
-  color: var(--forest-green);
+.nav ul li a:hover {
+  color: #1F4D3A;
 }
 
-/* Elegant Gold Underline */
-
-.nav li a::after {
-  content: "";
-
-  position: absolute;
-
-  left: 0;
-  bottom: 0;
-
-  width: 0;
-  height: 2px;
-
-  background: var(--gold);
-
-  transition: width 0.3s ease;
-}
-
-.nav li a:hover::after {
-  width: 100%;
-}
-
-/* =====================================
-   DONATE BUTTON
-===================================== */
-
-.button {
-  display: flex;
-  align-items: center;
-}
+/* DONATE BUTTON */
 
 .donateBtn {
-  text-decoration: none;
-
-  background: var(--forest-green);
-  color: white;
-
-  padding: 14px 30px;
-
-  border-radius: 8px;
-
-  font-weight: 700;
-
-  transition: all 0.3s ease;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  background: #1F4D3A;
+  color: white !important;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 .donateBtn:hover {
-  background: var(--forest-green-light);
-
-  transform: translateY(-2px);
-
-  box-shadow: 0 8px 20px rgba(47, 93, 80, 0.25);
+  background: #7A1F2B;
 }
 
-/* =====================================
-   MOBILE TOGGLE
-===================================== */
+/* TOGGLE */
 
 .toggle {
   display: none;
 }
 
-.toggle button {
+.menuToggle {
   background: transparent;
-  border: none;
-
-  color: var(--burgundy);
-
-  font-size: 1.8rem;
-
-  cursor: pointer;
+  color: #7A1F2B;
+  padding: 0;
+  font-size: 24px;
 }
 
-/* =====================================
-   MOBILE MENU
-===================================== */
-
-.small {
-  position: absolute;
-
-  top: 100%;
-  left: 0;
-
-  width: 100%;
-
-  background: white;
-
-  display: flex;
-  flex-direction: column;
-
-  gap: 20px;
-
-  padding: 25px;
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
-  border-top: 3px solid var(--gold);
+.menuToggle:hover {
+  background: transparent;
 }
 
-.small li {
-  list-style: none;
-}
+/* MOBILE */
 
-.small li a {
-  color: var(--burgundy);
-
-  font-weight: 600;
-
-  text-decoration: none;
-
-  font-size: 1rem;
-}
-
-/* =====================================
-   RESPONSIVE
-===================================== */
-
-@media screen and (max-width: 1024px) {
-
-  .logoText {
-    font-size: 1.25rem;
-  }
-
-  .nav .flex {
-    gap: 22px;
-  }
-
-  .donateBtn {
-    padding: 12px 24px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-
-  .nav .flex {
-    display: none;
-  }
+@media screen and (max-width: 992px) {
 
   .toggle {
     display: block;
@@ -265,38 +90,53 @@ header {
     display: none;
   }
 
-  .logoImage {
-    width: 50px;
-    height: 50px;
+  .nav ul.flex {
+    display: none;
   }
 
-  .logoText {
-    font-size: 1.1rem;
-    max-width: 180px;
-    line-height: 1.2;
+  .nav ul.small {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background: #F8F3E7;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+    border-top: 1px solid #C9A227;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .nav ul.small li {
+    margin: 0;
+  }
+
+  .nav ul.small li a {
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
-  .container {
-    padding: 14px 18px;
-  }
-
-  .logo {
-    gap: 10px;
+  header .container {
+    height: 80px;
   }
 
   .logoImage {
-    width: 45px;
-    height: 45px;
+    height: 60px;
   }
 
-  .logoText {
-    font-size: 1rem;
+  .nav ul.small {
+    top: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .logoImage {
+    height: 55px;
   }
 
-  .toggle button {
-    font-size: 1.6rem;
-  }
 }

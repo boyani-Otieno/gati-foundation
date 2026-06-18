@@ -23,7 +23,7 @@ const Footer = () => {
 
           <div className="footer-social">
 
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/share/18yUpuGDjq/?mibextid=wwXIfrm" target="_blank" rel="noreferrer">
               <FaFacebookSquare />
             </a>
 
