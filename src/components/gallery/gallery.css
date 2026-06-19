@@ -86,8 +86,8 @@
   border-radius: 18px;
   object-fit: cover;
 }
-
-.gallery-card video:hover,
+"
+.gallery-card video:hover,"
 .gallery-card img:hover {
   transform: scale(1.03);
   transition: 0.4s ease;
