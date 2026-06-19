@@ -81,8 +81,6 @@
 
 .gallery-card img,
 .gallery-card video {
-
-.
   width: 100%;
   display: block;
   border-radius: 18px;
@@ -94,8 +92,6 @@
   transform: scale(1.03);
   transition: 0.4s ease;
 }
-
-
 
 /* RESPONSIVE */
 
