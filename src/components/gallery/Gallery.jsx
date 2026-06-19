@@ -10,7 +10,7 @@ const galleryItems = [
 
   {
     type: "image",
-    src: "/images/full-team.jpeg",
+    src: "/images/noshame.jpeg",
   },
 
   {
@@ -20,12 +20,12 @@ const galleryItems = [
 
   {
     type: "image",
-    src: "/images/two.jpeg",
+    src: "/images/full-team.jpeg",
   },
 
   {
     type: "image",
-    src: "/images/three.jpeg",
+    src: "/images/wote.jpeg",
   },
 
   {
@@ -41,6 +41,34 @@ const galleryItems = [
   {
     type: "image",
     src: "/images/mentor.jpeg",
+  },
+  {
+    type: "image",
+    src: "/images/partners.jpeg",
+  },
+   {
+    type: "image",
+    src: "/images/san.jpeg",
+  },
+  {
+    type: "image",
+    src: "/images/mentor2.jpeg",
+  },
+   {
+    type: "image",
+    src: "/images/boke-milly.jpeg",
+  },
+  {
+    type: "image",
+    src: "/images/pads.jpeg",
+  },
+  {
+    type: "image",
+    src: "/images/sisi-wote.jpeg",
+  },
+  {
+    type: "image",
+    src: "/images/pboke.jpeg",
   },
 
 ];
@@ -85,7 +113,10 @@ const Gallery = () => {
             ) : (
 
               <video
-                controls
+                autoPlay
+                muted
+                loop
+                playsInline
                 preload="metadata"
               >
                 <source src={item.src} />

@@ -88,7 +88,7 @@ const Footer = () => {
 
 
           <button>
-            Donate Now
+            <a href="/donate">Donate Now</a>
           </button>
 
 

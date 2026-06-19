@@ -82,20 +82,17 @@
 .gallery-card img,
 .gallery-card video {
 
+.
   width: 100%;
-
   display: block;
-
   border-radius: 18px;
-
-  transition: 0.4s ease;
-
+  object-fit: cover;
 }
 
-.gallery-card:hover img {
-
-  transform: scale(1.04);
-
+.gallery-card video:hover,
+.gallery-card img:hover {
+  transform: scale(1.03);
+  transition: 0.4s ease;
 }
 
 
