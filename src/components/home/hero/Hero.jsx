@@ -61,10 +61,10 @@ const Hero = () => {
             <div className="hero-info">
               <h3>Contribute Time & Resources</h3>
               <p>
-                Your time and resources can help make a lasting impact. 
-                Volunteer, donate, or get involved in our initiatives to 
-                create positive change. Join us as we Uplift, Protect, and Mentor 
-                Communities in Kuria, Kenya
+                Your time, skills, and resources can help create lasting change in the lives of girls, women, and
+                vulnerable families. Volunteer, partner with us, or support our programs as we work to empower
+                communities through education, mentorship, dignity, and advocacy in Gwitembe, Kuria East,
+                Kenya.
               </p>
               <a href="/contribute" className="hero-btn clear-btn1" target="_blank" rel="noreferrer">
                 Get Involved <IoArrowForward />
@@ -74,9 +74,9 @@ const Hero = () => {
             <div className="hero-info">
               <h3>Spread Awareness</h3>
               <p>
-               Underage Kuria girls after undergoing female circumcision (FGM)
-               walk along Kehancha-Migori road in Kuria West. Despite the ban on 
-               FGM, some communities still secretly carry out the practice.
+               Every conversation has the power to inspire change. Through education, advocacy, and
+               community engagement, we amplify voices, challenge harmful norms, and promote a future
+               where girls and young women can realize their full potential in Gwitembe, Kuria East, Kenya
               </p>
               <a href="https://www.standardmedia.co.ke/nyanza/article/2001438675/activists-from-kenya-tanzania-join-forces-to-fight-female-cut#google_vignette" 
               className="hero-btn clear-btn" target="_blank" rel="noreferrer">
