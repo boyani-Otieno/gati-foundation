@@ -82,7 +82,7 @@ const Gallery = () => {
       <div className="gallery-hero">
 
         <span className="gallery-subtitle">
-          Our Impact In Pictures
+          Our Impact In Pictures and Videos
         </span>
 
         <h1>
@@ -90,7 +90,7 @@ const Gallery = () => {
         </h1>
 
         <p>
-          Every photograph tells a story of resilience,
+          Every photograph and video tells a story of resilience,
           empowerment, and community transformation.
         </p>
 

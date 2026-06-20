@@ -1,89 +1,89 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
 import "./awards.css";
 
 const CardsSection = () => {
-
   const issues = [
     {
-      title: "FGM",
-      highlight: "15%",
+      title: "FGM & GBV",
       description:
-        "According to the Kenya Demographic and Health Survey (KDHS) 2022, 15% of girls and women aged 15–49 in Kenya have undergone Female Genital Mutilation. Although progress has been made, many girls remain vulnerable to harmful cultural practices."
+        "While Kenya's national FGM prevalence among women aged 15–49 stands at 15% (KDHS 2022), the rate in the Kuria community remains as high as 84%. In Kuria East, girls aged 9–17 continue to face heightened risk during traditional cutting seasons."
     },
-
     {
-      title: "HIV",
-      highlight: "1.6M",
+      title: "Championing Education Access",
       description:
-        "According to NASCOP, approximately 1.6 million people in Kenya live with HIV/AIDS. The impact continues to affect vulnerable communities, especially women, children, and marginalized groups."
+        "Many girls in marginalized communities face barriers to education because of poverty, early marriage, and harmful cultural practices. Education remains one of the strongest pathways to empowerment."
     },
-
     {
-      title: "CLIMATE",
-      highlight: "East Africa",
+      title: "Livelihoods in Border Conflict",
       description:
-        "Climate change continues to increase droughts and environmental challenges across East Africa, affecting livelihoods, food security, and the ability of communities to thrive."
+        "The Migori–Narok boundary dispute continues to disrupt economic activity. Women who depend on small businesses and cross-border trade face reduced income opportunities and increased vulnerability."
+    },
+    {
+      title: "Climate Change & Agriculture",
+      description:
+        "Recurring droughts and unpredictable weather patterns threaten food security. Women-headed households are often the hardest hit during climate shocks."
+    },
+    {
+      title: "Partnerships for Community Change",
+      description:
+        "Lasting change requires collaboration. We work with local leaders, schools, healthcare providers, and community champions to build sustainable solutions."
     }
   ];
 
-
   return (
+    <section className="impact-section">
 
-    <section className="cards-section">
+      <div className="impact-header">
+        <span>OUR FOCUS AREAS</span>
 
-
-      <div className="cards-heading">
-
-        <h2>
-          Why This Work Matters
-        </h2>
+        <h2>Why This Work Matters</h2>
 
         <p>
-          The Margaret Robi Foundation addresses some of the most pressing
-          challenges affecting women, girls, and vulnerable communities.
-          Through advocacy, empowerment, and sustainable solutions, we work
-          toward a more equitable future.
+          The challenges facing women and girls are interconnected.
+          Through advocacy, education, and community action, we address
+          the root causes of inequality and create opportunities for change.
         </p>
-
       </div>
 
-
-
-      <div className="cards-container">
-
-
+      <Swiper
+        modules={[Pagination, Autoplay]}
+        slidesPerView={1}
+        spaceBetween={30}
+        pagination={{ clickable: true }}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          1100: {
+            slidesPerView: 3,
+          },
+        }}
+        className="impactSwiper"
+      >
         {issues.map((issue, index) => (
+          <SwiperSlide key={index}>
+            <div className="impact-card">
+              <div className="card-accent"></div>
 
-          <div className="card" key={index}>
+              <h3>{issue.title}</h3>
 
-
-            <span className="card-number">
-              {issue.highlight}
-            </span>
-
-
-            <h3>
-              {issue.title}
-            </h3>
-
-
-            <p>
-              {issue.description}
-            </p>
-
-
-          </div>
-
+              <p>{issue.description}</p>
+            </div>
+          </SwiperSlide>
         ))}
-
-
-      </div>
-
-
+      </Swiper>
     </section>
-
   );
 };
-
 
 export default CardsSection;

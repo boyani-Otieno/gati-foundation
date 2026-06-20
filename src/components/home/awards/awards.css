@@ -1,165 +1,86 @@
-.cards-section {
-
-  background:#1F4D3A;
-
-  padding:80px 8%;
-
+.impact-section {
+  background: #1F4D3A;
+  padding: 90px 8%;
 }
 
-
-
-.cards-heading {
-
-  text-align:center;
-
-  max-width:750px;
-
-  margin:auto;
-
+.impact-header {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
 }
 
-
-
-.cards-heading h2 {
-
-  color:#C9A227;
-
-  font-size:38px;
-
-  margin-bottom:20px;
-
+.impact-header span {
+  color: #C9A227;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-
-
-.cards-heading p {
-
-  color:#F8F3E7;
-
-  line-height:1.8;
-
+.impact-header h2 {
+  color: #F8F3E7;
+  font-size: 42px;
+  margin: 15px 0;
 }
 
-
-
-.cards-container {
-
-
-  margin-top:50px;
-
-  display:grid;
-
-  grid-template-columns:repeat(3,1fr);
-
-  gap:35px;
-
-
+.impact-header p {
+  color: rgba(248, 243, 231, 0.85);
+  line-height: 1.8;
+  margin-bottom: 50px;
 }
 
-
-
-.card {
-
-
-  background:#F8F3E7;
-
-  padding:35px;
-
-  border-radius:18px;
-
-  position:relative;
-
-  overflow:hidden;
-
-  transition:.3s ease;
-
+.impactSwiper {
+  padding-bottom: 60px;
 }
 
-
-
-.card:hover {
-
-
-  transform:translateY(-10px);
-
+.impact-card {
+  background: #F8F3E7;
+  border-radius: 20px;
+  padding: 35px;
+  min-height: 320px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.35s ease;
 }
 
-
-
-.card::before {
-
-
-  content:"";
-
-  position:absolute;
-
-  top:0;
-
-  left:0;
-
-  width:100%;
-
-  height:6px;
-
-  background:#C9A227;
-
-
+.impact-card:hover {
+  transform: translateY(-8px);
 }
 
-
-
-.card-number {
-
-
-  font-size:40px;
-
-  font-weight:700;
-
-  color:#7A1F2B;
-
-
+.card-accent {
+  width: 70px;
+  height: 6px;
+  background: #C9A227;
+  border-radius: 50px;
+  margin-bottom: 25px;
 }
 
-
-
-.card h3 {
-
-
-  margin-top:15px;
-
-  margin-bottom:15px;
-
-  color:#1F4D3A;
-
-  font-size:25px;
-
-
+.impact-card h3 {
+  color: #7A1F2B;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-
-
-.card p {
-
-
-  color:#2B2B2B;
-
-  line-height:1.8;
-
-  font-size:15px;
-
-
+.impact-card p {
+  color: #2B2B2B;
+  line-height: 1.8;
 }
 
-
-
-@media(max-width:900px){
-
-
-.cards-container{
-
-grid-template-columns:1fr;
-
+.swiper-pagination-bullet {
+  background: #F8F3E7;
+  opacity: 0.5;
 }
 
+.swiper-pagination-bullet-active {
+  background: #C9A227;
+  opacity: 1;
+}
 
+@media (max-width: 768px) {
+  .impact-header h2 {
+    font-size: 34px;
+  }
+
+  .impact-card {
+    min-height: auto;
+  }
 }
