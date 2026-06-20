@@ -64,10 +64,6 @@ const galleryItems = [
   },
   {
     type: "image",
-    src: "/images/sisi-wote.jpeg",
-  },
-  {
-    type: "image",
     src: "/images/pboke.jpeg",
   },
 

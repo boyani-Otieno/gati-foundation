@@ -7,7 +7,9 @@ header {
 }
 
 header .container {
-  height: 90px;
+  height: 110px;
+  display: flex;
+  align-items: center;
 }
 
 /* LOGO */
@@ -23,10 +25,12 @@ header .container {
 }
 
 .logoImage {
-  height: 75px;
+  height: 100px;
   width: auto;
+  max-width: 220px;
   object-fit: contain;
   display: block;
+  transition: 0.3s ease;
 }
 
 /* NAVIGATION */
@@ -39,22 +43,40 @@ header .container {
   color: #7A1F2B;
   font-weight: 600;
   font-size: 15px;
-  transition: 0.3s;
+  transition: 0.3s ease;
+  position: relative;
 }
 
 .nav ul li a:hover {
   color: #1F4D3A;
 }
 
+/* Optional subtle underline effect */
+
+.nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #C9A227;
+  transition: 0.3s ease;
+}
+
+.nav ul li a:hover::after {
+  width: 100%;
+}
+
 /* DONATE BUTTON */
 
 .donateBtn {
   background: #1F4D3A;
-  color: white !important;
+  color: #fff !important;
   padding: 12px 28px;
   border-radius: 30px;
   font-weight: 600;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .donateBtn:hover {
@@ -72,13 +94,15 @@ header .container {
   color: #7A1F2B;
   padding: 0;
   font-size: 24px;
+  border: none;
+  box-shadow: none;
 }
 
 .menuToggle:hover {
   background: transparent;
 }
 
-/* MOBILE */
+/* TABLET & MOBILE */
 
 @media screen and (max-width: 992px) {
 
@@ -96,7 +120,7 @@ header .container {
 
   .nav ul.small {
     position: absolute;
-    top: 90px;
+    top: 110px;
     left: 0;
     width: 100%;
     background: #F8F3E7;
@@ -118,25 +142,38 @@ header .container {
   }
 }
 
+/* SMALL TABLETS */
+
 @media screen and (max-width: 768px) {
+
+  header .container {
+    height: 90px;
+  }
+
+  .logoImage {
+    height: 75px;
+    max-width: 180px;
+  }
+
+  .nav ul.small {
+    top: 90px;
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 480px) {
 
   header .container {
     height: 80px;
   }
 
   .logoImage {
-    height: 60px;
+    height: 65px;
+    max-width: 150px;
   }
 
   .nav ul.small {
     top: 80px;
   }
-}
-
-@media screen and (max-width: 480px) {
-
-  .logoImage {
-    height: 55px;
-  }
-
 }
