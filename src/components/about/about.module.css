@@ -132,10 +132,12 @@
 }
 
 .memberBio {
-  font-size: 1rem;
-  line-height: 1.65;
-  color: #546e7a;
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #333333;
   margin: 0;
+  text-align: justify;
 }
 
 @media screen and (max-width: 768px) {
