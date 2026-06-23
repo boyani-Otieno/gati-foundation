@@ -69,7 +69,7 @@ export const list = [
   {
     id: 1,
     cover: "../images/list/mentor2.jpeg",
-    name: "Educating children",
+    name: "Mentorship Session",
   },
   {
     id: 2,
@@ -79,7 +79,7 @@ export const list = [
   {
     id: 3,
     cover: "../images/list/partners.jpeg",
-    name: "Supporting communities",
+    name: "Dignity Support",
   },
   {
     id: 4,

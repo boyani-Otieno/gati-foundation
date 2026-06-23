@@ -8,7 +8,7 @@ const Recent = () => {
     <>
       <section className='recent padding'>
         <div className='container'>
-          <Heading title='Recent Projects done' subtitle='From grassroots advocacy to direct community support, our recent initiatives focus on delivering immediate relief and long-term empowerment to vulnerable families across the Kuria region.' />
+          <Heading title='Recent Projects done' subtitle=' Our recent projects empower girls through mentorship, advocacy, and dignity support, creating opportunities for them to thrive in their community' />
           <RecentCard />
         </div>
       </section>
