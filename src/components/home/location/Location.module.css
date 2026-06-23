@@ -1,0 +1,227 @@
+.girlsPromiseSection {
+  padding: 100px 0;
+  background: #f8f3e7;
+}
+
+
+.girlsPromiseContainer {
+  width: 90%;
+  margin: auto;
+}
+
+
+
+.girlsPromiseGrid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:30px;
+}
+
+
+
+.girlsPromiseCard {
+
+  background:#fff;
+  padding:40px 30px;
+  border-radius:16px;
+  border-top:5px solid #c9a227;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  transition:.3s ease;
+
+}
+
+
+.girlsPromiseCard:hover {
+
+  transform:translateY(-8px);
+
+}
+
+
+
+.girlsPromiseIcon {
+
+  width:70px;
+  height:70px;
+  margin:0 auto 20px;
+  border-radius:50%;
+  background:#1f5b45;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  font-weight:bold;
+
+}
+
+
+
+.girlsPromiseCard h3 {
+
+  color:#6d1f32;
+  margin-bottom:15px;
+  font-size:22px;
+
+}
+
+
+
+.girlsPromiseCard p {
+
+  color:#666;
+  line-height:1.8;
+
+}
+
+
+
+
+
+.communityImpactWrapper {
+
+  margin-top:100px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+
+}
+
+
+
+.communityImpactTag {
+
+  display:inline-block;
+  background:rgba(109,31,50,.1);
+  color:#6d1f32;
+  padding:8px 18px;
+  border-radius:30px;
+  font-weight:700;
+  margin-bottom:20px;
+
+}
+
+
+
+
+.communityImpactText h2 {
+
+  font-size:48px;
+  line-height:1.2;
+  color:#1f5b45;
+  margin-bottom:25px;
+
+}
+
+
+
+.communityImpactText h2 span {
+
+  display:block;
+  color:#6d1f32;
+
+}
+
+
+
+
+.communityImpactText p {
+
+  font-size:18px;
+  line-height:1.9;
+  color:#555;
+
+}
+
+
+
+
+.communityImpactGrid {
+
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:25px;
+
+}
+
+
+
+
+.communityImpactCard {
+
+  background:#1f5b45;
+  color:white;
+  padding:40px;
+  border-radius:16px;
+  text-align:center;
+
+}
+
+
+
+.communityImpactCard h3 {
+
+  color:#c9a227;
+  font-size:48px;
+  margin-bottom:10px;
+
+}
+
+
+
+.communityImpactCard p {
+
+  font-size:16px;
+  letter-spacing:1px;
+
+}
+
+
+
+
+@media screen and (max-width:992px){
+
+  .girlsPromiseGrid{
+
+    grid-template-columns:repeat(2,1fr);
+
+  }
+
+
+  .communityImpactWrapper{
+
+    grid-template-columns:1fr;
+
+  }
+
+}
+
+
+
+@media screen and (max-width:768px){
+
+
+  .girlsPromiseGrid{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .communityImpactGrid{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .communityImpactText h2{
+
+    font-size:34px;
+
+  }
+
+}

@@ -74,7 +74,7 @@ export const list = [
   {
     id: 2,
     cover: "../images/list/jeda.jpeg",
-    name: "Changing lifes",
+    name: "Changing lives",
   },
   {
     id: 3,

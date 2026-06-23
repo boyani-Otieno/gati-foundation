@@ -99,7 +99,7 @@ alt={item.title}
 </h3>
 
 
-<p>
+<p>kill -9 2162
 {item.text}
 </p>
 
