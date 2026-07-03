@@ -1,90 +1,76 @@
 import React from "react";
-import Heading from "../../common/Heading";
-import { motion } from "framer-motion";
-import { Typewriter } from 'react-simple-typewriter';
-import { IoArrowForward } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { IoArrowForward, IoHeartOutline } from "react-icons/io5";
 import "./hero.css";
-//import vida from "../../images/vida.mp4"; 
 
 const Hero = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
   return (
-    <section className='hero'>
-      {/* Background Video Element */}
-      {/* <video 
-        autoPlay 
-        loop 
-        muted 
-        playsInline 
-        className="hero-video"
-      >
-        <source src={vida} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video> */}
+    <section
+      className="mrf-hero"
+      style={{ backgroundImage: "url('/images/wote.jpeg')" }}
+    >
+      <div className="mrf-hero-overlay"></div>
 
-      {/* Dark Overlay to make sure white text is readable */}
-      <div className="hero-overlay"></div>
+      <div className="mrf-hero-wrapper">
+        <div className="mrf-hero-content">
 
-      <div className='container'>
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-        >
-          <Heading
-            title={
-              <Typewriter
-                words={['Join the cause']}
-                loop={99}
-                cursor
-                cursorStyle='_'
-                typeSpeed={70}
-                deleteSpeed={50}
-                delaySpeed={1000}
-              />
-            }
-            subtitle='Her Legacy. Their Future.'
-          />
+          {/* <span className="mrf-hero-tag">
+            MARGARET ROBI FOUNDATION
+          </span> */}
 
-          {/* Additional Information */}
-          <div className="hero-info-section">
-            <div className="hero-info">
-              <h3>Contribute Time & Resources</h3>
-              <p>
-                Your time, skills, and resources can help create lasting change in the lives of girls, women, and
-                vulnerable families. Volunteer, partner with us, or support our programs as we work to empower
-                communities through education, mentorship, dignity, and advocacy in Gwitembe, Kuria East,
-                Kenya.
-              </p>
-              <a href="/contribute" className="hero-btn clear-btn1" target="_blank" rel="noreferrer">
-                Get Involved <IoArrowForward />
-              </a>
-            </div>
+          <div className="mrf-hero-line"></div>
 
-            <div className="hero-info">
-              <h3>Spread Awareness</h3>
-              <p>
-               Every conversation has the power to inspire change. Through education, advocacy, and
-               community engagement, we amplify voices, challenge harmful norms, and promote a future
-               where girls and young women can realize their full potential in Gwitembe, Kuria East, Kenya
-              </p>
-              <a href="https://www.standardmedia.co.ke/nyanza/article/2001438675/activists-from-kenya-tanzania-join-forces-to-fight-female-cut#google_vignette" 
-              className="hero-btn clear-btn" target="_blank" rel="noreferrer">
-                Read More <IoArrowForward />
-              </a>
-            </div>
+          <h1 className="mrf-hero-title">
+            Her Legacy.
+            <br />
+            <span>Their Future.</span>
+          </h1>
+
+          <p className="mrf-hero-text">
+            We empower girls, women and vulnerable families through
+            education, mentorship, advocacy and sustainable community
+            development, creating opportunities that transform lives
+            across Kuria East and beyond.
+          </p>
+
+          <div className="mrf-hero-actions">
+            <Link to="/donate" className="mrf-btn-primary">
+              Get Involved
+              <IoArrowForward />
+            </Link>
+
+            <Link to="/about" className="mrf-btn-secondary">
+              Learn More
+              <IoArrowForward />
+            </Link>
           </div>
-        </motion.div>
+
+          <div className="mrf-hero-footer">
+
+            <div className="mrf-footer-divider"></div>
+
+            <div className="mrf-footer-content">
+              <IoHeartOutline className="mrf-heart" />
+
+              <div>
+                <h4>Creating Lasting Change</h4>
+                <p>
+                  Every donation, every volunteer and every partnership
+                  helps build a brighter future for children and families.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div className="mrf-scroll">
+        <div className="mrf-mouse">
+          <span></span>
+        </div>
+        <p>Scroll</p>
       </div>
     </section>
   );

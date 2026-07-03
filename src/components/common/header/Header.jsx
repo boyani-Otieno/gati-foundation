@@ -44,7 +44,7 @@ const Header = () => {
             className="donateBtn"
             onClick={() => setNavList(false)}
           >
-            Donate
+            Get Involved
           </Link>
         </div>
 
