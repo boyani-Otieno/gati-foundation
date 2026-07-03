@@ -66,12 +66,12 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="mrf-scroll">
+      {/* <div className="mrf-scroll">
         <div className="mrf-mouse">
           <span></span>
         </div>
         <p>Scroll</p>
-      </div>
+      </div> */}
     </section>
   );
 };
