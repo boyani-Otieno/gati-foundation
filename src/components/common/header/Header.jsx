@@ -1,50 +1,101 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./header.css";
 
 const Header = () => {
   const location = useLocation();
-
   const isHome = location.pathname === "/";
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  const toggleDropdown = (menu) => {
+    setOpenDropdown(openDropdown === menu ? null : menu);
+  };
+  const navRef = useRef(null);
+  useEffect(() => {
+
+  const handleResize = () => {
+
+    if (window.innerWidth > 992) {
+      setMenuOpen(false);
+    }
+
+  };
+
+  window.addEventListener("resize", handleResize);
+
+  return () => window.removeEventListener("resize", handleResize);
+
+}, []);
+  const closeMenus = () => {
+    setMenuOpen(false);
+    setOpenDropdown(null);
+  };
+  useEffect(() => {
+
+  const handleClickOutside = (event) => {
+
+    if (
+      navRef.current &&
+      !navRef.current.contains(event.target)
+    ) {
+      setOpenDropdown(null);
+    }
+
+  };
+
+  const handleEscape = (event) => {
+
+    if (event.key === "Escape") {
+      setOpenDropdown(null);
+    }
+
+  };
+
+  document.addEventListener("mousedown", handleClickOutside);
+  document.addEventListener("keydown", handleEscape);
+
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+    document.removeEventListener("keydown", handleEscape);
+  };
+
+}, []);
 
   return (
     <header className={isHome ? "homeHeader" : "pageHeader"}>
-
       <div className="container">
 
         {/* Logo */}
 
         <div className="logo">
-
-          <Link to="/">
+          <Link to="/" onClick={closeMenus}>
             <img
               src="/images/new-maroon-logo.png"
               alt="Margaret Robi Foundation"
               className="logoImage"
             />
           </Link>
-
         </div>
 
-        {/* Navigation */}
+        {/* Navigation */}ref={navRef}
 
-        <nav className="nav">
+        <nav className="nav" ref={navRef}>
 
           <ul className={menuOpen ? "navMenu active" : "navMenu"}>
 
             <li>
-              <Link to="/" onClick={() => setMenuOpen(false)}>
+              <Link to="/" onClick={closeMenus}>
                 Home
               </Link>
             </li>
 
             {/* ABOUT */}
 
-            <li className="dropdown">
+            <li className={`dropdown ${openDropdown === "about" ? "open" : ""}`}>
 
-              <span>
+              <span onClick={() => toggleDropdown("about")}>
                 About Us
                 <i className="fa fa-chevron-down"></i>
               </span>
@@ -52,19 +103,19 @@ const Header = () => {
               <ul className="dropdownMenu">
 
                 <li>
-                  <Link to="/about" onClick={() => setMenuOpen(false)}>
+                  <Link to="/about" onClick={closeMenus}>
                     Our Inspiration
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/team" onClick={() => setMenuOpen(false)}>
+                  <Link to="/team" onClick={closeMenus}>
                     Leadership Team
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/partners" onClick={() => setMenuOpen(false)}>
+                  <Link to="/partners" onClick={closeMenus}>
                     Partners
                   </Link>
                 </li>
@@ -75,9 +126,9 @@ const Header = () => {
 
             {/* IMPACT */}
 
-            <li className="dropdown">
+            <li className={`dropdown ${openDropdown === "impact" ? "open" : ""}`}>
 
-              <span>
+              <span onClick={() => toggleDropdown("impact")}>
                 Impact
                 <i className="fa fa-chevron-down"></i>
               </span>
@@ -85,13 +136,13 @@ const Header = () => {
               <ul className="dropdownMenu">
 
                 <li>
-                  <Link to="/impact" onClick={() => setMenuOpen(false)}>
+                  <Link to="/impact" onClick={closeMenus}>
                     Our Impact
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/work" onClick={() => setMenuOpen(false)}>
+                  <Link to="/work" onClick={closeMenus}>
                     Our Work
                   </Link>
                 </li>
@@ -101,18 +152,16 @@ const Header = () => {
             </li>
 
             <li>
-
-              <Link to="/blog" onClick={() => setMenuOpen(false)}>
+              <Link to="/blog" onClick={closeMenus}>
                 Blog
               </Link>
-
             </li>
 
             {/* GET INVOLVED */}
 
-            <li className="dropdown">
+            <li className={`dropdown ${openDropdown === "involved" ? "open" : ""}`}>
 
-              <span>
+              <span onClick={() => toggleDropdown("involved")}>
                 Get Involved
                 <i className="fa fa-chevron-down"></i>
               </span>
@@ -120,25 +169,25 @@ const Header = () => {
               <ul className="dropdownMenu">
 
                 <li>
-                  <Link to="/donate" onClick={() => setMenuOpen(false)}>
+                  <Link to="/donate" onClick={closeMenus}>
                     Donate
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/volunteer" onClick={() => setMenuOpen(false)}>
+                  <Link to="/volunteer" onClick={closeMenus}>
                     Volunteer
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/careers" onClick={() => setMenuOpen(false)}>
+                  <Link to="/careers" onClick={closeMenus}>
                     Careers
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/contact" onClick={() => setMenuOpen(false)}>
+                  <Link to="/contact" onClick={closeMenus}>
                     Contact Us
                   </Link>
                 </li>
@@ -157,17 +206,14 @@ const Header = () => {
           className="mobileBtn"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-
           {menuOpen ? (
             <i className="fa fa-times"></i>
           ) : (
             <i className="fa fa-bars"></i>
           )}
-
         </button>
 
       </div>
-
     </header>
   );
 };

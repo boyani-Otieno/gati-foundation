@@ -80,17 +80,17 @@ export const list = [
   {
     id: 4,
     cover: "../images/list/wote.jpeg",
-    name: "Growing together",
+    name: "",
   },
   {
     id: 5,
     cover: "../images/list/full-team.jpeg",
-    name: "Brightening smiles",
+    name: "",
   },
   {
     id: 6,
     cover: "../images/list/bokep.jpeg",
-    name: "Inspiring lives",
+    name: "",
   },
 ]
 
