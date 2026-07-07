@@ -1,179 +1,250 @@
-header {
-  background: transparent;
-  border-bottom: 2px solid #C9A227;
-  position: sticky;
-  top: 0;
-  z-index: 999;
+/* =========================
+   BASE HEADER
+========================= */
+
+header{
+  width:100%;
+  z-index:1000;
 }
 
-header .container {
-  height: 110px;
-  display: flex;
-  align-items: center;
+/* =========================
+   HOME PAGE HEADER
+========================= */
+
+.homeHeader{
+  position:absolute;
+  top:40px;
+  left:0;
+  width:100%;
+  background:transparent;
+  border:none;
+  box-shadow:none;
 }
 
-/* LOGO */
-
-.logo {
-  display: flex;
-  align-items: center;
+.homeHeader .nav ul li a{
+  color:#fff;
 }
 
-.logo a {
-  display: flex;
-  align-items: center;
+.homeHeader .nav ul li a:hover{
+  color:#ec9c2d;
 }
 
-.logoImage {
-  height: 100px;
-  width: auto;
-  max-width: 220px;
-  object-fit: contain;
-  display: block;
-  transition: 0.3s ease;
+/* =========================
+   OTHER PAGES
+========================= */
+
+.pageHeader{
+  position:sticky;
+  top:40px;
+  left:0;
+  width:100%;
+  background:#F8F3E7;
+  border-bottom:1px solid #e5d8b8;
+  box-shadow:0 3px 10px rgba(0,0,0,.05);
 }
 
-/* NAVIGATION */
-
-.nav ul {
-  gap: 30px;
+.pageHeader .nav ul li a{
+  color:#7A1F2B;
 }
 
-.nav ul li a {
-  color: #7A1F2B;
-  font-weight: 600;
-  font-size: 15px;
-  transition: 0.3s ease;
-  position: relative;
+.pageHeader .nav ul li a:hover{
+  color:#1F4D3A;
 }
 
-.nav ul li a:hover {
-  color: #1F4D3A;
+/* =========================
+   CONTAINER
+========================= */
+
+.homeHeader .container,
+.pageHeader .container{
+  width:92%;
+  max-width:1400px;
+  margin:auto;
+  height:115px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
 }
 
-/* Optional subtle underline effect */
+/* =========================
+   LOGO
+========================= */
 
-.nav ul li a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: #C9A227;
-  transition: 0.3s ease;
+.logo{
+  display:flex;
+  align-items:center;
 }
 
-.nav ul li a:hover::after {
-  width: 100%;
+.logo a{
+  display:flex;
+  align-items:center;
 }
 
-/* DONATE BUTTON */
-
-.donateBtn {
-  background: #1F4D3A;
-  color: #fff !important;
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: 0.3s ease;
+.logoImage{
+  height:125px;
+  width:auto;
+  object-fit:contain;
+  transition:.3s;
 }
 
-.donateBtn:hover {
-  background: #7A1F2B;
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav ul{
+  display:flex;
+  align-items:center;
+  gap:38px;
 }
 
-/* TOGGLE */
-
-.toggle {
-  display: none;
+.nav ul li a{
+  position:relative;
+  font-weight:600;
+  font-size:15px;
+  transition:.3s;
 }
 
-.menuToggle {
-  background: transparent;
-  color: #7A1F2B;
-  padding: 0;
-  font-size: 24px;
-  border: none;
-  box-shadow: none;
+.nav ul li a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0;
+  height:2px;
+  background:#ec9c2d;
+  transition:.3s;
 }
 
-.menuToggle:hover {
-  background: transparent;
+.nav ul li a:hover::after{
+  width:100%;
 }
 
-/* TABLET & MOBILE */
+/* =========================
+   BUTTON
+========================= */
 
-@media screen and (max-width: 992px) {
+.donateBtn{
+  background:#1F4D3A;
+  color:#fff!important;
+  padding:14px 30px;
+  border-radius:30px;
+  font-weight:600;
+  transition:.3s;
+}
 
-  .toggle {
-    display: block;
+.donateBtn:hover{
+  background:#7A1F2B;
+}
+
+/* =========================
+   MOBILE TOGGLE
+========================= */
+
+.toggle{
+  display:none;
+}
+
+.menuToggle{
+  background:transparent;
+  border:none;
+  box-shadow:none;
+  font-size:28px;
+  cursor:pointer;
+}
+
+/* White icon on Home */
+
+.homeHeader .menuToggle{
+  color:#fff;
+}
+
+/* Burgundy icon on other pages */
+
+.pageHeader .menuToggle{
+  color:#7A1F2B;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:992px){
+
+  .button{
+    display:none;
   }
 
-  .button {
-    display: none;
+  .toggle{
+    display:block;
   }
 
-  .nav ul.flex {
-    display: none;
+  .nav ul.flex{
+    display:none;
   }
 
-  .nav ul.small {
-    position: absolute;
-    top: 110px;
-    left: 0;
-    width: 100%;
-    background: #F8F3E7;
-    padding: 25px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    text-align: center;
-    border-top: 1px solid #C9A227;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  .nav ul.small{
+    position:absolute;
+    top:110px;
+    left:0;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    padding:30px 0;
+    background:#F8F3E7;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
   }
 
-  .nav ul.small li {
-    margin: 0;
+  .nav ul.small li a{
+    color:#7A1F2B;
+    font-size:17px;
   }
 
-  .nav ul.small li a {
-    font-size: 16px;
+  .logoImage{
+    height:95px;
   }
+
 }
 
-/* SMALL TABLETS */
+/* =========================
+   MOBILE
+========================= */
 
-@media screen and (max-width: 768px) {
+@media(max-width:768px){
 
-  header .container {
-    height: 90px;
+  .homeHeader,
+  .pageHeader{
+    top: 5rem;
   }
 
-  .logoImage {
-    height: 75px;
-    max-width: 180px;
+  .homeHeader .container,
+  .pageHeader .container{
+    height:90px;
   }
 
-  .nav ul.small {
-    top: 90px;
+  .logoImage{
+    height:75px;
   }
+
+  .nav ul.small{
+    top:90px;
+  }
+
 }
 
-/* MOBILE */
+@media(max-width:480px){
 
-@media screen and (max-width: 480px) {
-
-  header .container {
-    height: 80px;
+  .homeHeader .container,
+  .pageHeader .container{
+    height:80px;
   }
 
-  .logoImage {
-    height: 65px;
-    max-width: 150px;
+  .logoImage{
+    height:65px;
   }
 
-  .nav ul.small {
-    top: 80px;
+  .nav ul.small{
+    top:80px;
   }
+
 }

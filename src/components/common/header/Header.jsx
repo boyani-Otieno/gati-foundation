@@ -1,20 +1,24 @@
 import React, { useState } from "react";
 import "./header.css";
 import { nav } from "../../data/Data";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [navList, setNavList] = useState(false);
+  const location = useLocation();
+
+  // Check if we're on the home page
+  const isHome = location.pathname === "/";
 
   return (
-    <header>
+    <header className={isHome ? "homeHeader" : "pageHeader"}>
       <div className="container flex">
 
         {/* Logo */}
         <div className="logo">
           <Link to="/">
             <img
-              src="/images/maroon-logo.png"
+              src="/images/new-maroon-logo.png"
               alt="Margaret Robi Foundation"
               className="logoImage"
             />
@@ -37,7 +41,7 @@ const Header = () => {
           </ul>
         </div>
 
-        {/* Donate Button */}
+        {/* Get Involved Button */}
         <div className="button">
           <Link
             to="/donate"
