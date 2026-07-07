@@ -22,7 +22,8 @@
   padding:160px 0 140px;
   color:white;
   text-align:center;
-  overflow:hidden;
+  overflow:visible;
+  z-index:99;
 }
 
 .donate-hero-overlay {

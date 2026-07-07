@@ -8,6 +8,9 @@ const Header = () => {
   const isHome = location.pathname === "/";
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
+  const [impactOpen, setImpactOpen] = useState(false);
+  const [involvedOpen, setInvolvedOpen] = useState(false);
 
   return (
     <header className={isHome ? "homeHeader" : "pageHeader"}>
@@ -42,14 +45,14 @@ const Header = () => {
 
             {/* ABOUT */}
 
-            <li className="dropdown">
+            <li className={`dropdown ${aboutOpen ? "open" : ""}`}>
 
-              <span>
-                About Us
-                <i className="fa fa-chevron-down"></i>
-              </span>
+            <span onClick={() => setAboutOpen(!aboutOpen)}>
+               About Us
+              <i className="fa fa-chevron-down"></i>
+            </span>
 
-              <ul className="dropdownMenu">
+            <ul className="dropdownMenu">
 
                 <li>
                   <Link to="/about" onClick={() => setMenuOpen(false)}>
@@ -75,9 +78,9 @@ const Header = () => {
 
             {/* IMPACT */}
 
-            <li className="dropdown">
+            <li className={`dropdown ${impactOpen ? "open" : ""}`}>
 
-              <span>
+              <span  onClick={() => setImpactOpen(!impactOpen)}>
                 Impact
                 <i className="fa fa-chevron-down"></i>
               </span>
@@ -110,9 +113,9 @@ const Header = () => {
 
             {/* GET INVOLVED */}
 
-            <li className="dropdown">
+            <li className={`dropdown ${involvedOpen ? "open" : ""}`}>
 
-              <span>
+              <span onClick={() => setInvolvedOpen(!involvedOpen)}>
                 Get Involved
                 <i className="fa fa-chevron-down"></i>
               </span>

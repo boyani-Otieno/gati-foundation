@@ -37,6 +37,7 @@ height:110px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+z-index:9999;
 }
 
 /*==============================
@@ -175,6 +176,7 @@ visibility:hidden;
 transform:translateY(20px);
 transition:.35s;
 box-shadow:0 20px 45px rgba(0,0,0,.12);
+z-index:9999;
 }
 
 .homeHeader .dropdownMenu{
@@ -238,6 +240,7 @@ TABLET
 
 header{
 top:5rem;
+z-index:99999;
 }
 
 .pageHeader{
@@ -246,6 +249,7 @@ top:0;
 
 header .container{
 height:90px;
+z-index:99999;
 }
 
 .logoImage{
@@ -272,6 +276,7 @@ gap:0;
 padding:30px;
 overflow-y:auto;
 transition:.35s ease;
+z-index:9999;
 }
 
 .navMenu.active{
@@ -282,6 +287,7 @@ left:0;
 width:100%;
 border-bottom:1px solid rgba(0,0,0,.08);
 display:block;
+z-index:9999;
 }
 
 .navMenu>li>a,
@@ -293,11 +299,13 @@ width:100%;
 padding:18px 0;
 color:#7A1F2B!important;
 font-size:17px;
+z-index:9999;
 }
 
 .navMenu>li>a::after,
 .dropdown>span::after{
 display:none;
+z-index:9999;
 }
 
 .dropdownMenu{
@@ -309,8 +317,13 @@ box-shadow:none;
 background:transparent;
 border-radius:0;
 padding:0 0 15px 20px;
-display:block;
+display:none;
 min-width:100%;
+z-index:9999;
+}
+
+.dropdown.open .dropdownMenu{
+display:block;
 }
 
 .dropdownMenu li a{

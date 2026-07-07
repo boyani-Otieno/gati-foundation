@@ -1,21 +1,67 @@
-.recent .text {
-  padding: 30px;
+.featured-projects{
+
+    padding:120px 0;
+
+    background:#ffffff;
+
+    position:relative;
 }
-.recent .category span {
-  padding: 4px 15px;
-  border-radius: 2px;
-  font-weight: 600;
-  font-size: 13px;
-  display: inline-block;
+
+.featured-projects::before{
+
+    content:"";
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(201,162,39,.05);
+
+    position:absolute;
+
+    top:-160px;
+
+    left:-180px;
 }
-.recent .category i {
-  font-size: 20px;
-  color: #bec7d8;
+
+.section-title{
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:auto auto 80px;
 }
-.recent p {
-  color: #000;
+
+.section-title span{
+
+    color:#C9A227;
+
+    letter-spacing:3px;
+
+    font-size:.9rem;
+
+    font-weight:700;
 }
-.recent .button {
-  border-top: 1px solid #e4e8f3;
-  padding: 10px 30px;
+
+.section-title h2{
+
+    margin:20px 0;
+
+    font-size:3rem;
+
+    color:#1F5B45;
+
+    line-height:1.2;
+}
+
+.section-title p{
+
+    color:#666;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
 }
