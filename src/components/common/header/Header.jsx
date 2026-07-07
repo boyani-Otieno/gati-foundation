@@ -79,7 +79,7 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Navigation */}ref={navRef}
+        {/* Navigation */}
 
         <nav className="nav" ref={navRef}>
 
