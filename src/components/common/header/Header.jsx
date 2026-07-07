@@ -1,68 +1,173 @@
 import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./header.css";
-import { nav } from "../../data/Data";
-import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [navList, setNavList] = useState(false);
+  const location = useLocation();
+
+  const isHome = location.pathname === "/";
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header>
-      <div className="container flex">
+    <header className={isHome ? "homeHeader" : "pageHeader"}>
+
+      <div className="container">
 
         {/* Logo */}
+
         <div className="logo">
+
           <Link to="/">
             <img
-              src="/images/maroon-logo.png"
+              src="/images/new-maroon-logo.png"
               alt="Margaret Robi Foundation"
               className="logoImage"
             />
           </Link>
+
         </div>
 
         {/* Navigation */}
-        <div className="nav">
-          <ul className={navList ? "small" : "flex"}>
-            {nav.map((list, index) => (
-              <li key={index}>
-                <Link
-                  to={list.path}
-                  onClick={() => setNavList(false)}
-                >
-                  {list.text}
-                </Link>
-              </li>
-            ))}
+
+        <nav className="nav">
+
+          <ul className={menuOpen ? "navMenu active" : "navMenu"}>
+
+            <li>
+              <Link to="/" onClick={() => setMenuOpen(false)}>
+                Home
+              </Link>
+            </li>
+
+            {/* ABOUT */}
+
+            <li className="dropdown">
+
+              <span>
+                About Us
+                <i className="fa fa-chevron-down"></i>
+              </span>
+
+              <ul className="dropdownMenu">
+
+                <li>
+                  <Link to="/about" onClick={() => setMenuOpen(false)}>
+                    Our Inspiration
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/team" onClick={() => setMenuOpen(false)}>
+                    Leadership Team
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/partners" onClick={() => setMenuOpen(false)}>
+                    Partners
+                  </Link>
+                </li>
+
+              </ul>
+
+            </li>
+
+            {/* IMPACT */}
+
+            <li className="dropdown">
+
+              <span>
+                Impact
+                <i className="fa fa-chevron-down"></i>
+              </span>
+
+              <ul className="dropdownMenu">
+
+                <li>
+                  <Link to="/impact" onClick={() => setMenuOpen(false)}>
+                    Our Impact
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/work" onClick={() => setMenuOpen(false)}>
+                    Our Work
+                  </Link>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li>
+
+              <Link to="/blog" onClick={() => setMenuOpen(false)}>
+                Blog
+              </Link>
+
+            </li>
+
+            {/* GET INVOLVED */}
+
+            <li className="dropdown">
+
+              <span>
+                Get Involved
+                <i className="fa fa-chevron-down"></i>
+              </span>
+
+              <ul className="dropdownMenu">
+
+                <li>
+                  <Link to="/donate" onClick={() => setMenuOpen(false)}>
+                    Donate
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/volunteer" onClick={() => setMenuOpen(false)}>
+                    Volunteer
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/careers" onClick={() => setMenuOpen(false)}>
+                    Careers
+                  </Link>
+                </li>
+
+                <li>
+                  <Link to="/contact" onClick={() => setMenuOpen(false)}>
+                    Contact Us
+                  </Link>
+                </li>
+
+              </ul>
+
+            </li>
+
           </ul>
-        </div>
 
-        {/* Donate Button */}
-        <div className="button">
-          <Link
-            to="/donate"
-            className="donateBtn"
-            onClick={() => setNavList(false)}
-          >
-            Get Involved
-          </Link>
-        </div>
+        </nav>
 
-        {/* Mobile Toggle */}
-        <div className="toggle">
-          <button
-            className="menuToggle"
-            onClick={() => setNavList(!navList)}
-          >
-            {navList ? (
-              <i className="fa fa-times"></i>
-            ) : (
-              <i className="fa fa-bars"></i>
-            )}
-          </button>
-        </div>
+        {/* Mobile Button */}
+
+        <button
+          className="mobileBtn"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+
+          {menuOpen ? (
+            <i className="fa fa-times"></i>
+          ) : (
+            <i className="fa fa-bars"></i>
+          )}
+
+        </button>
 
       </div>
+
     </header>
   );
 };
