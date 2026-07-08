@@ -8,6 +8,7 @@ import StorySection from "./story/StorySection";
 import Price from "./price/Pricing";
 import Recent from "./recent/Recent";
 import ImpactSection from "./Impact/ImpactSection";
+import TestimonialsSection from "./testimonials/testimonials";
 
 const Home = () => {
   useEffect(() => {
@@ -38,6 +39,9 @@ const Home = () => {
         <ImpactSection />
       </div>
       <div data-aos="fade-left">
+        <TestimonialsSection />
+      </div>
+      <div data-aos="fade-right">
         <Price />
       </div>
     </>
