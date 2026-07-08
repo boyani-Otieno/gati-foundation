@@ -6,11 +6,14 @@ import Footer from "../common/footer/Footer"
 import About from "../about/About"
 import Pricing from "../pricing/Pricing"
 import Blog from "../blog/Blog"
-import Services from "../services/Services"
+import Need from "../need/Need"
 import Contact from "../contact/Contact"
 import Donate from "../common/donate/Donate"
 import SmallNav from "../common/header/SmallNav"
 import Gallery from "../gallery/Gallery"
+import Inspiration from "../about/Inspiration"
+import Leadership from "../about/Leadership"
+import Partners from "../about/Partners"
 
 const Pages = () => {
   return (
@@ -21,7 +24,10 @@ const Pages = () => {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
-          <Route exact path='/services' component={Services} />
+          <Route exact path='/inspiration' component={Inspiration} />
+          <Route exact path='/leadership' component={Leadership} />
+          <Route exact path='/partners' component={Partners} />
+          <Route exact path='/need' component={Need} />
           <Route exact path='/blog' component={Blog} />
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/contact' component={Contact} />

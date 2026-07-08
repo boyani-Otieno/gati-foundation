@@ -17,8 +17,8 @@ const Footer = () => {
           </h2>
 
           <p>
-            Empowering women and girls through education, leadership,
-            advocacy, and the fight against harmful cultural practices.
+            Empowering girls and young women by restoring dignity, expanding opportunity, and helping 
+            them thrive where conflict, harmful cultural practices, and inequality shape everyday life.
           </p>
 
           <div className="footer-social">

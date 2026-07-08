@@ -103,13 +103,13 @@ const Header = () => {
               <ul className="dropdownMenu">
 
                 <li>
-                  <Link to="/about" onClick={closeMenus}>
+                  <Link to="/inspiration" onClick={closeMenus}>
                     Our Inspiration
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="/team" onClick={closeMenus}>
+                  <Link to="/leadership" onClick={closeMenus}>
                     Leadership Team
                   </Link>
                 </li>
@@ -122,6 +122,12 @@ const Header = () => {
 
               </ul>
 
+            </li>
+
+            <li>
+              <Link to="/services" onClick={closeMenus}>
+                Need
+              </Link>
             </li>
 
             {/* IMPACT */}

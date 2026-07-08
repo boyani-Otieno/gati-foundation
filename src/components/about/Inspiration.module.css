@@ -1,0 +1,226 @@
+.hero{
+    height:75vh;
+    background:
+    linear-gradient(rgba(23,63,53,.65),rgba(23,63,53,.65)),
+    url("./../images/wote.jpeg") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#fff;
+}
+
+.heroContent{
+    width:min(800px,90%);
+}
+
+.heroContent span{
+    letter-spacing:4px;
+    color:#C9A227;
+    font-size:13px;
+}
+
+.heroContent h1{
+    font-size:4rem;
+    font-weight:300;
+    margin:25px 0;
+    line-height:1.15;
+}
+
+.heroContent p{
+    font-size:1.15rem;
+    line-height:1.8;
+}
+
+.storySection,
+.legacySection{
+    padding:120px 8%;
+    background:#fff;
+}
+
+.legacySection{
+    background:#F8F3E7;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.imageSide img{
+    width:100%;
+    border-radius:20px;
+    display:block;
+}
+
+.sectionTag{
+    color:#C9A227;
+    letter-spacing:3px;
+    font-size:13px;
+    text-transform:uppercase;
+}
+
+.textSide h2{
+    font-size:3rem;
+    color:#173F35;
+    font-weight:300;
+    margin:20px 0 30px;
+}
+
+.textSide p{
+    line-height:2;
+    color:#555;
+    margin-bottom:25px;
+}
+
+.valuesSection{
+    padding:120px 8%;
+    background:#fff;
+}
+
+.valuesHeader{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.valuesHeader span{
+    color:#C9A227;
+    letter-spacing:3px;
+    font-size:13px;
+}
+
+.valuesHeader h2{
+    margin-top:20px;
+    color:#173F35;
+    font-size:3rem;
+    font-weight:300;
+}
+
+.valuesGrid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.valueCard{
+    background:#F8F3E7;
+    padding:40px;
+    border-radius:18px;
+    transition:.35s;
+}
+
+.valueCard:hover{
+    transform:translateY(-8px);
+}
+
+.valueCard h3{
+    color:#173F35;
+    margin-bottom:20px;
+}
+
+.valueCard p{
+    line-height:1.9;
+    color:#555;
+}
+
+.quoteSection{
+    background:#173F35;
+    color:white;
+    text-align:center;
+    padding:120px 8%;
+}
+
+.quoteSection blockquote{
+    font-size:2.3rem;
+    font-weight:300;
+    line-height:1.6;
+    max-width:900px;
+    margin:auto;
+}
+
+.quoteSection span{
+    display:block;
+    margin-top:30px;
+    color:#C9A227;
+}
+
+.ctaSection{
+    padding:120px 8%;
+    text-align:center;
+    background:#F8F3E7;
+}
+
+.ctaSection h2{
+    font-size:3rem;
+    color:#173F35;
+    font-weight:300;
+}
+
+.ctaSection p{
+    max-width:650px;
+    margin:25px auto 40px;
+    line-height:1.9;
+    color:#555;
+}
+
+.ctaButton{
+    display:inline-block;
+    padding:16px 42px;
+    background:#C9A227;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.ctaButton:hover{
+    background:#173F35;
+}
+
+@media(max-width:992px){
+
+.container{
+grid-template-columns:1fr;
+}
+
+.valuesGrid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.heroContent h1{
+font-size:3rem;
+}
+
+}
+
+@media(max-width:768px){
+
+.valuesGrid{
+grid-template-columns:1fr;
+}
+
+.hero{
+height:65vh;
+}
+
+.heroContent h1{
+font-size:2.4rem;
+}
+
+.textSide h2,
+.valuesHeader h2,
+.ctaSection h2{
+font-size:2.2rem;
+}
+
+.quoteSection blockquote{
+font-size:1.6rem;
+}
+
+}

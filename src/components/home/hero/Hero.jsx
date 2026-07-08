@@ -27,10 +27,13 @@ const Hero = () => {
           </h1>
 
           <p className="mrf-hero-text">
-            We empower girls, women and vulnerable families through
-            education, mentorship, advocacy and sustainable community
-            development, creating opportunities that transform lives
-            across Kuria East and beyond.
+            We believe lasting change begins when every girl
+             and young woman has the strength to overcome, 
+             the freedom to choose, and every opportunity to 
+             thrive. Together, we restore dignity, create opportunity, 
+             and empower girls and young women to rise above the 
+             interconnected realities of conflict, harmful cultural 
+             practices, and inequality.
           </p>
 
           <div className="mrf-hero-actions">
