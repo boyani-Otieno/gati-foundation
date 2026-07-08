@@ -4,10 +4,10 @@ import "aos/dist/aos.css";
 import Awards from "./awards/Awards";
 import Featured from "./featured/Featured";
 import Hero from "./hero/Hero";
-import Location from "./location/Location";
+import StorySection from "./story/StorySection";
 import Price from "./price/Pricing";
 import Recent from "./recent/Recent";
-import Team from "./team/Team";
+import ImpactSection from "./Impact/ImpactSection";
 
 const Home = () => {
   useEffect(() => {
@@ -32,10 +32,10 @@ const Home = () => {
         <Awards />
       </div>
       <div data-aos="fade-up">
-        <Location />
+        <StorySection />
       </div>
       <div data-aos="fade-right">
-        <Team />
+        <ImpactSection />
       </div>
       <div data-aos="fade-left">
         <Price />

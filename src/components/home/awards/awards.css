@@ -1,28 +1,28 @@
-.impact-section {
+.impact1-section {
   background: #1F4D3A;
   padding: 90px 8%;
 }
 
-.impact-header {
+.impact1-header {
   text-align: center;
   max-width: 800px;
   margin: auto;
 }
 
-.impact-header span {
+.impact1-header span {
   color: #C9A227;
   letter-spacing: 2px;
   font-weight: 600;
   font-size: 14px;
 }
 
-.impact-header h2 {
+.impact1-header h2 {
   color: #F8F3E7;
   font-size: 42px;
   margin: 15px 0;
 }
 
-.impact-header p {
+.impact1-header p {
   color: rgba(248, 243, 231, 0.85);
   line-height: 1.8;
   margin-bottom: 50px;
@@ -32,7 +32,7 @@
   padding-bottom: 60px;
 }
 
-.impact-card {
+.impact1-card {
   background: #F8F3E7;
   border-radius: 20px;
   padding: 35px;
@@ -42,7 +42,7 @@
   transition: 0.35s ease;
 }
 
-.impact-card:hover {
+.impact1-card:hover {
   transform: translateY(-8px);
 }
 
@@ -54,13 +54,13 @@
   margin-bottom: 25px;
 }
 
-.impact-card h3 {
+.impact1-card h3 {
   color: #7A1F2B;
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.impact-card p {
+.impact1-card p {
   color: #2B2B2B;
   line-height: 1.8;
 }
@@ -76,11 +76,11 @@
 }
 
 @media (max-width: 768px) {
-  .impact-header h2 {
+  .impact1-header h2 {
     font-size: 34px;
   }
 
-  .impact-card {
+  .impact1-card {
     min-height: auto;
   }
 }

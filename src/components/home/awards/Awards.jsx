@@ -37,9 +37,9 @@ const CardsSection = () => {
   ];
 
   return (
-    <section className="impact-section">
+    <section className="impact1-section">
 
-      <div className="impact-header">
+      <div className="impact1-header">
         <span>OUR FOCUS AREAS</span>
 
         <h2>Why This Work Matters</h2>
@@ -72,7 +72,7 @@ const CardsSection = () => {
       >
         {issues.map((issue, index) => (
           <SwiperSlide key={index}>
-            <div className="impact-card">
+            <div className="impact1-card">
               <div className="card-accent"></div>
 
               <h3>{issue.title}</h3>

@@ -1,0 +1,162 @@
+/*==============================
+IMPACT SECTION
+==============================*/
+
+.impact-section {
+  padding: 130px 0;
+  background: #f8f3e7;
+  position: relative;
+}
+
+.impact-section::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border: 1px solid rgba(201, 162, 39, 0.15);
+  border-radius: 50%;
+  top: 70px;
+  right: -60px;
+}
+
+.impact-header {
+  max-width: 700px;
+  margin: 0 auto 80px;
+  text-align: center;
+}
+
+.impact-tag {
+  display: inline-block;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #c9a227;
+  margin-bottom: 18px;
+}
+
+.impact-header h2 {
+  font-size: 48px;
+  font-weight: 300;
+  color: #173f35;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.impact-card h3 {
+  font-size: 72px;
+  font-weight: 300;
+  color: #173f35;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.impact-card:hover h3 {
+  transform: scale(1.05);
+}
+
+.impact-card h3 {
+  animation: numberPulse 3.3s ease-in-out infinite;
+}
+
+@keyframes numberPulse {
+  0% {
+    transform: scale(0.95);
+    opacity: .8;
+  }
+
+  20% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+
+  40% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.impact-header p {
+  color: #5c5c5c;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.impact-card {
+  text-align: center;
+  position: relative;
+}
+
+.impact-card::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #c9a227;
+  display: block;
+  margin: 25px auto;
+}
+
+.impact-card h3 {
+  font-size: 72px;
+  font-weight: 300;
+  color: #173f35;
+  margin-bottom: 10px;
+}
+
+.impact-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  max-width: 220px;
+  margin: auto;
+}
+
+/*==============================
+TABLET
+==============================*/
+
+@media (max-width: 991px) {
+
+  .impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  .impact-header h2 {
+    font-size: 40px;
+  }
+
+}
+
+/*==============================
+MOBILE
+==============================*/
+
+@media (max-width: 768px) {
+
+  .impact-section {
+    padding: 90px 0;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .impact-header h2 {
+    font-size: 34px;
+  }
+
+  .impact-card h3 {
+    font-size: 56px;
+  }
+
+}
