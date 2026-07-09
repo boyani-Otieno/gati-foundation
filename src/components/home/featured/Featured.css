@@ -1,247 +1,452 @@
-:root{
-    --cream:#F8F3E7;
-    --green:#1F5B45;
-    --gold:#C9A227;
-    --text:#2A2A2A;
-}
+/*========================================
+  FOCUS SECTION
+========================================*/
 
-.programs-section{
+.focusSection{
     padding:120px 0;
-    background:var(--cream);
+    background:#F8F3E7;
     position:relative;
     overflow:hidden;
 }
 
-.programs-section::before{
+/* Decorative background */
+
+.focusSection::before{
     content:"";
-    width:500px;
-    height:500px;
+    position:absolute;
+    width:650px;
+    height:650px;
     border:1px solid rgba(201,162,39,.15);
     border-radius:50%;
+    bottom:-420px;
+    left:-280px;
+}
+
+.focusSection::after{
+    content:"";
     position:absolute;
-    top:-220px;
+    width:500px;
+    height:500px;
+    border:1px solid rgba(201,162,39,.10);
+    border-radius:50%;
+    top:-260px;
     right:-180px;
 }
 
-.section-heading{
-    max-width:760px;
-    margin:0 auto 70px;
-    text-align:center;
-}
-
-.section-heading span{
-
-    color:var(--gold);
-    font-size:.9rem;
-    letter-spacing:3px;
-    font-weight:700;
-}
-
-.section-heading h2{
-
-    font-size:3rem;
-    margin:18px 0;
-    color:var(--green);
-    line-height:1.2;
-}
-
-.section-heading p{
-
-    font-size:1.05rem;
-    color:#666;
-    line-height:1.8;
-}
-
-.program-grid{
+.focusContainer{
+    width:min(1200px,92%);
+    margin:auto;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:28px;
+    grid-template-columns:.95fr 1.05fr;
+    gap:90px;
+    align-items:flex-start;
+    position:relative;
+    z-index:2;
 }
 
-.program-card{
-    background:white;
+/*========================================
+  LEFT SIDE
+========================================*/
+
+.focusLeft{
+    position:sticky;
+    top:120px;
+}
+
+.focusTag{
+    display:inline-block;
+    color:#C9A227;
+    font-size:.9rem;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.focusLeft h2{
+    font-family:"Cormorant Garamond", serif;
+    font-size:5rem;
+    line-height:.95;
+    font-weight:500;
+    color:#173F35;
+    margin-bottom:25px;
+}
+
+.focusLeft h2 span{
+    color:#C9A227;
+}
+
+.goldLine{
+    width:80px;
+    height:3px;
+    background:#C9A227;
+    margin-bottom:35px;
+    border-radius:5px;
+}
+
+.focusLeft p{
+    color:#555;
+    line-height:2;
+    font-size:1.05rem;
+    margin-bottom:40px;
+    max-width:470px;
+}
+
+/*========================================
+  BUTTON
+========================================*/
+
+.focusBtn{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    background:#173F35;
+    color:#fff;
+    padding:16px 34px;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.35s ease;
+    box-shadow:0 10px 25px rgba(23,63,53,.18);
+}
+
+.focusBtn:hover{
+    background:#C9A227;
+    color:#173F35;
+    transform:translateY(-3px);
+}
+
+/*========================================
+  ACCORDION
+========================================*/
+
+.focusRight{
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.accordionItem{
+    background:#fff;
     border-radius:22px;
-    padding:30px 24px;
-    text-align:center;
+    border:1px solid rgba(23,63,53,.08);
+    overflow:hidden;
+    transition:.35s ease;
+    box-shadow:0 12px 35px rgba(0,0,0,.05);
+}
 
-    transition:.4s ease;
+.accordionItem:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+}
 
-    box-shadow:
-    0 10px 30px rgba(0,0,0,.05);
+.accordionItem.active{
+    border-color:#C9A227;
+}
 
-    position:relative;
+/*========================================
+  HEADER
+========================================*/
+
+.accordionHeader{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:none;
+    border:none;
+    padding:28px 30px;
+    cursor:pointer;
+    text-align:left;
+}
+
+.headerLeft{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    flex:1;
+}
+
+.iconCircle{
+    width:68px;
+    height:68px;
+    border-radius:50%;
+    background:rgba(201,162,39,.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+.iconCircle svg{
+    font-size:30px;
+    color:#173F35;
+}
+
+.headerLeft h3{
+    color:#173F35;
+    font-size:1.45rem;
+    font-weight:600;
+    line-height:1.35;
+}
+
+/*========================================
+  ACCORDION CONTENT
+========================================*/
+
+.accordionContent{
     overflow:hidden;
 }
 
-.program-card:nth-child(even){
-
-    margin-top:45px;
+.accordionContent p{
+    padding:0 30px 30px 118px;
+    color:#666;
+    line-height:1.9;
+    font-size:1rem;
+    max-width:700px;
 }
 
-.program-card:hover{
+/*========================================
+  PLUS ICON
+========================================*/
 
-    transform:translateY(-14px);
-
-    box-shadow:
-    0 25px 55px rgba(0,0,0,.12);
+.plus{
+    font-size:2.2rem;
+    font-weight:300;
+    color:#C9A227;
+    transition:transform .35s ease,color .35s ease;
+    flex-shrink:0;
+    line-height:1;
 }
 
-.program-card::after{
-
-    content:"";
-
-    position:absolute;
-    left:0;
-    bottom:0;
-
-    width:100%;
-    height:5px;
-
-    transform:scaleX(0);
-
-    transition:.35s;
+.plus.rotate{
+    transform:rotate(45deg);
+    color:#173F35;
 }
 
-.program-card:hover::after{
+/*========================================
+  ACTIVE STATE
+========================================*/
 
-    transform:scaleX(1);
+.accordionItem.active{
+    box-shadow:0 18px 45px rgba(23,63,53,.12);
 }
 
-.icon-box{
-
-    width:72px;
-    height:72px;
-
-    font-size:1.6rem;
-    margin-bottom:20px;
+.accordionItem.active .iconCircle{
+    background:#C9A227;
 }
 
-.program-card h3{
+.accordionItem.active .iconCircle svg{
+    color:#fff;
+}
+
+.accordionItem.active h3{
+    color:#173F35;
+}
+
+/*========================================
+  HOVER EFFECTS
+========================================*/
+
+.accordionHeader:hover .iconCircle{
+    transform:scale(1.05);
+}
+
+.iconCircle{
+    transition:all .35s ease;
+}
+
+.focusBtn i{
+    transition:transform .3s ease;
+}
+
+.focusBtn:hover i{
+    transform:translateX(4px);
+    background:rgba(201,162,39,.18);
+}
+
+/*========================================
+  TABLET
+========================================*/
+
+@media (max-width:992px){
+
+.focusSection{
+    padding:100px 0;
+}
+
+.focusContainer{
+    grid-template-columns:1fr;
+    gap:60px;
+}
+
+.focusLeft{
+    position:static;
+}
+
+.focusLeft h2{
+    font-size:4rem;
+}
+
+.focusLeft p{
+    max-width:100%;
+}
+
+.accordionContent p{
+    padding:0 30px 30px 30px;
+}
+
+}
+
+/*========================================
+  MOBILE
+========================================*/
+
+@media (max-width:768px){
+
+.focusSection{
+    padding:80px 0;
+}
+
+.focusContainer{
+    width:92%;
+    gap:45px;
+}
+
+.focusLeft h2{
+    font-size:3rem;
+    line-height:1;
+}
+
+.focusTag{
+    font-size:.8rem;
+    letter-spacing:2px;
+}
+
+.goldLine{
+    margin-bottom:25px;
+}
+
+.focusLeft p{
+    font-size:.98rem;
+    line-height:1.8;
+}
+
+.focusBtn{
+    padding:15px 28px;
+    font-size:.95rem;
+}
+
+.accordionHeader{
+    padding:22px;
+}
+
+.headerLeft{
+    gap:16px;
+}
+
+.iconCircle{
+    width:56px;
+    height:56px;
+}
+
+.iconCircle svg{
+    font-size:24px;
+}
+
+.headerLeft h3{
     font-size:1.15rem;
-    line-height:1.5;
-    min-height:110px;
-    margin-bottom:24px;
 }
 
-.program-card a{
-
-    color:var(--green);
-
-    text-decoration:none;
-
-    font-weight:600;
-
-    transition:.3s;
+.plus{
+    font-size:2rem;
 }
 
-.program-card:hover a{
-
-    color:var(--gold);
-}
-
-/* COLORS */
-
-.red .icon-box{
-
-    background:#ffe6e6;
-    color:#ef4444;
-}
-
-.red::after{
-
-    background:#ef4444;
-}
-
-.green .icon-box{
-
-    background:#e7f8ef;
-    color:#22c55e;
-}
-
-.green::after{
-
-    background:#22c55e;
-}
-
-.gold .icon-box{
-
-    background:#fff6dd;
-    color:#d4a017;
-}
-
-.gold::after{
-
-    background:#d4a017;
-}
-
-.purple .icon-box{
-
-    background:#f5e9ff;
-    color:#a855f7;
-}
-
-.purple::after{
-
-    background:#a855f7;
-}
-
-.blue .icon-box{
-
-    background:#e8f3ff;
-    color:#3b82f6;
-}
-
-.blue::after{
-
-    background:#3b82f6;
-}
-
-@media(max-width:992px){
-
-.section-heading h2{
-
-font-size:2.4rem;
-
-}
-
-.program-card:nth-child(even){
-
-margin-top:20px;
-
+.accordionContent p{
+    padding:0 22px 22px 22px;
+    font-size:.95rem;
 }
 
 }
 
-@media(max-width:768px){
+/*========================================
+  SMALL PHONES
+========================================*/
 
-.programs-section{
+@media (max-width:480px){
 
-padding:90px 0;
+.focusSection{
+    padding:70px 0;
+}
+
+.focusLeft h2{
+    font-size:2.4rem;
+}
+
+.focusLeft p{
+    font-size:.95rem;
+}
+
+.focusBtn{
+    width:100%;
+    justify-content:center;
+}
+
+.accordionHeader{
+    align-items:flex-start;
+}
+
+.headerLeft{
+    align-items:flex-start;
+}
+
+.iconCircle{
+    width:50px;
+    height:50px;
+}
+
+.iconCircle svg{
+    font-size:22px;
+}
+
+.headerLeft h3{
+    font-size:1rem;
+    line-height:1.4;
+}
+
+.plus{
+    font-size:1.8rem;
+    margin-left:15px;
+}
+
+.accordionContent p{
+    font-size:.92rem;
+    line-height:1.8;
+    padding:0 20px 20px 20px;
+}
 
 }
 
-.section-heading h2{
+/*========================================
+  LARGE DESKTOPS
+========================================*/
 
-font-size:2rem;
+@media (min-width:1400px){
 
+.focusContainer{
+    max-width:1320px;
 }
 
-.section-heading{
-
-margin-bottom:50px;
-
+.focusLeft h2{
+    font-size:5.5rem;
 }
 
-.program-card{
-
-padding:35px 28px;
-
+.headerLeft h3{
+    font-size:1.55rem;
 }
 
-.program-card h3{
-
-min-height:auto;
-
+.accordionContent p{
+    font-size:1.05rem;
 }
 
 }

@@ -62,10 +62,9 @@ button {
   transition: 0.3s ease;
 }
 
-button:hover {
-  background: var(--burgundy);
+button:not(.accordionHeader):hover{
+    background:var(--burgundy);
 }
-
 
 button i {
   margin-right: 5px;

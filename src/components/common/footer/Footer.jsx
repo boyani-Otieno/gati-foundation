@@ -87,9 +87,9 @@ const Footer = () => {
           </span>
 
 
-          <button>
+          {/* <button>
             <a href="/donate">Donate Now</a>
-          </button>
+          </button> */}
 
 
         </div>

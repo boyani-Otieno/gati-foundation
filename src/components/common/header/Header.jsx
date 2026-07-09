@@ -157,11 +157,11 @@ const Header = () => {
 
             </li>
 
-            <li>
+            {/* <li>
               <Link to="/blog" onClick={closeMenus}>
                 Blog
               </Link>
-            </li>
+            </li> */}
 
             {/* GET INVOLVED */}
 

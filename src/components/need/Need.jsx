@@ -71,7 +71,7 @@ export default function Need() {
       </section>
 
       <section className={styles.stats}>
-        <div className="container">
+        {/* <div className="container">
           <div className={styles.statsGrid}>
             <div><h2>84%</h2><p>FGM</p></div>
             <div><h2>17.1</h2><p>First Marriage</p></div>
@@ -80,7 +80,7 @@ export default function Need() {
             <div><h2>&lt;12%</h2><p>Land Ownership</p></div>
             <div><h2>30%</h2><p>Climate Losses</p></div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <section className={styles.cards}>
