@@ -109,7 +109,7 @@ const Header = () => {
                 </li>
 
                 <li>
-                  <Link to="/leadership" onClick={closeMenus}>
+                  <Link to="/about" onClick={closeMenus}>
                     Leadership Team
                   </Link>
                 </li>

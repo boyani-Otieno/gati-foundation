@@ -1,149 +1,439 @@
-/* --- Core Section Container --- */
-.aboutSection {
-  background-color: #fcfcfc; /* Elegant paper/canvas white tint from screenshot */
-  padding: 80px 24px;
-  font-family: "Georgia", "Times New Roman", Times, serif; /* Clean literary serif style matching the picture */
-  color: #2b2b2b;
+/* ==============================
+   ABOUT PAGE
+============================== */
+
+.aboutSection{
+    padding:120px 0;
+    background:#F8F3E7;
 }
 
-.storyContainer {
-  max-width: 850px; /* Centered, comfortable reading width identical to document layout */
-  margin: 0 auto;
+.container{
+    width:min(1200px,92%);
+    margin:auto;
 }
 
-.leftRow {
-  width: 100%;
+/* ==============================
+   STORY
+============================== */
+
+.storyGrid{
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:80px;
+    align-items:center;
 }
 
-/* --- Document Titles --- */
-.pageTitle {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 2.8rem;
-  font-weight: 400;
-  color: #111111;
-  margin-bottom: 40px;
-  letter-spacing: -0.5px;
+.overline{
+    display:inline-block;
+    color:#C9A227;
+    font-size:13px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:18px;
 }
 
-.storyContainer h3 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #111111;
-  margin: 50px 0 20px 0;
+.storyContent h1{
+    font-size:3.6rem;
+    font-weight:300;
+    line-height:1.15;
+    color:#173F35;
+    margin-bottom:30px;
 }
 
-/* --- Elegant Paragraph Formats --- */
-.storyText {
-  font-size: 1.15rem;
-  line-height: 1.75;
-  color: #333333;
-  margin-bottom: 28px;
-  text-align: justify; /* Aligns clean edges exactly like printed copy */
+.storyContent p{
+    color:#666;
+    font-size:17px;
+    line-height:1.9;
+    margin-bottom:22px;
 }
 
-.storyText strong {
-  font-weight: 700;
-  color: #000000;
+.storyImage{
+    position:relative;
 }
 
-/* --- Blockquote Feature Callout --- */
-.highlightBlock {
-  border-left: 3px solid #111111;
-  padding-left: 24px;
-  margin: 40px 0;
+.storyImage img{
+    width:100%;
+    height:650px;
+    object-fit:cover;
+    border-radius:28px;
+    display:block;
+    box-shadow:0 30px 70px rgba(0,0,0,.08);
 }
 
-.highlightBlock .storyText {
-  font-style: italic;
-  color: #555555;
+/* Decorative Accent */
+
+.storyImage::before{
+    content:"";
+    position:absolute;
+    width:160px;
+    height:160px;
+    background:#C9A227;
+    opacity:.12;
+    border-radius:50%;
+    top:-40px;
+    right:-40px;
+    z-index:-1;
 }
 
-/* --- UNTOUCHED LEADERSHIP STYLES (Retained from your layout) --- */
-.teamSection {
-  padding: 100px 24px;
-  background-color: #f8f9fa;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+/* ==============================
+SECTION HEADING
+============================== */
+
+.sectionHeading{
+    text-align:center;
+    margin-bottom:70px;
 }
 
-.teamSection h2 {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: #263238;
-  text-align: center;
-  margin-bottom: 60px;
+.sectionHeading span{
+    display:block;
+    color:#C9A227;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    font-size:13px;
+    margin-bottom:15px;
 }
 
-.teamContainer {
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+.sectionHeading h2{
+    font-size:3rem;
+    font-weight:300;
+    color:#173F35;
+    line-height:1.2;
 }
 
-.teamMemberCard {
-  background-color: #ffffff;
-  border-radius: 8px;
-  padding: 35px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* ==============================
+MISSION VISION VALUES
+============================== */
+
+.beliefsSection{
+    padding:120px 0;
+    background:#fff;
 }
 
-.teamMemberCard:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+.beliefsGrid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
 }
 
-.memberImageWrapper {
-  flex: 0 0 180px;
+.beliefCard{
+    background:#F8F3E7;
+    border-radius:24px;
+    padding:45px;
+    transition:.35s ease;
+    border:1px solid rgba(23,63,53,.08);
 }
 
-.memberImg {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 6px;
-  display: block;
+.beliefCard:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
 }
 
-.memberInfoWrapper {
-  flex: 1;
+.beliefCard h3{
+    color:#173F35;
+    font-size:1.6rem;
+    margin-bottom:20px;
+    font-weight:500;
 }
 
-.memberName {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #263238;
-  margin: 0 0 4px 0;
+.beliefCard p{
+    color:#666;
+    line-height:1.9;
 }
 
-.memberTitle {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #e65100;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 16px;
-  display: block;
+.beliefCard ul{
+    list-style:none;
+    padding:0;
+    margin:0;
 }
 
-.memberBio {
-  font-family: "Georgia", "Times New Roman", Times, serif;
-  font-size: 1.15rem;
-  line-height: 1.75;
-  color: #333333;
-  margin: 0;
-  text-align: justify;
+.beliefCard li{
+    padding:12px 0;
+    color:#555;
+    border-bottom:1px solid rgba(0,0,0,.08);
+    position:relative;
+    padding-left:26px;
 }
 
-@media screen and (max-width: 768px) {
-  .teamMemberCard {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.beliefCard li:last-child{
+    border:none;
+}
+
+.beliefCard li::before{
+    content:"";
+    width:8px;
+    height:8px;
+    background:#C9A227;
+    border-radius:50%;
+    position:absolute;
+    left:0;
+    top:20px;
+}
+
+/* ==============================
+   LEADERSHIP
+============================== */
+
+.leadershipSection{
+    padding:120px 0;
+    background:#F8F3E7;
+}
+
+.leader{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    gap:80px;
+    align-items:center;
+    padding:90px 0;
+    border-bottom:1px solid rgba(23,63,53,.08);
+}
+
+.leader:last-child{
+    border-bottom:none;
+}
+
+/* Alternate image/text layout */
+
+.reverse{
+    direction:rtl;
+}
+
+.reverse > *{
+    direction:ltr;
+}
+
+/* ==============================
+   LEADER CONTENT
+============================== */
+
+.role{
+    display:inline-block;
+    color:#C9A227;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:13px;
+    margin-bottom:14px;
+    font-weight:600;
+}
+
+.leaderContent h3{
+    font-size:2.3rem;
+    font-weight:300;
+    color:#173F35;
+    margin-bottom:22px;
+    line-height:1.2;
+}
+
+.leaderContent p{
+    font-size:17px;
+    line-height:1.9;
+    color:#666;
+}
+
+/* ==============================
+   LEADER IMAGE
+============================== */
+
+.leaderImage{
+    position:relative;
+}
+
+.leaderImage img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    border-radius:28px;
+    display:block;
+    box-shadow:0 25px 60px rgba(0,0,0,.10);
+    transition:transform .45s ease;
+}
+
+.leader:hover .leaderImage img{
+    transform:scale(1.02);
+}
+
+/* Decorative Accent */
+
+.leaderImage::after{
+    content:"";
+    position:absolute;
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    background:#C9A227;
+    opacity:.10;
+    bottom:-35px;
+    right:-35px;
+    z-index:-1;
+}
+
+.reverse .leaderImage::after{
+    right:auto;
+    left:-35px;
+}
+
+/* ==============================
+   TABLET
+============================== */
+
+@media (max-width:992px){
+
+.storyGrid{
+    grid-template-columns:1fr;
+    gap:60px;
+}
+
+.storyContent{
+    order:2;
+}
+
+.storyImage{
+    order:1;
+}
+
+.storyImage img{
+    height:500px;
+}
+
+.beliefsGrid{
+    grid-template-columns:1fr;
+}
+
+.leader{
+    grid-template-columns:1fr;
+    gap:45px;
+    padding:70px 0;
+}
+
+.reverse{
+    direction:ltr;
+}
+
+.leaderImage{
+    order:-1;
+}
+
+.leaderImage img{
+    height:460px;
+}
+
+.storyContent h1{
+    font-size:3rem;
+}
+
+.sectionHeading h2{
+    font-size:2.5rem;
+}
+
+.leaderContent h3{
+    font-size:2rem;
+}
+
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width:768px){
+
+.aboutSection,
+.beliefsSection,
+.leadershipSection{
+    padding:90px 0;
+}
+
+.storyGrid{
+    gap:45px;
+}
+
+.storyContent h1{
+    font-size:2.4rem;
+}
+
+.storyContent p{
+    font-size:16px;
+}
+
+.storyImage img{
+    height:380px;
+    border-radius:22px;
+}
+
+.sectionHeading{
+    margin-bottom:50px;
+}
+
+.sectionHeading h2{
+    font-size:2rem;
+}
+
+.beliefCard{
+    padding:32px;
+}
+
+.beliefCard h3{
+    font-size:1.4rem;
+}
+
+.leader{
+    gap:35px;
+    padding:55px 0;
+}
+
+.leaderContent h3{
+    font-size:1.8rem;
+}
+
+.leaderContent p{
+    font-size:16px;
+}
+
+.leaderImage img{
+    height:360px;
+    border-radius:22px;
+}
+
+}
+
+/* ==============================
+   SMALL PHONES
+============================== */
+
+@media (max-width:480px){
+
+.container{
+    width:92%;
+}
+
+.storyContent h1{
+    font-size:2rem;
+    line-height:1.25;
+}
+
+.sectionHeading h2{
+    font-size:1.8rem;
+}
+
+.storyImage img,
+.leaderImage img{
+    height:300px;
+}
+
+.beliefCard{
+    padding:26px;
+}
+
+.beliefCard li{
+    padding-left:22px;
+}
+
+.leaderContent h3{
+    font-size:1.6rem;
+}
+
+.leaderContent p,
+.storyContent p{
+    line-height:1.8;
+}
+
 }
