@@ -1,632 +1,117 @@
+import { useState } from "react";
 import styles from "./Need.module.css";
 
-const stats = [
+const issues = [
   {
-    number: "84%",
-    label: "Girls & Women\nAffected by FGM",
+    id: 1,
+    stat: "84%",
+    title: "Female Genital Mutilation",
+    summary: "FGM remains widespread in Kuria, affecting an estimated 84% of girls and women.",
+    details: "While Kenya's national prevalence of Female Genital Mutilation has fallen to approximately 15% according to the 2022 Kenya Demographic and Health Survey (KDHS), the practice remains alarmingly high in Kuria, where local health reporting indicates an estimated 84% of women and girls have undergone the practice. Often carried out during school holidays, the practice exposes girls to lifelong physical and psychological harm while increasing their vulnerability to child marriage, school dropout, and early pregnancy. For girls living in border communities affected by recurring conflict, these risks are further intensified by displacement, insecurity, and disrupted access to protection services."
   },
   {
-    number: "17.1",
-    label: "Median Age\nat First Marriage",
+    id: 2,
+    stat: "17.1",
+    title: "Early & Forced Marriage",
+    summary: "Migori County records one of Kenya's lowest median ages at first marriage pushing many girls into adulthood before they can pursue their potential.",
+    details: "Data from the Kenya National Bureau of Statistics confirms that Migori County records one of the lowest median ages at first marriage in Kenya at 17.1 years. In Kuria East, early and forced marriage remains closely linked to harmful traditional practices, poverty, and gender inequality. Once a girl undergoes the cut, she is often considered ready for marriage regardless of her age, a practice that continues to deny girls their right to education, personal development, and economic opportunity. Recurring conflict further increases household vulnerability, placing more girls at risk of early marriage as families struggle with insecurity and economic hardship."
   },
   {
-    number: "22%",
-    label: "Girls Begin\nChildbearing",
+    id: 3,
+    stat: "22%",
+    title: "Early Childhood & Teenage Pregnancy",
+    summary: "An estimated 22% of girls aged 15–19 in Migori County have begun childbearing putting their education and future at risk..",
+    details: "Kuria East continues to face a high burden of adolescent pregnancy, driven by early marriage, limited access to reproductive health information, and poverty. According to the 2022 KDHS, 22% of girls aged 15–19 in Migori County have begun childbearing, a rate significantly above the national average, placing thousands of girls at risk of dropping out of school and remaining trapped in cycles of poverty. The instability caused by recurring conflict further limits access to education and essential health services, increasing girls' vulnerability."
   },
   {
-    number: "23–35%",
-    label: "Girls Reach\nSecondary School",
+    id: 4,
+    stat: "23–35%",
+    title: "Barriers to Girls' Education",
+    summary: "Only 23%–35% of girls in Kuria transition to secondary school, limiting their future opportunities..",
+    details: "Many girls in Kuria East never complete their education due to the combined effects of harmful cultural practices, child marriage, and economic hardship. With local Ministry of Education transition data indicating that only 23% to 35% of girls progress to secondary education in this region, thousands are denied the knowledge, skills, and opportunities needed to reach their full potential. Periodic conflict and displacement further interrupt learning, forcing many girls out of school for extended periods."
   },
   {
-    number: "30%",
-    label: "Increase in Climate\nDriven Crop Losses",
+    id: 5,
+    stat: "GBV",
+    title: "Gender-Based Violence",
+    summary: "Poverty and economic dependence continue to heighten the risk of violence against women and girls.",
+    details: "Research conducted in Kuria East highlights a strong relationship between economic dependency and exposure to abuse. Poverty, unequal power relations and limited access to resources leave many women vulnerable to physical, emotional, sexual and economic abuse, while barriers to reporting and accessing support services remain significant. These risks are heightened during periods of conflict, when displacement, insecurity, and weakened protection systems expose women and girls to even greater harm."
   },
+  {
+    id: 6,
+    stat: "<12%",
+    title: "Conflict, Widowhood & Economic Exclusion",
+    summary: "Recurring conflict along the Gwitembe-Ang'ata Barikoi border fuels displacement, widens economic exclusion, and deepens poverty.",
+    details: "The ongoing border conflict has created a humanitarian crisis, leaving displaced young women in vulnerable conditions. Widows are disproportionately affected, losing breadwinners and primary income. With farms abandoned, these women face extreme dependency. This is compounded by land inequality; with women holding less than 12% of individual titles per Kenya Land Alliance data, they lack the assets to rebuild. International Land Coalition research confirms insecure tenure drives poverty, making urgent intervention essential."
+  },
+  {
+    id: 7,
+    stat: "+30%",
+    title: "Climate Change & Food Insecurity",
+    summary: "Over 30% increase in climate-driven agricultural losses is deepening food insecurity among women-led households, who face greater pressure to secure their families' needs.",
+    details: "In Kuria East, erratic rainfall and drought have devastated food security. Women-led households bear the extreme burden of securing resources amidst dwindling resources. With regional assessments from the Lake Region Economic Bloc showing climate-driven agricultural losses have surged by over 30%, these households remain the most vulnerable to food poverty, creating a critical gap in climate resilience that demands urgent intervention. In conflict-affected communities, displacement and loss of livelihoods further reduce families' ability to recover from climate shocks, compounding food insecurity."
+  }
 ];
 
 export default function Need() {
-  return (
-    <section className={styles.needPage}>
-      {/* ================= HERO ================= */}
+  const [openCard, setOpenCard] = useState(null);
 
+  const toggleCard = (id) => {
+    setOpenCard(openCard === id ? null : id);
+  };
+
+  return (
+    <section className={styles.need}>
       <section className={styles.hero}>
         <div className="container">
-
-          <div className={styles.heroGrid}>
-
-            <div className={styles.heroContent}>
-
-              <span className={styles.kicker}>
-                THE NEED
-              </span>
-
-              <h1>
-                Every girl deserves
-                <br />
-                the freedom to
-                <br />
-                learn, grow,
-                <br />
-                and lead.
-              </h1>
-
-              <div className={styles.goldLine}></div>
-
-              <p>
-                In Kuria East, harmful cultural practices,
-                poverty, recurring conflict and climate
-                change continue to deny thousands of girls
-                and women the opportunity to thrive.
-                Behind every statistic is a life with
-                limitless potential waiting to be realised.
-              </p>
-
-            </div>
-
-            <div className={styles.heroImage}>
-              <img
-                src="/images/need/hero.jpg"
-                alt="Girls learning together"
-              />
-            </div>
-
-          </div>
-
+          <span className={styles.tag}>THE NEED</span>
+          <h1>Breaking barriers.<br />Expanding opportunities.</h1>
+          <p>Building a stronger Kuria community through the power of girls and women.</p>
         </div>
       </section>
 
-      {/* ================= STATS ================= */}
-
-      <section className={styles.statsSection}>
+      <section className={styles.stats}>
         <div className="container">
-
           <div className={styles.statsGrid}>
+            <div><h2>84%</h2><p>FGM</p></div>
+            <div><h2>17.1</h2><p>First Marriage</p></div>
+            <div><h2>22%</h2><p>Teen Pregnancy</p></div>
+            <div><h2>23–35%</h2><p>Secondary School</p></div>
+            <div><h2>&lt;12%</h2><p>Land Ownership</p></div>
+            <div><h2>30%</h2><p>Climate Losses</p></div>
+          </div>
+        </div>
+      </section>
 
-            {stats.map((item, index) => (
+      <section className={styles.cards}>
+        <div className="container">
+          <div className={styles.grid}>
+            {issues.map((item) => (
+              <div key={item.id} className={`${styles.card} ${item.id === 7 ? styles.full : ""}`}>
+                <div className={styles.badge}>{item.stat}</div>
+                <h3>{item.title}</h3>
+                <p>{item.summary}</p>
 
-              <div
-                key={index}
-                className={styles.statCard}
-              >
+                <div className={`${styles.details} ${openCard === item.id ? styles.show : ""}`}>
+                  <p>{item.details}</p>
+                </div>
 
-                <h2>{item.number}</h2>
-
-                <p>
-                  {item.label}
-                </p>
-
+                <button onClick={() => toggleCard(item.id)} className={styles.button}>
+                  {openCard === item.id ? "Show Less" : "Read More"}
+                </button>
               </div>
-
             ))}
-
           </div>
-
         </div>
       </section>
 
-      {/* ================= INTRO ================= */}
-
-      <section className={styles.intro}>
-
+      <section className={styles.cta}>
         <div className="container">
-
-          <div className={styles.introContent}>
-
-            <span>
-              OUR CHALLENGE
-            </span>
-
-            <h2>
-              Breaking barriers.
-              Expanding opportunities.
-            </h2>
-
-            <p>
-              The challenges facing girls and women in
-              Kuria East are deeply interconnected.
-              Harmful cultural practices, conflict,
-              poverty and climate change reinforce
-              one another, creating cycles that prevent
-              families from reaching their full potential.
-              Understanding these realities is the first
-              step toward creating lasting change.
-            </p>
-
-          </div>
-
+          <h2>Together We Can Change This Story</h2>
+          <p>Every girl deserves the opportunity to learn, lead and thrive. Together we can build safer communities, expand opportunities and create lasting change for generations to come.</p>
+          <a href="/donate" className={styles.ctaButton}>Support Our Work</a>
         </div>
-
       </section>
-
-      {/* ===================================================== */}
-      {/* CARD 1 */}
-      {/* ===================================================== */}
-
-      <section className={styles.storySection}>
-
-        <div className="container">
-
-          <div className={styles.storyGrid}>
-
-            <div className={styles.storyImage}>
-
-              <img
-                src="/images/need/fgm.jpg"
-                alt="Ending Female Genital Mutilation"
-              />
-
-            </div>
-
-            <div className={styles.storyContent}>
-
-              <span>01</span>
-
-              <h2>
-                Female Genital Mutilation
-              </h2>
-
-              <h3>84%</h3>
-
-              <p>
-                Female Genital Mutilation remains one of
-                the greatest barriers facing girls in
-                Kuria. While national prevalence has
-                declined significantly, local estimates
-                indicate that nearly eighty-four percent
-                of girls and women have undergone the
-                practice.
-              </p>
-
-              <p>
-                Often performed during school holidays,
-                FGM exposes girls to lifelong physical
-                and emotional harm while increasing the
-                risk of early marriage, school dropout
-                and teenage pregnancy.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* ===================================================== */}
-      {/* CARD 2 */}
-      {/* ===================================================== */}
-
-      <section
-        className={`${styles.storySection} ${styles.greenSection}`}
-      >
-
-        <div className="container">
-
-          <div
-            className={`${styles.storyGrid} ${styles.reverse}`}
-          >
-
-            <div className={styles.storyContent}>
-
-              <span>02</span>
-
-              <h2>
-                Early & Forced Marriage
-              </h2>
-
-              <h3>17.1 Years</h3>
-
-              <p>
-                Migori County records one of the lowest
-                median ages at first marriage in Kenya.
-                In Kuria East, harmful traditional
-                practices and poverty continue to push
-                many girls into adulthood before they
-                have completed their education.
-              </p>
-
-              <p>
-                Once a girl undergoes the cut, she is
-                often considered ready for marriage,
-                denying her the opportunity to pursue
-                education, leadership and economic
-                independence.
-              </p>
-
-            </div>
-
-            <div className={styles.storyImage}>
-
-              <img
-                src="/images/need/marriage.jpg"
-                alt="Ending Child Marriage"
-              />
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* ===================================================== */}
-      {/* CARD 3 */}
-      {/* ===================================================== */}
-
-      <section className={styles.storySection}>
-
-        <div className="container">
-
-          <div className={styles.storyGrid}>
-
-            <div className={styles.storyImage}>
-
-              <img
-                src="/images/need/pregnancy.jpg"
-                alt="Teenage Pregnancy"
-              />
-
-            </div>
-
-            <div className={styles.storyContent}>
-
-              <span>03</span>
-
-              <h2>
-                Early Childhood &
-                Teenage Pregnancy
-              </h2>
-
-              <h3>22%</h3>
-
-              <p>
-                More than one in five girls aged
-                fifteen to nineteen in Migori County
-                have begun childbearing, placing their
-                education, health and future at risk.
-              </p>
-
-              <p>
-                Limited access to reproductive health
-                information, poverty and early marriage
-                continue to fuel adolescent pregnancy,
-                leaving many girls trapped in cycles of
-                vulnerability.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* ===================================================== */}
-      {/* CARD 4 */}
-      {/* ===================================================== */}
-
-      <section
-        className={`${styles.storySection} ${styles.burgundySection}`}
-      >
-
-        <div className="container">
-
-          <div
-            className={`${styles.storyGrid} ${styles.reverse}`}
-          >
-
-            <div className={styles.storyContent}>
-
-              <span>04</span>
-
-              <h2>
-                Barriers to
-                Girls' Education
-              </h2>
-
-              <h3>23–35%</h3>
-
-              <p>
-                Only a small proportion of girls in
-                Kuria East transition to secondary
-                school. Harmful practices, poverty and
-                conflict continue to interrupt learning
-                and limit opportunities for future
-                employment.
-              </p>
-
-              <p>
-                Education remains one of the most
-                powerful pathways out of poverty,
-                making investment in girls essential
-                for long-term community development.
-              </p>
-
-            </div>
-
-            <div className={styles.storyImage}>
-
-              <img
-                src="/images/need/education.jpg"
-                alt="Girls Education"
-              />
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-            {/* ===================================================== */}
-      {/* CARD 5 */}
-      {/* ===================================================== */}
-
-      <section className={styles.storySection}>
-
-        <div className="container">
-
-          <div className={styles.storyGrid}>
-
-            <div className={styles.storyImage}>
-
-              <img
-                src="/images/need/gbv.jpg"
-                alt="Gender-Based Violence"
-              />
-
-            </div>
-
-            <div className={styles.storyContent}>
-
-              <span>05</span>
-
-              <h2>
-                Gender-Based Violence
-              </h2>
-
-              <h3>
-                Breaking the Cycle
-              </h3>
-
-              <p>
-                Poverty and economic dependence continue to
-                increase women's vulnerability to physical,
-                emotional, sexual and economic violence.
-                Limited access to resources and support
-                services leaves many survivors without the
-                protection they deserve.
-              </p>
-
-              <p>
-                During periods of conflict, displacement and
-                insecurity further weaken community
-                protection systems, exposing women and girls
-                to even greater risk.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* ===================================================== */}
-      {/* CARD 6 */}
-      {/* ===================================================== */}
-
-      <section
-        className={`${styles.storySection} ${styles.greenSection}`}
-      >
-
-        <div className="container">
-
-          <div
-            className={`${styles.storyGrid} ${styles.reverse}`}
-          >
-
-            <div className={styles.storyContent}>
-
-              <span>06</span>
-
-              <h2>
-                Conflict, Widowhood &
-                Economic Exclusion
-              </h2>
-
-              <h3>
-                Less than 12%
-              </h3>
-
-              <p>
-                Recurring conflict along the
-                Gwitembe–Ang'ata Barikoi border has
-                displaced families, destroyed livelihoods
-                and pushed many women into extreme
-                vulnerability.
-              </p>
-
-              <p>
-                Widows often lose their primary source of
-                income while land ownership remains heavily
-                unequal, limiting their ability to rebuild
-                their lives and provide for their families.
-              </p>
-
-            </div>
-
-            <div className={styles.storyImage}>
-
-              <img
-                src="/images/need/conflict.jpg"
-                alt="Conflict and Economic Empowerment"
-              />
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* ===================================================== */}
-      {/* CARD 7 */}
-      {/* ===================================================== */}
-
-      <section className={styles.storySection}>
-
-        <div className="container">
-
-          <div className={styles.storyGrid}>
-
-            <div className={styles.storyImage}>
-
-              <img
-                src="/images/need/climate.jpg"
-                alt="Climate Change"
-              />
-
-            </div>
-
-            <div className={styles.storyContent}>
-
-              <span>07</span>
-
-              <h2>
-                Climate Change &
-                Food Insecurity
-              </h2>
-
-              <h3>
-                +30%
-              </h3>
-
-              <p>
-                Erratic rainfall, prolonged drought and
-                declining agricultural productivity continue
-                to deepen food insecurity throughout Kuria
-                East.
-              </p>
-
-              <p>
-                Women-led households are particularly
-                affected as they struggle to secure food,
-                income and stability while climate shocks
-                and conflict reduce opportunities for
-                recovery.
-              </p>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* ===================================================== */}
-      {/* QUOTE */}
-      {/* ===================================================== */}
-
-      <section className={styles.quoteSection}>
-
-        <div className="container">
-
-          <div className={styles.quoteContent}>
-
-            <span className={styles.quoteTop}>
-              OUR BELIEF
-            </span>
-
-            <blockquote>
-
-              "When a girl is protected,
-              educated and empowered,
-              she transforms not only
-              her own future, but the
-              future of her family,
-              her community and the
-              generations that follow."
-
-            </blockquote>
-
-            <div className={styles.quoteLine}></div>
-
-            <p>
-              Margaret Robi Foundation
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* ===================================================== */}
-      {/* CTA */}
-      {/* ===================================================== */}
-
-      <section className={styles.ctaSection}>
-
-        <div className="container">
-
-          <div className={styles.ctaContent}>
-
-            <span>
-              JOIN THE MOVEMENT
-            </span>
-
-            <h2>
-
-              The challenges are
-              immense.
-
-              <br />
-
-              So is our determination.
-
-            </h2>
-
-            <p>
-
-              Together we can protect girls,
-              strengthen women and build
-              resilient communities where
-              every individual has the
-              opportunity to thrive.
-
-            </p>
-
-            <div className={styles.ctaButtons}>
-
-              <a
-                href="/programs"
-                className={styles.primaryBtn}
-              >
-                Explore Our Programmes
-              </a>
-
-              <a
-                href="/donate"
-                className={styles.secondaryBtn}
-              >
-                Support Our Work
-              </a>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
     </section>
   );
 }

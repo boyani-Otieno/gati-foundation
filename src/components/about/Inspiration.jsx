@@ -50,12 +50,12 @@ const Inspiration = () => {
 
         <div className={styles.container}>
 
-          <div className={styles.imageSide}>
+          {/* <div className={styles.imageSide}>
             <img
               src="/images/margaret-robi.jpg"
               alt="Margaret Robi"
             />
-          </div>
+          </div> */}
 
           <div className={styles.textSide}>
 
