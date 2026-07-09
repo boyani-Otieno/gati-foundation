@@ -328,6 +328,35 @@ RESPONSIVE
         font-size:2.2rem;
     }
 
+    @media (max-width: 992px){
+
+    .legacySection{
+        padding:100px 0;
+    }
+
+    .legacyGrid{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .textSide{
+        order:2;
+    }
+
+    .imageSide{
+        order:1;
+    }
+
+    .textSide h2{
+        font-size:2.8rem;
+    }
+
+    .textSide p{
+        font-size:1rem;
+    }
+
+}
+
 }
 
 @media(max-width:768px){
@@ -369,6 +398,33 @@ RESPONSIVE
         padding:35px 30px;
     }
 
+     .legacySection{
+        padding:80px 0;
+    }
+
+    .legacyGrid{
+        gap:40px;
+    }
+
+    .textSide h2{
+        font-size:2.2rem;
+        line-height:1.2;
+    }
+
+    .textSide p{
+        font-size:.98rem;
+        line-height:1.8;
+    }
+
+    .sectionTag{
+        font-size:.8rem;
+        letter-spacing:2px;
+    }
+
+    .imageSide img{
+        border-radius:18px;
+    }
+
 }
 
 @media(max-width:480px){
@@ -397,6 +453,27 @@ RESPONSIVE
     .ctaButton{
         width:100%;
         max-width:280px;
+    }
+
+    .legacySection{
+        padding:70px 0;
+    }
+
+    .textSide h2{
+        font-size:1.9rem;
+    }
+
+    .textSide p{
+        font-size:.95rem;
+        line-height:1.7;
+    }
+
+    .legacyGrid{
+        gap:30px;
+    }
+
+    .imageSide img{
+        border-radius:16px;
     }
 
 }

@@ -73,8 +73,8 @@ const Inspiration = () => {
               for those who come after them. Margaret Robi was one of those
               women. Having lived through many of the challenges that continue
               to limit the opportunities and lives of girls and young women
-              today—including harmful cultural practices, inequality and
-              barriers to education—she believed that no girl's future should
+              today including harmful cultural practices, inequality and
+              barriers to education she believed that no girl's future should
               be determined by those circumstances, but by her own potential.
             </p>
 
@@ -87,16 +87,6 @@ const Inspiration = () => {
               all, she inspired them to rise beyond society's expectations,
               creating possibilities where many saw only limitations.
             </p>
-
-            <p>
-              Today, Margaret Robi's vision lives on through the Margaret Robi
-              Foundation. Inspired by her mother's life and the enduring impact
-              she had on others, Jerida Gati founded the Foundation in 2021 to
-              continue the work Margaret had already begun. Her legacy is not
-              only remembered—it is lived every day through the lives
-              transformed by the Foundation.
-            </p>
-
           </div>
 
         </div>
