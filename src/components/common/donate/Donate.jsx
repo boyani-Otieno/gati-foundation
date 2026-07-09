@@ -4,369 +4,501 @@ import {
   IoHeart,
   IoShieldCheckmark,
   IoSparkles,
-  IoEarth
+  IoEarth,
+  IoSchool,
+  IoPeople,
+  IoLeaf,
+  IoWoman
 } from "react-icons/io5";
 
 import {
   PayPalScriptProvider,
-  PayPalButtons
+  PayPalButtons,
 } from "@paypal/react-paypal-js";
 
 import "./donate.css";
 
-
 const DonationPage = () => {
 
-
-  const [amount,setAmount] = useState("50");
-  const [customAmount,setCustomAmount] = useState("");
-  const [frequency,setFrequency] = useState("once");
-
-
+  const [amount, setAmount] = useState("50");
+  const [customAmount, setCustomAmount] = useState("");
+  const [frequency, setFrequency] = useState("once");
 
   const donationTiers = [
     {
-      value:"15",
-      impact:"Provides a month of sanitary supplies for 3 girls."
+      value: "15",
+      impact:
+        "Helps provide dignity supplies and mentorship resources that keep a girl in school."
     },
     {
-      value:"30",
-      impact:"Supplies nutritious meals to a vulnerable family for 2 weeks."
+      value: "30",
+      impact:
+        "Supports community dialogues that help protect girls from FGM and child marriage."
     },
     {
-      value:"50",
-      impact:"Funds rescue shelter accommodation and mentorship for a fleeing girl."
+      value: "50",
+      impact:
+        "Funds mentorship, career guidance and educational support for vulnerable girls."
     },
     {
-      value:"100",
-      impact:"Sponsors medical support and counseling workshops in the community."
+      value: "100",
+      impact:
+        "Strengthens community programmes that empower women and create lasting change."
     }
   ];
 
-
-
   const currentImpactText =
-    donationTiers.find(
-      item=>item.value===amount
-    )?.impact ||
-    "Directly funds emergency rescues, education, and community resilience in Kuria.";
-
-
+    donationTiers.find((item) => item.value === amount)?.impact ||
+    "Every contribution directly strengthens programmes that empower girls, women and communities across Kuria.";
 
   return (
 
-
 <PayPalScriptProvider
- options={{
-  "client-id":"YOUR_PAYPAL_CLIENT_ID",
-  currency:"USD"
- }}
+options={{
+"client-id":"YOUR_PAYPAL_CLIENT_ID",
+currency:"USD"
+}}
 >
 
-
 <div className="donation-page">
-
 
 <header className="donate-hero">
 
 <div className="donate-hero-overlay"></div>
 
-
 <div className="donate-container hero-flex">
 
-
 <motion.div
+
 className="hero-text"
-initial={{opacity:0,y:20}}
+
+initial={{opacity:0,y:30}}
+
 animate={{opacity:1,y:0}}
+
+transition={{duration:.8}}
+
 >
 
 <span className="badge">
-Transform Lives in Kuria, Kenya
+
+SUPPORT GIRLS. STRENGTHEN COMMUNITIES.
+
 </span>
 
-
 <h1>
-Her Legacy. Their Future.
+
+Your Gift Creates
+<br />
+Lasting Change
+
 </h1>
 
+<p>
+
+Every contribution helps girls and young women in Kuria overcome harmful cultural practices, remain in school, build safer futures and create lasting opportunities for themselves and their communities.
+
+</p>
 
 </motion.div>
-
 
 </div>
 
 </header>
 
-
-
-
 <div className="donate-container main-grid">
 
-
-
 <motion.div
+
 className="story-panel"
+
+initial={{opacity:0,x:-40}}
+
+whileInView={{opacity:1,x:0}}
+
+viewport={{once:true}}
+
+transition={{duration:.7}}
+
 >
 
-
 <h2>
-Where Your Money Goes
-</h2>
 
+Where Your Support Creates Lasting Change
+
+</h2>
 
 <p className="lead-p">
 
-We operate directly on the ground. Your contribution supports
-protection, education, empowerment and community transformation.
+Your contribution creates lasting opportunities for girls and young women in Kuria, where recurring conflict, harmful cultural practices and systemic gender inequality continue to limit opportunity. Every donation helps create safer communities, expand educational opportunities and empower women and girls to build stronger futures.
 
 </p>
-
-
-
 
 <div className="impact-cards">
 
+<div className="i-card">
+
+<IoShieldCheckmark className="i-icon gold"/>
+
+<div>
+
+<h3>
+
+Protecting Girls from FGM
+
+</h3>
+
+<p>
+
+Supporting community dialogues, girl-centred mentorship and home visits that help protect girls from Female Genital Mutilation.
+
+</p>
+
+</div>
+
+</div>
 
 <div className="i-card">
-<IoHeart className="i-icon color-orange"/>
+
+<IoHeart className="i-icon red"/>
+
 <div>
+
 <h3>
-Rescue & Protection
+
+Preventing Child Marriage
+
 </h3>
+
 <p>
-Safe spaces and support for vulnerable girls.
+
+Helping girls remain in school through mentorship, dignity support, career guidance and community engagement.
+
 </p>
-</div>
+
 </div>
 
-
+</div>
 
 <div className="i-card">
-<IoSparkles className="i-icon color-blue"/>
+
+<IoSparkles className="i-icon blue"/>
+
 <div>
+
 <h3>
-Education & Empowerment
+
+Reducing Teenage Pregnancy
+
 </h3>
+
 <p>
-Building confidence and leadership opportunities.
+
+Providing age-appropriate reproductive health education, trusted mentorship and life guidance.
+
 </p>
+
 </div>
+
 </div>
-
-
-
 
 <div className="i-card">
-<IoEarth className="i-icon color-green"/>
+
+<IoSchool className="i-icon green"/>
+
 <div>
+
 <h3>
-Community Growth
+
+Keeping Girls in School
+
 </h3>
-<p>
-Helping families create sustainable futures.
-</p>
-</div>
-</div>
-</div>
-<div className="trust-footer">
-
-<IoShieldCheckmark className="trust-icon"/>
 
 <p>
-<strong>
-Secure PayPal Donation:
-</strong>
- Your payment is protected by PayPal encryption.
-</p>
 
+Providing dignity supplies, educational resources, mentorship and family engagement that remove barriers to learning.
+
+</p>
 
 </div>
 
+</div>
 
+<div className="i-card">
+
+<IoWoman className="i-icon orange"/>
+
+<div>
+
+<h3>
+
+Advancing Women's Safety
+
+</h3>
+
+<p>
+
+Supporting grassroots initiatives that strengthen confidence, independence and informed decision-making.
+
+</p>
+
+</div>
+
+</div>
+
+<div className="i-card">
+
+<IoPeople className="i-icon purple"/>
+
+<div>
+
+<h3>
+
+Rebuilding Livelihoods
+
+</h3>
+
+<p>
+
+Helping widows and vulnerable women strengthen livelihoods through practical skills and sustainable income opportunities.
+
+</p>
+
+</div>
+
+</div>
+
+<div className="i-card">
+
+<IoLeaf className="i-icon green"/>
+
+<div>
+
+<h3>
+
+Climate & Food Security
+
+</h3>
+
+<p>
+
+Supporting women-led households with climate-smart agriculture, nutrition and resilient livelihood practices.
+
+</p>
+
+</div>
+
+</div>
+
+<div className="i-card">
+
+<IoEarth className="i-icon gold"/>
+
+<div>
+
+<h3>
+
+Building Stronger Communities
+
+</h3>
+
+<p>
+
+Every contribution strengthens local leadership, community resilience and lasting opportunities for girls and women.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
 </motion.div>
-
-
-
-
-
-
 
 <motion.div
-className="form-panel"
+  className="form-panel"
+  initial={{ opacity: 0, x: 40 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.7 }}
 >
 
+  <div className="donate-form">
 
-<div className="donate-form">
+    <span className="form-tag">
+      MAKE A DONATION
+    </span>
 
+    <h2>
+      Invest in a Girl's Future
+    </h2>
 
+    <p className="form-intro">
+      Choose a one-time or monthly contribution. Every gift helps create
+      safer communities, stronger futures, and lasting opportunities for
+      girls and young women.
+    </p>
 
-<div className="frequency-toggle">
+    <div className="frequency-toggle">
 
+      <button
+        className={frequency === "once" ? "active" : ""}
+        onClick={() => setFrequency("once")}
+      >
+        Give Once
+      </button>
 
-<button
-className={frequency==="once"?"active":""}
-onClick={()=>setFrequency("once")}
->
-Give Once
-</button>
+      <button
+        className={frequency === "monthly" ? "active" : ""}
+        onClick={() => setFrequency("monthly")}
+      >
+        Monthly Giving
+      </button>
 
+    </div>
 
-<button
-className={frequency==="monthly"?"active":""}
-onClick={()=>setFrequency("monthly")}
->
-Monthly Support
-</button>
+    <label className="section-label">
 
+      Select Donation Amount (USD)
 
-</div>
+    </label>
 
+    <div className="amount-grid">
 
+      {donationTiers.map((tier) => (
 
+        <button
+          key={tier.value}
+          className={
+            amount === tier.value && !customAmount
+              ? "amount-btn selected"
+              : "amount-btn"
+          }
+          onClick={() => {
+            setAmount(tier.value);
+            setCustomAmount("");
+          }}
+        >
+          ${tier.value}
+        </button>
 
+      ))}
 
-<label className="section-label">
+    </div>
 
-Select Donation Amount (USD)
+    <div className="custom-input-wrapper">
 
-</label>
+      <span>$</span>
 
+      <input
+        type="number"
+        placeholder="Enter another amount"
+        value={customAmount}
+        min="5"
+        onChange={(e) => {
+          setCustomAmount(e.target.value);
+          setAmount(e.target.value);
+        }}
+      />
 
+    </div>
 
+    <div className="live-impact-box">
 
+      <h4>Your Gift Today</h4>
 
-<div className="amount-grid">
+      <p>{currentImpactText}</p>
 
+    </div>
 
-{donationTiers.map(tier=>(
+    <div className="paypal-button-wrapper">
 
+      <PayPalButtons
+        style={{
+          layout: "vertical",
+          color: "gold",
+          shape: "pill",
+          label: "donate"
+        }}
+        createOrder={(data, actions) => {
+          return actions.order.create({
+            purchase_units: [
+              {
+                amount: {
+                  value: amount,
+                },
+                description:
+                  frequency === "monthly"
+                    ? "Monthly support for GATI Foundation"
+                    : "Donation to GATI Foundation",
+              },
+            ],
+          });
+        }}
+        onApprove={(data, actions) => {
+          return actions.order.capture().then(() => {
+            alert(
+              "Thank you for supporting girls and young women in Kuria. Your generosity is creating lasting change."
+            );
+          });
+        }}
+      />
 
-<button
+    </div>
 
-key={tier.value}
+    <p className="secure-text">
 
-className={
-amount===tier.value && !customAmount
-?
-"amount-btn selected"
-:
-"amount-btn"
-}
+      🔒 Secure payment powered by PayPal
 
+    </p>
 
-onClick={()=>{
+  </div>
 
-setAmount(tier.value)
-setCustomAmount("")
-
-}}
-
-
->
-
-${tier.value}
-
-</button>
-
-
-))}
-
-
-</div>
-
-
-
-
-
-
-
-<div className="custom-input-wrapper">
-
-
-<span>
-$
-</span>
-
-
-<input
-
-type="number"
-
-placeholder="Custom amount"
-
-value={customAmount}
-
-onChange={(e)=>{
-
-setCustomAmount(e.target.value)
-setAmount(e.target.value)
-}}
-min="5"
-/>
-</div>
-<div className="live-impact-box">
-
-<p>
-
-<strong>
-Your Impact:
-</strong>
-
-{currentImpactText}
-
-</p>
-
-</div>
-<div className="paypal-button-wrapper">
-<PayPalButtons
-style={{
-layout:"vertical",
-color:"gold",
-shape:"pill"
-}}
-createOrder={(data,actions)=>{
-return actions.order.create({
-purchase_units:[
-{
-amount:{
-value:amount
-},
-description:
-frequency==="monthly"
-?
-"Monthly donation support"
-:
-"Community donation"}]})}}
-onApprove={(data,actions)=>{
-return actions.order.capture()
-.then(()=>{
-
-alert(
-"Thank you for supporting our mission ❤️")})}}/>
-</div>
-<p className="secure-text">
-🔒 PayPal Secure Checkout
-</p>
-</div>
 </motion.div>
 
-
-
-
-
 </div>
 
+<section className="commitment-section">
+
+  <div className="donate-container">
+
+    <div className="commitment-box">
+
+      <IoShieldCheckmark className="commitment-icon" />
+
+      <h2>
+        Our Commitment to Your Impact
+      </h2>
+
+      <p>
+
+        Every contribution is carefully directed to where it can create
+        the greatest difference. Guided by deep local knowledge,
+        trusted community relationships, and responsible stewardship,
+        we ensure your generosity helps girls and young women build
+        safer, stronger, and more independent futures.
+
+      </p>
+
+      <p>
+
+        Together, we are protecting girls, expanding educational
+        opportunities, strengthening women, and building resilient
+        communities across Kuria.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 
 </div>
-
 
 </PayPalScriptProvider>
 
-
-  )
-
-}
-
+  );
+};
 
 export default DonationPage;

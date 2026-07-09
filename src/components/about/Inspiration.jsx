@@ -23,11 +23,10 @@ const values = [
 const Inspiration = () => {
   return (
     <>
+
       {/* HERO */}
 
       <section className={styles.hero}>
-        <div className={styles.overlay}></div>
-
         <div className={styles.heroContent}>
           <span>OUR INSPIRATION</span>
 
@@ -38,28 +37,28 @@ const Inspiration = () => {
           </h1>
 
           <p>
-            One woman's courage continues to inspire generations of girls,
-            women, and communities across Kenya.
+            Margaret Robi's life is a testament to the transformative power of
+            courage, compassion, and education. Her unwavering belief in the
+            potential of every girl continues to inspire the Foundation's
+            mission today.
           </p>
         </div>
       </section>
 
-      {/* WHO SHE WAS */}
+      {/* DIVIDER */}
+
+      <section className={styles.sectionDivider}>
+        <div className={styles.goldDivider}></div>
+      </section>
+
+      {/* HER STORY */}
 
       <section className={styles.storySection}>
+        <div className="container">
 
-        <div className={styles.container}>
+          <div className={styles.storyContent}>
 
-          {/* <div className={styles.imageSide}>
-            <img
-              src="/images/margaret-robi.jpg"
-              alt="Margaret Robi"
-            />
-          </div> */}
-
-          <div className={styles.textSide}>
-
-            <span className={styles.sectionTag}>
+            <span className={styles.storyTag}>
               HER STORY
             </span>
 
@@ -67,34 +66,49 @@ const Inspiration = () => {
               A Woman of Extraordinary Courage
             </h2>
 
+            <div className={styles.storyDivider}></div>
+
             <p>
-              Margaret Robi was a woman of extraordinary courage,
-              resilience, and hope. Raised within the Kuria community,
-              she experienced firsthand the realities that continue to
-              affect many girls and women today, including Female
-              Genital Mutilation (FGM), gender discrimination, and
-              limited educational opportunities.
+              Some women inherit the world as it is. Others quietly reshape it
+              for those who come after them. Margaret Robi was one of those
+              women. Having lived through many of the challenges that continue
+              to limit the opportunities and lives of girls and young women
+              today—including harmful cultural practices, inequality and
+              barriers to education—she believed that no girl's future should
+              be determined by those circumstances, but by her own potential.
             </p>
 
             <p>
-              Despite the opportunities she never had, Margaret never
-              accepted that a girl's future should be determined by her
-              gender or circumstances. She believed every girl deserved
-              dignity, education, and the freedom to dream beyond the
-              limitations imposed by society.
+              For Margaret, education was never an end in itself. It was the
+              beginning of freedom, choice and lasting change. Though her own
+              circumstances were far from easy, she helped girls remain in
+              school, opened her home to girls in need and walked alongside
+              young women as they pursued education and skills training. Above
+              all, she inspired them to rise beyond society's expectations,
+              creating possibilities where many saw only limitations.
+            </p>
+
+            <p>
+              Today, Margaret Robi's vision lives on through the Margaret Robi
+              Foundation. Inspired by her mother's life and the enduring impact
+              she had on others, Jerida Gati founded the Foundation in 2021 to
+              continue the work Margaret had already begun. Her legacy is not
+              only remembered—it is lived every day through the lives
+              transformed by the Foundation.
             </p>
 
           </div>
 
         </div>
-
       </section>
 
-      {/* LEGACY */}
+      {/* HER LEGACY */}
 
       <section className={styles.legacySection}>
 
-        <div className={styles.container}>
+        <div className="container">
+
+           <div className={styles.legacyGrid}>
 
           <div className={styles.textSide}>
 
@@ -108,15 +122,15 @@ const Inspiration = () => {
 
             <p>
               Inspired by her mother's unwavering belief in education,
-              equality, and hope, Jerida Gati founded the Margaret Robi
+              equality and hope, Jerida Gati founded the Margaret Robi
               Foundation in 2021 to carry forward that vision.
             </p>
 
             <p>
-              Today the Foundation works alongside schools,
-              communities, parents, and young women to dismantle
-              harmful cultural practices, promote leadership, and
-              empower girls to reach their full potential.
+              Today the Foundation works alongside schools, communities,
+              parents and young women to dismantle harmful cultural
+              practices, promote leadership and empower girls to reach
+              their full potential.
             </p>
 
           </div>
@@ -127,78 +141,77 @@ const Inspiration = () => {
               alt="Jerida Gati"
             />
           </div>
-
+         </div>
         </div>
 
       </section>
-
-      {/* VALUES */}
+            {/* VALUES */}
 
       <section className={styles.valuesSection}>
+        <div className="container">
 
-        <div className={styles.valuesHeader}>
+          <div className={styles.valuesHeader}>
+            <span>VALUES SHE INSPIRED</span>
 
-          <span>VALUES SHE INSPIRED</span>
+            <h2>
+              The Values That
+              <br />
+              Continue to Guide Us
+            </h2>
+          </div>
 
-          <h2>
-            Her Spirit Continues
-            <br />
-            Through Our Work
-          </h2>
-
-        </div>
-
-        <div className={styles.valuesGrid}>
-
-          {values.map((value, index) => (
-
-            <div className={styles.valueCard} key={index}>
-
-              <h3>{value.title}</h3>
-
-              <p>{value.text}</p>
-
-            </div>
-
-          ))}
+          <div className={styles.valuesGrid}>
+            {values.map((value, index) => (
+              <div className={styles.valueCard} key={index}>
+                <h3>{value.title}</h3>
+                <p>{value.text}</p>
+              </div>
+            ))}
+          </div>
 
         </div>
-
       </section>
 
       {/* QUOTE */}
 
       <section className={styles.quoteSection}>
+        <div className="container">
 
-        <blockquote>
-          "When girls are empowered through education,
-          dignity, and opportunity, entire communities
-          flourish."
-        </blockquote>
+          <blockquote>
+            "A brighter future is built when people choose to act. Together, we stand with girls and young women who too often shoulder the greatest burden in the wake of conflict and crisis while confronting harmful cultural practices and unequal opportunities. Although among those most affected, they remain too often excluded from the opportunities, resources, and decisions that define their futures. We are changing that by restoring dignity, expanding opportunity, and equipping them to rebuild their lives, support their families, and shape more resilient communities."
+          </blockquote>
 
-        <span>
-          — Inspired by the life and legacy of Margaret Robi
-        </span>
+          <span>
+            — Inspired by the life and legacy of Margaret Robi
+          </span>
 
+        </div>
       </section>
 
-      {/* CTA */}
+      {/* CALL TO ACTION */}
 
       <section className={styles.ctaSection}>
+        <div className="container">
 
-        <h2>
-          Continue Her Legacy
-        </h2>
+          <h2>
+            Continue Her Legacy
+          </h2>
 
-        <p>
-          Together we can ensure every girl has the opportunity
-          to learn, lead, and thrive.
-        </p>
+          <p>
+            Join us in carrying forward Margaret Robi's vision by
+            empowering girls, strengthening women, and building
+            resilient communities where every child has the
+            opportunity to learn, lead, and thrive.
+          </p>
 
-        <a href="/contact" className={styles.ctaButton}>
-          Join Our Mission
-        </a>
+          <a
+            href="/donate"
+            className={styles.ctaButton}
+          >
+            Support Our Mission
+          </a>
 
+        </div>
       </section>
 
     </>

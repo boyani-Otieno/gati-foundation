@@ -1,84 +1,162 @@
 .hero{
-    height:75vh;
+    min-height:80vh;
     background:
-    linear-gradient(rgba(23,63,53,.65),rgba(23,63,53,.65)),
-    url("./../images/wote.jpeg") center/cover;
+        linear-gradient(rgba(23,63,53,.70),rgba(23,63,53,.70)),
+        url("./../images/wote.jpeg") center/cover no-repeat;
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
     text-align:center;
     color:#fff;
+    padding:120px 0;
 }
 
 .heroContent{
-    width:min(800px,90%);
+    width:min(850px,90%);
+    margin:auto;
 }
 
 .heroContent span{
-    letter-spacing:4px;
+    display:inline-block;
     color:#C9A227;
-    font-size:13px;
+    letter-spacing:4px;
+    font-size:.9rem;
+    font-weight:700;
+    margin-bottom:20px;
+    text-transform:uppercase;
 }
 
 .heroContent h1{
-    font-size:4rem;
-    font-weight:300;
-    margin:25px 0;
-    line-height:1.15;
+    font-family:"Cormorant Garamond",serif;
+    font-size:4.5rem;
+    font-weight:600;
+    line-height:1.1;
+    letter-spacing:-1px;
+    margin-bottom:30px;
 }
 
 .heroContent p{
+    max-width:720px;
+    margin:auto;
     font-size:1.15rem;
-    line-height:1.8;
+    line-height:2;
+    color:rgba(255,255,255,.92);
 }
 
-.storySection,
-.legacySection{
-    padding:120px 8%;
-    background:#fff;
-}
+/*==============================
+HER STORY
+==============================*/
 
-.legacySection{
+.storySection{
+    padding:140px 0;
     background:#F8F3E7;
 }
 
-.container{
-    max-width:1200px;
+.storyContent{
+    width:min(900px,90%);
     margin:auto;
+    text-align:center;
+}
+
+.storyTag{
+    display:inline-block;
+    color:#C9A227;
+    font-size:.9rem;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.storyContent h2{
+    font-family:"Cormorant Garamond",serif;
+    font-size:3.5rem;
+    color:#173F35;
+    margin-bottom:30px;
+    line-height:1.15;
+}
+
+.storyDivider{
+    width:80px;
+    height:2px;
+    background:#C9A227;
+    margin:0 auto 45px;
+}
+
+.storyContent p{
+    color:#555;
+    font-size:1.08rem;
+    line-height:2.1;
+    margin-bottom:25px;
+    text-align:left;
+}
+
+/*==============================
+HER LEGACY
+==============================*/
+
+.sectionDivider{
+    background:#F8F3E7;
+    padding:50px 0;
+}
+
+.goldDivider{
+    width:90px;
+    height:3px;
+    background:#C9A227;
+    margin:auto;
+    border-radius:5px;
+}
+
+.legacySection{
+    background:#fff;
+    padding:130px 0;
+}
+
+.legacyGrid{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:80px;
+    grid-template-columns:1.1fr .9fr;
+    gap:70px;
     align-items:center;
+}
+
+.sectionTag{
+    display:inline-block;
+    color:#C9A227;
+    font-size:.9rem;
+    font-weight:700;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+}
+
+.textSide h2{
+    font-family:"Cormorant Garamond",serif;
+    font-size:3.3rem;
+    color:#173F35;
+    line-height:1.15;
+    margin-bottom:30px;
+}
+
+.textSide p{
+    color:#555;
+    line-height:2;
+    font-size:1.08rem;
+    margin-bottom:24px;
 }
 
 .imageSide img{
     width:100%;
-    border-radius:20px;
     display:block;
+    border-radius:22px;
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
 }
-
-.sectionTag{
-    color:#C9A227;
-    letter-spacing:3px;
-    font-size:13px;
-    text-transform:uppercase;
-}
-
-.textSide h2{
-    font-size:3rem;
-    color:#173F35;
-    font-weight:300;
-    margin:20px 0 30px;
-}
-
-.textSide p{
-    line-height:2;
-    color:#555;
-    margin-bottom:25px;
-}
+/*==============================
+VALUES
+==============================*/
 
 .valuesSection{
-    padding:120px 8%;
+    padding:130px 0;
     background:#fff;
 }
 
@@ -88,139 +166,237 @@
 }
 
 .valuesHeader span{
+    display:inline-block;
     color:#C9A227;
+    font-size:.9rem;
+    font-weight:700;
     letter-spacing:3px;
-    font-size:13px;
+    text-transform:uppercase;
+    margin-bottom:18px;
 }
 
 .valuesHeader h2{
-    margin-top:20px;
+    font-family:"Cormorant Garamond",serif;
+    font-size:3.4rem;
     color:#173F35;
-    font-size:3rem;
-    font-weight:300;
+    line-height:1.2;
 }
 
 .valuesGrid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:30px;
-    max-width:1200px;
-    margin:auto;
 }
 
 .valueCard{
     background:#F8F3E7;
-    padding:40px;
-    border-radius:18px;
-    transition:.35s;
+    padding:45px 35px;
+    border-radius:20px;
+    border-top:4px solid transparent;
+    transition:.35s ease;
 }
 
 .valueCard:hover{
     transform:translateY(-8px);
+    border-top-color:#C9A227;
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
 }
 
 .valueCard h3{
     color:#173F35;
-    margin-bottom:20px;
+    font-size:1.5rem;
+    margin-bottom:18px;
 }
 
 .valueCard p{
-    line-height:1.9;
     color:#555;
+    line-height:1.9;
 }
+
+/*==============================
+QUOTE
+==============================*/
 
 .quoteSection{
     background:#173F35;
-    color:white;
+    color:#fff;
     text-align:center;
-    padding:120px 8%;
+    padding:140px 0;
 }
 
 .quoteSection blockquote{
-    font-size:2.3rem;
-    font-weight:300;
-    line-height:1.6;
     max-width:900px;
     margin:auto;
+    font-family:"Cormorant Garamond",serif;
+    font-size:1rem;
+    line-height:1.6;
+    font-style:italic;
+    font-weight:500;
 }
 
 .quoteSection span{
     display:block;
-    margin-top:30px;
+    margin-top:35px;
     color:#C9A227;
+    font-size:1rem;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
 }
 
+/*==============================
+CALL TO ACTION
+==============================*/
+
 .ctaSection{
-    padding:120px 8%;
+    padding:130px 0;
+    background:#fff;
     text-align:center;
-    background:#F8F3E7;
 }
 
 .ctaSection h2{
-    font-size:3rem;
+    font-family:"Cormorant Garamond",serif;
+    font-size:3.4rem;
     color:#173F35;
-    font-weight:300;
+    margin-bottom:25px;
 }
 
 .ctaSection p{
-    max-width:650px;
-    margin:25px auto 40px;
-    line-height:1.9;
+    max-width:700px;
+    margin:0 auto 45px;
     color:#555;
+    font-size:1.08rem;
+    line-height:2;
 }
 
 .ctaButton{
-    display:inline-block;
-    padding:16px 42px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:18px 46px;
     background:#C9A227;
-    color:white;
+    color:#fff;
     text-decoration:none;
     border-radius:50px;
-    transition:.3s;
+    font-weight:600;
+    transition:all .35s ease;
 }
 
 .ctaButton:hover{
-    background:#173F35;
+    background:#6D1F32;
+    transform:translateY(-4px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:1200px){
+
+    .valuesGrid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
 }
 
 @media(max-width:992px){
 
-.container{
-grid-template-columns:1fr;
-}
+    .hero{
+        min-height:70vh;
+        padding:100px 0;
+    }
 
-.valuesGrid{
-grid-template-columns:repeat(2,1fr);
-}
+    .heroContent h1{
+        font-size:3.5rem;
+    }
 
-.heroContent h1{
-font-size:3rem;
-}
+    .storySection,
+    .valuesSection,
+    .quoteSection,
+    .ctaSection{
+        padding:100px 0;
+    }
+
+    .storyContent h2,
+    .valuesHeader h2,
+    .ctaSection h2{
+        font-size:2.8rem;
+    }
+
+    .quoteSection blockquote{
+        font-size:2.2rem;
+    }
 
 }
 
 @media(max-width:768px){
 
-.valuesGrid{
-grid-template-columns:1fr;
+    .hero{
+        min-height:60vh;
+    }
+
+    .heroContent h1{
+        font-size:2.8rem;
+    }
+
+    .heroContent p{
+        font-size:1rem;
+    }
+
+    .storyContent h2,
+    .valuesHeader h2,
+    .ctaSection h2{
+        font-size:2.3rem;
+    }
+
+    .storyContent p,
+    .ctaSection p,
+    .valueCard p{
+        font-size:1rem;
+    }
+
+    .valuesGrid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .quoteSection blockquote{
+        font-size:1.8rem;
+    }
+
+    .valueCard{
+        padding:35px 30px;
+    }
+
 }
 
-.hero{
-height:65vh;
-}
+@media(max-width:480px){
 
-.heroContent h1{
-font-size:2.4rem;
-}
+    .heroContent h1{
+        font-size:2.2rem;
+    }
 
-.textSide h2,
-.valuesHeader h2,
-.ctaSection h2{
-font-size:2.2rem;
-}
+    .heroContent span,
+    .storyTag,
+    .valuesHeader span{
+        letter-spacing:2px;
+        font-size:.8rem;
+    }
 
-.quoteSection blockquote{
-font-size:1.6rem;
-}
+    .storyContent h2,
+    .valuesHeader h2,
+    .ctaSection h2{
+        font-size:2rem;
+    }
+
+    .quoteSection blockquote{
+        font-size:1.5rem;
+    }
+
+    .ctaButton{
+        width:100%;
+        max-width:280px;
+    }
 
 }
