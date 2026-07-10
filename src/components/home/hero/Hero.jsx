@@ -55,13 +55,13 @@ const Hero = () => {
             <div className="mrf-footer-content">
               <IoHeartOutline className="mrf-heart" />
 
-              <div>
+              {/* <div>
                 <h4>Creating Lasting Change</h4>
                 <p>
                   Every donation, every volunteer and every partnership
                   helps build a brighter future for children and families.
                 </p>
-              </div>
+              </div> */}
             </div>
 
           </div>

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Awards from "./awards/Awards";
-import Featured from "./featured/Featured";
+//import Featured from "./featured/Featured";
 import Hero from "./hero/Hero";
 //import StorySection from "./story/StorySection";
 //import Price from "./price/Pricing";
@@ -25,7 +25,7 @@ const Home = () => {
       </div>
       <div data-aos="fade-right">
         <Awards />
-        <Featured />
+        {/* <Featured /> */}
       </div>
       <div data-aos="fade-left">
         <Recent />
