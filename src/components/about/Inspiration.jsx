@@ -1,24 +1,24 @@
 import React from "react";
 import styles from "./Inspiration.module.css";
 
-const values = [
-  {
-    title: "Courage",
-    text: "Margaret Robi demonstrated remarkable courage in believing that every girl deserved dignity, education, and the opportunity to determine her own future."
-  },
-  {
-    title: "Hope",
-    text: "She believed that lasting change begins when communities choose hope over harmful traditions and invest in the potential of every child."
-  },
-  {
-    title: "Education",
-    text: "Although opportunities were limited during her lifetime, Margaret never stopped believing that education could transform lives and communities."
-  },
-  {
-    title: "Legacy",
-    text: "Today, her values continue to guide every programme, every mentorship session, and every life touched by the Foundation."
-  }
-];
+// const values = [
+//   {
+//     title: "Courage",
+//     text: "Margaret Robi demonstrated remarkable courage in believing that every girl deserved dignity, education, and the opportunity to determine her own future."
+//   },
+//   {
+//     title: "Hope",
+//     text: "She believed that lasting change begins when communities choose hope over harmful traditions and invest in the potential of every child."
+//   },
+//   {
+//     title: "Education",
+//     text: "Although opportunities were limited during her lifetime, Margaret never stopped believing that education could transform lives and communities."
+//   },
+//   {
+//     title: "Legacy",
+//     text: "Today, her values continue to guide every programme, every mentorship session, and every life touched by the Foundation."
+//   }
+// ];
 
 const Inspiration = () => {
   return (
@@ -164,7 +164,7 @@ const Inspiration = () => {
 
       {/* QUOTE */}
 
-      <section classNameTeacher={styles.quoteSection}>
+      {/* <section className={styles.quoteSection}>
         <div className="container">
 
           <blockquote>
@@ -176,7 +176,7 @@ const Inspiration = () => {
           </span>
 
         </div>
-      </section>
+      </section> */}
 
       {/* CALL TO ACTION */}
 

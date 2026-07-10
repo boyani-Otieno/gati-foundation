@@ -11,17 +11,17 @@ const About = () => {
       title: "Our Mission",
       text: "To work alongside communities to eliminate harmful cultural practices, advance gender equality, expand access to education, and empower girls and women through leadership, mentorship, and advocacy.",
     },
-    {
-      title: "Our Values",
-      values: [
-        "Dignity",
-        "Equality",
-        "Integrity",
-        "Community",
-        "Inclusion",
-        "Sustainable Impact",
-      ],
-    },
+    // {
+    //   title: "Our Values",
+    //   values: [
+    //     "Dignity",
+    //     "Equality",
+    //     "Integrity",
+    //     "Community",
+    //     "Inclusion",
+    //     "Sustainable Impact",
+    //   ],
+    // },
   ];
 
   const teamMembers = [
