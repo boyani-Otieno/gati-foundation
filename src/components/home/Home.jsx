@@ -4,8 +4,8 @@ import "aos/dist/aos.css";
 import Awards from "./awards/Awards";
 import Featured from "./featured/Featured";
 import Hero from "./hero/Hero";
-import StorySection from "./story/StorySection";
-import Price from "./price/Pricing";
+//import StorySection from "./story/StorySection";
+//import Price from "./price/Pricing";
 import Recent from "./recent/Recent";
 import ImpactSection from "./Impact/ImpactSection";
 import TestimonialsSection from "./testimonials/testimonials";
@@ -31,10 +31,10 @@ const Home = () => {
         <Recent />
       </div>
       <div data-aos="zoom-in">
-        <Awards />
+        {/* <Awards /> */}
       </div>
       <div data-aos="fade-up">
-        <StorySection />
+        {/* <StorySection /> */}
       </div>
       <div data-aos="fade-right">
         <ImpactSection />
@@ -43,7 +43,7 @@ const Home = () => {
         <TestimonialsSection />
       </div>
       <div data-aos="fade-right">
-        <Price />
+        {/* <Price /> */}
       </div>
     </>
   );

@@ -137,7 +137,7 @@ const Inspiration = () => {
       </section>
             {/* VALUES */}
 
-      <section className={styles.valuesSection}>
+      {/* <section className={styles.valuesSection}>
         <div className="container">
 
           <div className={styles.valuesHeader}>
@@ -160,11 +160,11 @@ const Inspiration = () => {
           </div>
 
         </div>
-      </section>
+      </section> */}
 
       {/* QUOTE */}
 
-      <section className={styles.quoteSection}>
+      <section classNameTeacher={styles.quoteSection}>
         <div className="container">
 
           <blockquote>
