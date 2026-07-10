@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagramSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import "./footer.css";
 
 const Footer = () => {
@@ -27,12 +27,12 @@ const Footer = () => {
               <FaFacebookSquare />
             </a>
 
-            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+            <a href="https://https://x.com/MargaretRobiFdn" target="_blank" rel="noreferrer">
               <FaXTwitter />
             </a>
 
-            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
-              <FaInstagramSquare />
+            <a href="https://www.linkedin.com/company/margaret-robi-foundation/" target="_blank" rel="noreferrer">
+              <FaLinkedin />
             </a>
 
           </div>
