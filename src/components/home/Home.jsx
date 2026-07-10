@@ -24,6 +24,7 @@ const Home = () => {
         <Hero />
       </div>
       <div data-aos="fade-right">
+        <Awards />
         <Featured />
       </div>
       <div data-aos="fade-left">
