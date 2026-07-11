@@ -14,6 +14,7 @@ import Gallery from "../gallery/Gallery"
 import Inspiration from "../about/Inspiration"
 import Leadership from "../about/Leadership"
 import Partners from "../about/Partners"
+import OurWork from "../Our/OurWork"
 
 const Pages = () => {
   return (
@@ -33,6 +34,7 @@ const Pages = () => {
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/gallery' component={Gallery} />
           <Route exact path='/donate' component={Donate} />
+          <Route exact path='/work' component={OurWork} />
         </Switch>
         <Footer />
       </Router>

@@ -4,7 +4,7 @@ import "./testimonials.css";
 const testimonials = [
   {
     quote:
-      "Through GATI Foundation I discovered confidence in myself. The mentorship sessions inspired me to stay in school and dream beyond my circumstances.",
+      "Through Margaret Robi Foundation I discovered confidence in myself. The mentorship sessions inspired me to stay in school and dream beyond my circumstances.",
     name: "Sharon A.",
     role: "Student",
   },
