@@ -17,6 +17,7 @@ import Partners from "../about/Partners"
 import OurWork from "../Our/OurWork"
 import OurImpact from "../Our/OurImpact"
 import Volunteer from "../volunteer/Volunteer"
+import Careers from "../Careers/Careers"
 
 const Pages = () => {
   return (
@@ -39,6 +40,7 @@ const Pages = () => {
           <Route exact path='/work' component={OurWork} />
           <Route exact path='/impact' component={OurImpact} />
            <Route exact path='/volunteer' component={Volunteer} />
+           <Route exact path='/careers' component={Careers} />
         </Switch>
         <Footer />
       </Router>

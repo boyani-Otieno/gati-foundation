@@ -1,0 +1,487 @@
+/*==================================
+ROOT
+==================================*/
+
+.careersPage{
+background:#F8F3E7;
+color:#1F4D3A;
+}
+
+.careersPage section{
+padding:110px 0;
+}
+
+.container{
+width:92%;
+max-width:1300px;
+margin:0 auto;
+}
+
+/*==================================
+INTRO
+==================================*/
+
+.careersIntro{
+padding-top:180px;
+padding-bottom:90px;
+text-align:center;
+background:#F8F3E7;
+}
+
+.sectionTag{
+display:inline-block;
+color:#C9A227;
+font-size:.85rem;
+font-weight:700;
+letter-spacing:4px;
+text-transform:uppercase;
+margin-bottom:25px;
+}
+
+.careersIntro h1{
+font-family:Georgia,"Times New Roman",serif;
+font-size:4.5rem;
+font-weight:400;
+line-height:1.05;
+color:#7A1F2B;
+margin-bottom:35px;
+}
+
+.careersIntro p{
+max-width:760px;
+margin:0 auto;
+font-size:1.1rem;
+line-height:2;
+color:#666;
+}
+
+/*==================================
+NOTICE
+==================================*/
+
+.careerNotice{
+background:#fff;
+}
+
+.noticeCard{
+max-width:900px;
+margin:0 auto;
+text-align:center;
+padding:70px 60px;
+background:#F8F3E7;
+border-radius:24px;
+box-shadow:0 18px 40px rgba(0,0,0,.08);
+border-top:5px solid #C9A227;
+}
+
+.noticeIcon{
+width:90px;
+height:90px;
+margin:0 auto 30px;
+border-radius:50%;
+background:#1F4D3A;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.noticeIcon i{
+font-size:2rem;
+color:#fff;
+}
+
+.noticeTag{
+display:block;
+color:#C9A227;
+font-size:.8rem;
+font-weight:700;
+letter-spacing:3px;
+margin-bottom:18px;
+}
+
+.noticeCard h2{
+font-family:Georgia,"Times New Roman",serif;
+font-size:2.8rem;
+font-weight:400;
+color:#7A1F2B;
+margin-bottom:25px;
+}
+
+.noticeCard p{
+font-size:1.05rem;
+line-height:1.9;
+color:#666;
+max-width:650px;
+margin:0 auto;
+}
+
+/*==================================
+WHY JOIN
+==================================*/
+
+.careerReasons{
+background:#F8F3E7;
+}
+
+.sectionHeading{
+text-align:center;
+max-width:760px;
+margin:0 auto 70px;
+}
+
+.sectionHeading span{
+display:inline-block;
+color:#C9A227;
+font-size:.85rem;
+font-weight:700;
+letter-spacing:3px;
+text-transform:uppercase;
+margin-bottom:18px;
+}
+
+.sectionHeading h2{
+font-family:Georgia,"Times New Roman",serif;
+font-size:3.3rem;
+font-weight:400;
+line-height:1.15;
+color:#7A1F2B;
+margin-bottom:25px;
+}
+
+.sectionHeading p{
+color:#666;
+line-height:1.9;
+font-size:1.05rem;
+}
+
+.reasonGrid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:35px;
+}
+
+.reasonCard{
+background:#fff;
+padding:45px 35px;
+border-radius:22px;
+box-shadow:0 15px 35px rgba(0,0,0,.06);
+transition:.35s ease;
+border-bottom:4px solid transparent;
+}
+
+.reasonCard:hover{
+transform:translateY(-10px);
+border-color:#C9A227;
+}
+
+.reasonIcon{
+width:75px;
+height:75px;
+border-radius:50%;
+background:#1F4D3A;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:28px;
+}
+
+.reasonIcon i{
+font-size:1.8rem;
+color:#fff;
+}
+
+.reasonCard h3{
+font-family:Georgia,"Times New Roman",serif;
+font-size:1.8rem;
+font-weight:400;
+color:#7A1F2B;
+margin-bottom:18px;
+}
+
+.reasonCard p{
+color:#666;
+line-height:1.8;
+font-size:1rem;
+}
+
+/*==================================
+VOLUNTEER CTA
+==================================*/
+
+.volunteerAlternative{
+background:#fff;
+}
+
+.volunteerGrid{
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:70px;
+align-items:center;
+}
+
+.volunteerContent span{
+display:inline-block;
+color:#C9A227;
+font-size:.85rem;
+font-weight:700;
+letter-spacing:3px;
+text-transform:uppercase;
+margin-bottom:20px;
+}
+
+.volunteerContent h2{
+font-family:Georgia,"Times New Roman",serif;
+font-size:3.4rem;
+font-weight:400;
+line-height:1.15;
+color:#7A1F2B;
+margin-bottom:28px;
+}
+
+.volunteerContent p{
+font-size:1.05rem;
+line-height:1.9;
+color:#666;
+margin-bottom:40px;
+max-width:560px;
+}
+
+.careerBtn{
+display:inline-flex;
+align-items:center;
+gap:12px;
+padding:16px 34px;
+background:#7A1F2B;
+color:#fff;
+text-decoration:none;
+border-radius:4px;
+font-weight:600;
+transition:.35s ease;
+}
+
+.careerBtn:hover{
+background:#5f1822;
+transform:translateY(-4px);
+}
+
+.careerBtn i{
+font-size:.9rem;
+}
+
+.volunteerImage{
+overflow:hidden;
+border-radius:24px;
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+.volunteerImage img{
+width:100%;
+height:520px;
+object-fit:cover;
+display:block;
+transition:.6s ease;
+}
+
+.volunteerImage:hover img{
+transform:scale(1.05);
+}
+
+/*==================================
+FUTURE OPPORTUNITIES
+==================================*/
+
+.futureCareers{
+background:#F8F3E7;
+padding-bottom:130px;
+}
+
+.futureCard{
+max-width:900px;
+margin:0 auto;
+text-align:center;
+padding:70px 60px;
+background:#fff;
+border-radius:24px;
+box-shadow:0 18px 40px rgba(0,0,0,.08);
+border-top:5px solid #1F4D3A;
+}
+
+.futureCard span{
+display:inline-block;
+color:#C9A227;
+font-size:.85rem;
+font-weight:700;
+letter-spacing:3px;
+text-transform:uppercase;
+margin-bottom:18px;
+}
+
+.futureCard h2{
+font-family:Georgia,"Times New Roman",serif;
+font-size:3rem;
+font-weight:400;
+color:#7A1F2B;
+margin-bottom:25px;
+}
+
+.futureCard p{
+max-width:680px;
+margin:0 auto;
+font-size:1.05rem;
+line-height:1.9;
+color:#666;
+}
+
+/*==================================
+TABLET
+==================================*/
+
+@media(max-width:992px){
+
+.careersPage section{
+padding:90px 0;
+}
+
+.careersIntro{
+padding-top:150px;
+}
+
+.careersIntro h1{
+font-size:3.5rem;
+}
+
+.sectionHeading h2,
+.volunteerContent h2,
+.futureCard h2,
+.noticeCard h2{
+font-size:2.5rem;
+}
+
+.reasonGrid{
+grid-template-columns:1fr;
+}
+
+.volunteerGrid{
+grid-template-columns:1fr;
+gap:50px;
+}
+
+.volunteerImage{
+order:-1;
+}
+
+.volunteerImage img{
+height:420px;
+}
+
+.noticeCard,
+.futureCard{
+padding:55px 40px;
+}
+
+}
+
+/*==================================
+MOBILE
+==================================*/
+
+@media(max-width:768px){
+
+.careersIntro{
+padding-top:130px;
+}
+
+.careersIntro h1{
+font-size:2.8rem;
+}
+
+.sectionHeading h2,
+.volunteerContent h2,
+.futureCard h2,
+.noticeCard h2{
+font-size:2.1rem;
+}
+
+.noticeCard,
+.futureCard{
+padding:45px 28px;
+}
+
+.reasonCard{
+padding:35px 28px;
+}
+
+.volunteerContent p,
+.futureCard p,
+.noticeCard p,
+.sectionHeading p,
+.reasonCard p,
+.careersIntro p{
+font-size:1rem;
+line-height:1.8;
+}
+
+.volunteerImage img{
+height:340px;
+}
+
+.careerBtn{
+width:100%;
+justify-content:center;
+}
+
+}
+
+/*==================================
+SMALL PHONES
+==================================*/
+
+@media(max-width:480px){
+
+.careersPage section{
+padding:70px 0;
+}
+
+.careersIntro{
+padding-top:120px;
+}
+
+.careersIntro h1{
+font-size:2.3rem;
+}
+
+.sectionHeading h2,
+.volunteerContent h2,
+.futureCard h2,
+.noticeCard h2{
+font-size:1.8rem;
+}
+
+.noticeIcon{
+width:75px;
+height:75px;
+}
+
+.noticeIcon i{
+font-size:1.6rem;
+}
+
+.reasonIcon{
+width:65px;
+height:65px;
+}
+
+.reasonIcon i{
+font-size:1.5rem;
+}
+
+.volunteerImage img{
+height:280px;
+}
+
+.futureCard,
+.noticeCard{
+padding:35px 22px;
+}
+
+}
