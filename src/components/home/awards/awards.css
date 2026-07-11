@@ -1,86 +1,91 @@
-.impact1-section {
-  background: #C9A227;
-  padding: 90px 8%;
+.impact1-section{
+  background:#F8F3E7;
+  padding:90px 8%;
 }
 
-.impact1-header {
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
+.impact1-header{
+  text-align:center;
+  max-width:800px;
+  margin:auto;
 }
 
-.impact1-header span {
-  color: green;
-  letter-spacing: 2px;
-  font-weight: 600;
-  font-size: 14px;
+.impact1-header span{
+  color:#1F4D3A;
+  letter-spacing:2px;
+  font-weight:600;
+  font-size:14px;
 }
 
-.impact1-header h2 {
-  color: #F8F3E7;
-  font-size: 42px;
-  margin: 15px 0;
+.impact1-header h2{
+  color:#7A1F2B;
+  font-size:42px;
+  margin:15px 0;
 }
 
-.impact1-header p {
-  color: rgba(248, 243, 231, 0.85);
-  line-height: 1.8;
-  margin-bottom: 50px;
+.impact1-header p{
+  color:#555;
+  line-height:1.8;
+  margin-bottom:50px;
 }
 
-.impactSwiper {
-  padding-bottom: 60px;
+.impactSwiper{
+  padding-bottom:60px;
 }
 
-.impact1-card {
-  background: #F8F3E7;
-  border-radius: 20px;
-  padding: 35px;
-  min-height: 320px;
-  position: relative;
-  overflow: hidden;
-  transition: 0.35s ease;
+.impact1-card{
+  background:#FFFFFF;
+  border-radius:20px;
+  padding:35px;
+  min-height:320px;
+  position:relative;
+  overflow:hidden;
+  transition:.35s ease;
+  border:1px solid rgba(122,31,43,.08);
+  box-shadow:0 12px 35px rgba(0,0,0,.06);
 }
 
-.impact1-card:hover {
-  transform: translateY(-8px);
+.impact1-card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 20px 45px rgba(0,0,0,.12);
 }
 
-.card-accent {
-  width: 70px;
-  height: 6px;
-  background: #C9A227;
-  border-radius: 50px;
-  margin-bottom: 25px;
+.card-accent{
+  width:70px;
+  height:6px;
+  background:#C9A227;
+  border-radius:50px;
+  margin-bottom:25px;
 }
 
-.impact1-card h3 {
-  color: #7A1F2B;
-  font-size: 24px;
-  margin-bottom: 20px;
+.impact1-card h3{
+  color:#7A1F2B;
+  font-size:24px;
+  margin-bottom:20px;
 }
 
-.impact1-card p {
-  color: #2B2B2B;
-  line-height: 1.8;
+.impact1-card p{
+  color:#555;
+  line-height:1.8;
 }
 
-.swiper-pagination-bullet {
-  background: #F8F3E7;
-  opacity: 0.5;
+.swiper-pagination-bullet{
+  background:#C9A227;
+  opacity:.35;
 }
 
-.swiper-pagination-bullet-active {
-  background: #C9A227;
-  opacity: 1;
+.swiper-pagination-bullet-active{
+  background:#7A1F2B;
+  opacity:1;
 }
 
-@media (max-width: 768px) {
-  .impact1-header h2 {
-    font-size: 34px;
+@media(max-width:768px){
+
+  .impact1-header h2{
+    font-size:34px;
   }
 
-  .impact1-card {
-    min-height: auto;
+  .impact1-card{
+    min-height:auto;
   }
+
 }
