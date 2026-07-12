@@ -10,29 +10,39 @@ import "./awards.css";
 const CardsSection = () => {
   const issues = [
     {
-      title: "FGM & GBV",
+      title: "Mitigating Female Genital Mutilation",
       description:
-        "While Kenya's national FGM prevalence among women aged 15–49 stands at 15% (KDHS 2022), the rate in the Kuria community remains as high as 84%. In Kuria East, girls aged 9–17 continue to face heightened risk during traditional cutting seasons."
+        "FGM remains widespread in Kuria, affecting an estimated 84% of girls and women"
     },
     {
-      title: "Championing Education Access",
+      title: "Preventing Child, Early and Forced Marriage",
       description:
-        "Many girls in marginalized communities face barriers to education because of poverty, early marriage, and harmful cultural practices. Education remains one of the strongest pathways to empowerment."
+        "At 17.1 years, Migori County records one of Kenya's lowest median ages at first marriage, pushing many girls into adulthood before they can pursue their potential."
     },
     {
-      title: "Livelihoods in Border Conflict",
+      title: "Reducing the Risk of Early and Teenage Pregnancy",
       description:
-        "The Migori–Narok boundary dispute continues to disrupt economic activity. Women who depend on small businesses and cross-border trade face reduced income opportunities and increased vulnerability."
+        "An estimated 22% of girls aged 15–19 in Migori County have begun childbearing, putting their education and future at risk."
     },
     {
-      title: "Climate Change & Agriculture",
+      title: "Supporting Girls to Enrol and Stay in School",
       description:
-        "Recurring droughts and unpredictable weather patterns threaten food security. Women-headed households are often the hardest hit during climate shocks."
+        "Only 23%–35% of girls in Kuria transition to secondary school, limiting their future opportunities."
     },
     {
-      title: "Partnerships for Community Change",
+      title: "Combating Gender-Based Violence",
       description:
-        "Lasting change requires collaboration. We work with local leaders, schools, healthcare providers, and community champions to build sustainable solutions."
+        "Poverty and economic dependence continue to heighten the risk of violence against women and girls."
+    },
+     {
+      title: "Helping Widowed and Conflict-Affected Women Sustain and Rebuild Livelihoods",
+      description:
+        "Recurring conflict along the Gwitembe-Ang'ata Barikoi border fuels displacement, widens economic exclusion, and deepens poverty."
+    },
+     {
+      title: "Supporting Women Facing Climate and Conflict-Driven Livelihood Losses",
+      description:
+        "Over 30% increase in climate-driven agricultural losses is deepening food insecurity among women-led households, who face greater pressure to secure their families' needs."
     }
   ];
 
