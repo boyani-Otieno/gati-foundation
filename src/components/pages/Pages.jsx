@@ -39,8 +39,9 @@ const Pages = () => {
           <Route exact path='/donate' component={Donate} />
           <Route exact path='/work' component={OurWork} />
           <Route exact path='/impact' component={OurImpact} />
-           <Route exact path='/volunteer' component={Volunteer} />
-           <Route exact path='/careers' component={Careers} />
+          <Route exact path='/volunteer' component={Volunteer} />
+          <Route exact path='/careers' component={Careers} />
+          <Route exact path='/partners' component={Partners} />
         </Switch>
         <Footer />
       </Router>

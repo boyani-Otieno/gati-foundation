@@ -120,7 +120,7 @@ const ImpactSection = () => {
           <p>
             Through community-driven action, we are helping girls
             and young women living with the realities of ongoing conflict,
-             harmful practices, and inequality restore dignity, expand opportunites, and 
+             harmful practices, and inequality restore dignity, create opportunites, and 
              shape their own future.
           </p>
         </div>

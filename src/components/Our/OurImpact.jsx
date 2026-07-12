@@ -129,12 +129,12 @@ const Impact = () => {
           </h1>
 
           <p>
-            Every statistic represents a girl encouraged to remain
-            in school, a family engaged through community dialogue,
-            and a future made possible through collective action.
-            While numbers tell part of the story, the real impact
-            is found in lives transformed and communities choosing
-            hope over harmful traditions.
+            Every statistic represents a girl supported to remain in school, 
+            a young woman rebuilding her future, a family engaged through 
+            community dialogue, and a future made possible through collective 
+            action. While numbers tell part of the story, the real impact is 
+            found in lives transformed and communities choosing hope over the 
+            realities of conflict, harmful cultural practices, and inequality.
           </p>
 
         </div>

@@ -188,10 +188,7 @@ const Inspiration = () => {
           </h2>
 
           <p>
-            Join us in carrying forward Margaret Robi's vision by
-            empowering girls, strengthening women, and building
-            resilient communities where every child has the
-            opportunity to learn, lead, and thrive.
+            Join us in carrying forward Margaret Robi's vision by restoring dignity, creating opportunities, and helping girls and young women shape their own futures where conflict, harmful cultural practices, and inequality shape everyday life.
           </p>
 
           <a

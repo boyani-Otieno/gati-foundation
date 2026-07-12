@@ -1,0 +1,514 @@
+:root{
+--cream:#F8F3E7;
+--burgundy:#7A1F2B;
+--green:#1F4D3A;
+--gold:#C9A227;
+--text:#555;
+}
+
+.partnersPage{
+background:var(--cream);
+overflow:hidden;
+}
+
+.partnersPage section{
+padding:110px 0;
+}
+
+.container{
+width:92%;
+max-width:1400px;
+margin:auto;
+}
+
+/*==================================
+INTRO
+==================================*/
+
+.partnersIntro{
+padding-top:190px;
+padding-bottom:110px;
+text-align:center;
+background:var(--cream);
+}
+
+.partnersIntro span{
+display:inline-block;
+color:var(--gold);
+font-size:.85rem;
+font-weight:700;
+letter-spacing:4px;
+text-transform:uppercase;
+margin-bottom:20px;
+}
+
+.partnersIntro h1{
+font-family:Georgia,"Times New Roman",serif;
+font-size:4.4rem;
+font-weight:400;
+line-height:1.1;
+color:var(--burgundy);
+max-width:900px;
+margin:0 auto 30px;
+}
+
+.partnersIntro p{
+max-width:760px;
+margin:auto;
+font-size:1.08rem;
+line-height:1.9;
+color:var(--text);
+}
+
+/*==================================
+SECTION HEADING
+==================================*/
+
+.sectionHeading{
+text-align:center;
+max-width:760px;
+margin:0 auto 70px;
+}
+
+.sectionHeading span{
+display:inline-block;
+color:var(--gold);
+font-size:.82rem;
+font-weight:700;
+letter-spacing:3px;
+text-transform:uppercase;
+margin-bottom:18px;
+}
+
+.sectionHeading h2{
+font-family:Georgia,"Times New Roman",serif;
+font-size:3.2rem;
+font-weight:400;
+color:var(--burgundy);
+margin-bottom:22px;
+}
+
+.sectionHeading p{
+font-size:1.05rem;
+line-height:1.9;
+color:var(--text);
+}
+
+/*==================================
+WHY PARTNER
+==================================*/
+
+.whyPartner{
+background:#fff;
+}
+
+.whyGrid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:35px;
+}
+
+.whyCard{
+background:var(--cream);
+padding:45px;
+border-radius:22px;
+border-left:5px solid var(--gold);
+transition:.35s ease;
+box-shadow:0 15px 35px rgba(0,0,0,.05);
+}
+
+.whyCard:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 45px rgba(0,0,0,.1);
+}
+
+.whyCard i{
+font-size:2.6rem;
+color:var(--green);
+margin-bottom:25px;
+}
+
+.whyCard h3{
+font-size:1.5rem;
+color:var(--burgundy);
+margin-bottom:18px;
+font-weight:600;
+}
+
+.whyCard p{
+color:var(--text);
+line-height:1.8;
+}
+
+/*==================================
+PARTNER TYPES
+==================================*/
+
+.partnerTypes{
+background:var(--cream);
+}
+
+.partnerGrid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.partnerCard{
+background:#fff;
+padding:45px 35px;
+border-radius:22px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,.06);
+transition:.35s ease;
+border-top:4px solid transparent;
+}
+
+.partnerCard:hover{
+transform:translateY(-8px);
+border-color:var(--gold);
+}
+
+.partnerIcon{
+width:85px;
+height:85px;
+margin:0 auto 25px;
+border-radius:50%;
+background:rgba(201,162,39,.12);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.partnerIcon i{
+font-size:2rem;
+color:var(--green);
+}
+
+.partnerCard h3{
+font-size:1.45rem;
+color:var(--burgundy);
+margin-bottom:18px;
+font-weight:600;
+}
+
+.partnerCard p{
+color:var(--text);
+line-height:1.8;
+font-size:.98rem;
+}
+
+/*==================================
+WAYS TO PARTNER
+==================================*/
+
+.partnershipWays{
+background:#fff;
+}
+
+.waysGrid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.wayCard{
+position:relative;
+padding:45px 35px;
+background:var(--cream);
+border-radius:22px;
+text-align:center;
+transition:.35s ease;
+box-shadow:0 12px 30px rgba(0,0,0,.05);
+}
+
+.wayCard:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 45px rgba(0,0,0,.1);
+}
+
+.wayNumber{
+width:70px;
+height:70px;
+margin:0 auto 25px;
+border-radius:50%;
+background:var(--gold);
+color:#fff;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:1.3rem;
+font-weight:700;
+}
+
+.wayCard h3{
+font-size:1.45rem;
+color:var(--burgundy);
+margin-bottom:18px;
+font-weight:600;
+}
+
+.wayCard p{
+color:var(--text);
+line-height:1.8;
+}
+
+/*==================================
+PARTNERSHIP PRINCIPLES
+==================================*/
+
+.principles{
+background:var(--cream);
+}
+
+.principlesGrid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.principleCard{
+background:#fff;
+padding:40px 30px;
+border-radius:22px;
+text-align:center;
+transition:.35s ease;
+box-shadow:0 15px 35px rgba(0,0,0,.06);
+border-bottom:4px solid transparent;
+}
+
+.principleCard:hover{
+transform:translateY(-8px);
+border-bottom-color:var(--gold);
+}
+
+.principleIcon{
+width:80px;
+height:80px;
+margin:0 auto 22px;
+border-radius:50%;
+background:rgba(31,77,58,.08);
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.principleIcon i{
+font-size:2rem;
+color:var(--green);
+}
+
+.principleCard h3{
+font-size:1.35rem;
+color:var(--burgundy);
+margin-bottom:15px;
+font-weight:600;
+}
+
+.principleCard p{
+color:var(--text);
+line-height:1.8;
+}
+
+/*==================================
+CALL TO ACTION
+==================================*/
+
+.partnerCTA{
+background:linear-gradient(rgba(31,77,58,.95),rgba(31,77,58,.95));
+text-align:center;
+}
+
+.partnerCTA span{
+display:inline-block;
+color:var(--gold);
+font-size:.85rem;
+font-weight:700;
+letter-spacing:3px;
+text-transform:uppercase;
+margin-bottom:18px;
+}
+
+.partnerCTA h2{
+font-family:Georgia,"Times New Roman",serif;
+font-size:3.3rem;
+font-weight:400;
+color:#fff;
+margin-bottom:25px;
+}
+
+.partnerCTA p{
+max-width:720px;
+margin:0 auto 45px;
+color:rgba(255,255,255,.9);
+line-height:1.9;
+font-size:1.05rem;
+}
+
+.ctaButtons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.primaryBtn,
+.secondaryBtn{
+padding:16px 34px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+transition:.35s ease;
+}
+
+.primaryBtn{
+background:var(--gold);
+color:#fff;
+}
+
+.primaryBtn:hover{
+background:var(--burgundy);
+transform:translateY(-4px);
+}
+
+.secondaryBtn{
+border:2px solid rgba(255,255,255,.6);
+color:#fff;
+}
+
+.secondaryBtn:hover{
+background:#fff;
+color:var(--green);
+transform:translateY(-4px);
+}
+
+/*==================================
+TABLET
+==================================*/
+
+@media(max-width:992px){
+
+.partnersIntro h1{
+font-size:3.3rem;
+}
+
+.sectionHeading h2{
+font-size:2.7rem;
+}
+
+.whyGrid,
+.partnerGrid,
+.waysGrid,
+.principlesGrid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.partnerCTA h2{
+font-size:2.8rem;
+}
+
+}
+
+/*==================================
+MOBILE
+==================================*/
+
+@media(max-width:768px){
+
+.partnersPage section{
+padding:80px 0;
+}
+
+.partnersIntro{
+padding-top:150px;
+}
+
+.partnersIntro h1{
+font-size:2.5rem;
+}
+
+.sectionHeading{
+margin-bottom:50px;
+}
+
+.sectionHeading h2{
+font-size:2.2rem;
+}
+
+.whyGrid,
+.partnerGrid,
+.waysGrid,
+.principlesGrid{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+.whyCard,
+.partnerCard,
+.wayCard,
+.principleCard{
+padding:35px 28px;
+}
+
+.partnerCTA h2{
+font-size:2.2rem;
+}
+
+.partnerCTA p{
+font-size:1rem;
+}
+
+.ctaButtons{
+flex-direction:column;
+align-items:center;
+}
+
+.primaryBtn,
+.secondaryBtn{
+width:100%;
+max-width:320px;
+text-align:center;
+}
+
+}
+
+/*==================================
+SMALL PHONES
+==================================*/
+
+@media(max-width:480px){
+
+.partnersIntro{
+padding-top:135px;
+}
+
+.partnersIntro h1{
+font-size:2rem;
+}
+
+.sectionHeading h2{
+font-size:1.8rem;
+}
+
+.partnerCTA h2{
+font-size:1.9rem;
+}
+
+.partnerIcon,
+.principleIcon{
+width:70px;
+height:70px;
+}
+
+.partnerIcon i,
+.principleIcon i{
+font-size:1.7rem;
+}
+
+.wayNumber{
+width:60px;
+height:60px;
+font-size:1.1rem;
+}
+
+}

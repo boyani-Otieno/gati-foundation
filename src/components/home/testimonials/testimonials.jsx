@@ -16,8 +16,8 @@ const testimonials = [
   },
   {
     quote:
-      "GATI's programs have transformed the way our school supports girls. The mentorship and awareness sessions continue to make a lasting impact.",
-    name: "Grace N.",
+      "Margaret Robi Foundation's programs have transformed the way our school supports girls. The mentorship and awareness sessions continue to make a lasting impact.",
+    name: "Millicent K.",
     role: "Teacher",
   },
 ];
