@@ -214,218 +214,260 @@ line-height:1.8;
 color:var(--green);
 }
 
-:root{
---cream:#F8F3E7;
---burgundy:#7A1F2B;
---green:#1F4D3A;
---gold:#C9A227;
---text:#555;
-}
-
-.workPage{
-background:var(--cream);
-overflow:hidden;
-}
-
-.workPage section{
-padding:110px 0;
-}
-
-.container{
-width:92%;
-max-width:1400px;
-margin:auto;
+.storyText p{
+font-size:1.05rem;
+line-height:1.9;
+color:var(--text);
+max-width:560px;
 }
 
 /*==============================
-HERO
+CALL TO ACTION
 ==============================*/
 
-.workHero{
-position:relative;
-height:100vh;
-min-height:760px;
-display:flex;
-align-items:center;
-justify-content:center;
-overflow:hidden;
+.workCTA{
+background:linear-gradient(rgba(31,77,58,.96),rgba(31,77,58,.96));
+text-align:center;
+padding:120px 0;
 }
 
-.heroVideo{
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-object-fit:cover;
-z-index:1;
-}
-
-.heroOverlay{
-position:absolute;
-inset:0;
-background:linear-gradient(
-90deg,
-rgba(17,17,17,.82) 0%,
-rgba(17,17,17,.70) 35%,
-rgba(17,17,17,.45) 65%,
-rgba(17,17,17,.25) 100%
-);
-z-index:2;
-}
-
-.heroContent{
-position:relative;
-z-index:3;
-max-width:680px;
-margin-left:0;
-}
-
-.heroContent span{
+.workCTA span{
 display:inline-block;
 color:var(--gold);
 font-size:.85rem;
 font-weight:700;
 letter-spacing:4px;
 text-transform:uppercase;
-margin-bottom:22px;
+margin-bottom:20px;
+}
+
+.workCTA h2{
+font-family:Georgia,"Times New Roman",serif;
+font-size:3.4rem;
+font-weight:400;
+line-height:1.2;
+color:#fff;
+margin-bottom:30px;
+}
+
+.workCTA p{
+max-width:760px;
+margin:0 auto 50px;
+font-size:1.08rem;
+line-height:1.9;
+color:rgba(255,255,255,.88);
+}
+
+.workCTA .heroButtons{
+justify-content:center;
+}
+
+.workCTA .secondaryBtn{
+border:2px solid rgba(255,255,255,.65);
+}
+
+.workCTA .secondaryBtn:hover{
+background:#fff;
+color:var(--green);
+}
+
+/*==============================
+ANIMATIONS
+==============================*/
+
+.storyRow{
+opacity:1;
+transform:translateY(0);
+transition:.5s ease;
+}
+
+.storyImage,
+.storyText{
+transition:.4s ease;
+}
+
+.storyText h2,
+.storyText blockquote{
+transition:.35s ease;
+}
+
+.storyRow:hover .storyText h2{
+color:var(--green);
+}
+
+.storyRow:hover .storyImage{
+transform:translateY(-6px);
+}
+
+/*==============================
+TABLET
+==============================*/
+
+@media(max-width:992px){
+
+.workHero{
+min-height:700px;
+}
+
+.heroContent{
+max-width:100%;
 }
 
 .heroContent h1{
-font-family:Georgia,"Times New Roman",serif;
-font-size:5.2rem;
-font-weight:400;
-line-height:1;
-color:#fff;
-margin-bottom:35px;
+font-size:4rem;
+}
+
+.storyRow{
+grid-template-columns:1fr;
+gap:50px;
+margin-bottom:90px;
+}
+
+.storyRow.reverse .storyImage,
+.storyRow.reverse .storyText{
+order:initial;
+}
+
+.storyImage img{
+height:500px;
+}
+
+.storyText{
+text-align:center;
+}
+
+.storyText p{
+max-width:100%;
+}
+
+.storyText blockquote{
+max-width:700px;
+margin:0 auto 25px;
+text-align:left;
+}
+
+.workCTA h2{
+font-size:2.8rem;
+}
+
+}
+
+/*==============================
+MOBILE
+==============================*/
+
+@media(max-width:768px){
+
+.workPage section{
+padding:80px 0;
+}
+
+.workHero{
+min-height:100vh;
+padding-top:90px;
+}
+
+.heroContent h1{
+font-size:2.9rem;
 }
 
 .heroContent p{
-font-size:1.15rem;
-line-height:1.9;
-color:rgba(255,255,255,.92);
-margin-bottom:45px;
-max-width:620px;
+font-size:1rem;
 }
 
 .heroButtons{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
+flex-direction:column;
+width:100%;
 }
 
 .primaryBtn,
 .secondaryBtn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-padding:17px 36px;
-border-radius:40px;
-font-weight:600;
-text-decoration:none;
-transition:.35s ease;
-}
-
-.primaryBtn{
-background:var(--burgundy);
-color:#fff;
-}
-
-.primaryBtn:hover{
-background:#5d1721;
-transform:translateY(-4px);
-}
-
-.secondaryBtn{
-border:2px solid rgba(255,255,255,.7);
-color:#fff;
-}
-
-.secondaryBtn:hover{
-background:#fff;
-color:var(--green);
-transform:translateY(-4px);
-}
-
-/*==============================
-STORIES
-==============================*/
-
-.storySection{
-background:var(--cream);
+width:100%;
 }
 
 .storyRow{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:80px;
-align-items:center;
-margin-bottom:130px;
+gap:35px;
+margin-bottom:70px;
 }
-
-.storyRow:last-child{
-margin-bottom:0;
-}
-
-.storyRow.reverse .storyImage{
-order:2;
-}
-
-.storyRow.reverse .storyText{
-order:1;
-}
-
-/*==============================
-IMAGES
-==============================*/
 
 .storyImage{
-overflow:hidden;
-border-radius:26px;
-box-shadow:0 25px 55px rgba(0,0,0,.12);
+border-radius:18px;
 }
 
 .storyImage img{
-width:100%;
-height:600px;
-object-fit:cover;
-display:block;
-transition:.6s ease;
-}
-
-.storyImage:hover img{
-transform:scale(1.06);
-}
-
-/*==============================
-TEXT
-==============================*/
-
-.storyText span{
-display:inline-block;
-font-size:.85rem;
-font-weight:700;
-letter-spacing:3px;
-text-transform:uppercase;
-color:var(--gold);
-margin-bottom:18px;
+height:360px;
 }
 
 .storyText h2{
-font-family:Georgia,"Times New Roman",serif;
-font-size:3rem;
-font-weight:400;
-line-height:1.15;
-color:var(--burgundy);
-margin-bottom:28px;
+font-size:2.2rem;
 }
 
 .storyText blockquote{
-margin:0 0 24px;
-padding-left:24px;
-border-left:4px solid var(--gold);
-font-size:1.2rem;
-font-style:italic;
+font-size:1.05rem;
+padding-left:18px;
+}
+
+.storyText p{
+font-size:1rem;
+}
+
+.workCTA{
+padding:90px 0;
+}
+
+.workCTA h2{
+font-size:2.2rem;
+}
+
+.workCTA p{
+font-size:1rem;
+margin-bottom:35px;
+}
+
+}
+
+/*==============================
+SMALL PHONES
+==============================*/
+
+@media(max-width:480px){
+
+.heroContent h1{
+font-size:2.3rem;
+}
+
+.heroContent span,
+.workCTA span,
+.storyText span{
+font-size:.75rem;
+letter-spacing:3px;
+}
+
+.storyImage img{
+height:300px;
+}
+
+.storyText h2{
+font-size:1.8rem;
+}
+
+.storyText blockquote{
+font-size:.98rem;
+}
+
+.storyText p{
+font-size:.95rem;
 line-height:1.8;
-color:var(--green);
+}
+
+.workCTA h2{
+font-size:1.9rem;
+}
+
+.primaryBtn,
+.secondaryBtn{
+padding:15px 28px;
+font-size:.95rem;
+}
+
 }
