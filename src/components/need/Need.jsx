@@ -65,8 +65,8 @@ export default function Need() {
       <section className={styles.hero}>
         <div className="container">
           <span className={styles.tag}>THE NEED</span>
-          <h1>Breaking barriers.<br />Expanding opportunities.</h1>
-          <p>Building a stronger Kuria community through the power of girls and women.</p>
+          <h1>Breaking barriers.<br />Creating opportunities.</h1>
+          <p>Building a stronger Kuria community through the power of girls and young women.</p>
         </div>
       </section>
 
@@ -108,7 +108,7 @@ export default function Need() {
       <section className={styles.cta}>
         <div className="container">
           <h2>Together We Can Change This Story</h2>
-          <p>Every girl deserves the opportunity to learn, lead and thrive. Together we can build safer communities, expand opportunities and create lasting change for generations to come.</p>
+          <p>Every girl and young woman deserves the opportunity to learn, lead and thrive. Together we can build safer communities, expand opportunities and create lasting change for generations to come.</p>
           <a href="/donate" className={styles.ctaButton}>Support Our Work</a>
         </div>
       </section>

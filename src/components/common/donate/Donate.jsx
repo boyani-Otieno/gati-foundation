@@ -130,7 +130,7 @@ Where Your Support Creates Lasting Change
 
 <p className="lead-p">
 
-Your contribution creates lasting opportunities for girls and young women in Kuria, where recurring conflict, harmful cultural practices and systemic gender inequality continue to limit opportunity. Every donation helps create safer communities, expand educational opportunities and empower women and girls to build stronger futures.
+Your contribution creates lasting opportunities for girls and young women in Kuria, where recurring conflict, harmful cultural practices and systemic gender inequality continue to limit opportunity. Every donation helps create safer communities, expand educational opportunities and empower young women and girls to build stronger future.
 
 </p>
 

@@ -5,23 +5,21 @@ const About = () => {
   const beliefs = [
     {
       title: "Our Vision",
-      text: "A future where girls and women live free from harmful cultural practices, enjoy equal opportunities, and are empowered to realise their full potential as leaders within their families and communities.",
+      text: "A future where girls and young women live free from harmful cultural practices, enjoy equal opportunities, and are empowered to realise their full potential as leaders within their families and communities.",
     },
     {
       title: "Our Mission",
-      text: "To work alongside communities to eliminate harmful cultural practices, advance gender equality, expand access to education, and empower girls and women through leadership, mentorship, and advocacy.",
+      text: "To work alongside communities to eliminate harmful cultural practices, advance gender equality, expand access to education, and empower girls and young women through leadership, mentorship, and advocacy.",
     },
-    // {
-    //   title: "Our Values",
-    //   values: [
-    //     "Dignity",
-    //     "Equality",
-    //     "Integrity",
-    //     "Community",
-    //     "Inclusion",
-    //     "Sustainable Impact",
-    //   ],
-    // },
+    {
+      title: "Our Values",
+      values: [
+        "Dignity",
+        "Equality",
+        "Integrity",
+        "Community",
+      ],
+    },
   ];
 
   const teamMembers = [
@@ -72,7 +70,7 @@ const About = () => {
               <p>
                 The Margaret Robi Foundation is a community-led organisation
                 dedicated to advancing gender equality and creating opportunities
-                for girls and women throughout Kuria. Inspired by the enduring
+                for girls and young women throughout Kuria. Inspired by the enduring
                 legacy of Margaret Robi, our work seeks to transform harmful
                 cultural practices, expand educational opportunities, strengthen
                 leadership, and empower communities to create lasting change.
@@ -82,7 +80,7 @@ const About = () => {
                 Founded in 2021 by Jerida Gati, the Foundation believes that
                 lasting transformation begins when girls are protected, educated,
                 and empowered to become confident leaders capable of shaping
-                their own futures.
+                their own future.
               </p>
             </div>
 

@@ -111,7 +111,7 @@ const Inspiration = () => {
             </h2>
 
             <p>
-              Inspired by her mother's unwavering belief in education,
+              Inspired by her mother's belief in education,
               equality and hope, Jerida Gati founded the Margaret Robi
               Foundation in 2021 to carry forward that vision.
             </p>

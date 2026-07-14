@@ -78,12 +78,12 @@ export const list = [
   },
   {
     id: 3,
-    cover: "../images/list/kits.JPG",
+    cover: "../images/list/kits.jpeg",
     name: "Dignity Support",
   },
   {
     id: 4,
-    cover: "../images/list/girlsg.JPG",
+    cover: "../images/list/girlsg.jpeg",
     name: "",
   },
   {
@@ -93,7 +93,7 @@ export const list = [
   },
   {
     id: 6,
-    cover: "../images/list/all.jpeg",
+    cover: "../images/list/four.JPG",
     name: "",
   },
 ]

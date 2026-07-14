@@ -9,6 +9,7 @@ import Hero from "./hero/Hero";
 import Recent from "./recent/Recent";
 import ImpactSection from "./Impact/ImpactSection";
 import TestimonialsSection from "./testimonials/testimonials";
+import Events from "./events/UpEvents"
 
 const Home = () => {
   useEffect(() => {
@@ -43,6 +44,9 @@ const Home = () => {
         <TestimonialsSection />
       </div>
       <div data-aos="fade-right">
+        <Events />
+      </div>
+      <div data-aos="fade-left">
         {/* <Price /> */}
       </div>
     </>

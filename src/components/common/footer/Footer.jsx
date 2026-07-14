@@ -17,7 +17,7 @@ const Footer = () => {
           </h2>
 
           <p>
-            Empowering girls and young women by restoring dignity, expanding opportunity, and helping 
+            Empowering girls and young women by restoring dignity, creating opportunity, and helping 
             them thrive where conflict, harmful cultural practices, and inequality shape everyday life.
           </p>
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import "./OurWork.css";
 
 const Work = () => {
@@ -29,30 +29,30 @@ const Work = () => {
 
         <div className="container heroContent">
 
-          <span>OUR WORK</span>
+          {/* <span>OUR WORK</span> */}
 
-          <h1>
+          {/* <h1>
             Every Conversation
             <br />
             Begins With Hope
-          </h1>
+          </h1> */}
 
-          <p>
+          {/* <p>
             Every girl's voice matters. Every story deserves to be heard.
             Through mentorship, dignity support and community engagement,
             we create opportunities for girls and young mothers, to discover their strength,
             build confidence and shape their future.
-          </p>
+          </p> */}
 
           <div className="heroButtons">
 
-            <a href="about" className="primaryBtn">
+            {/* <a href="about" className="primaryBtn">
               Explore Our Journey
             </a>
 
             <Link to="/volunteer" className="secondaryBtn">
               Get Involved
-            </Link>
+            </Link> */}
 
           </div>
 
@@ -179,7 +179,7 @@ const Work = () => {
             <div className="storyImage">
 
               <img
-                src="/images/all.jpeg"
+                src="/images/all4.jpeg"
                 alt="Foundation team"
               />
 
