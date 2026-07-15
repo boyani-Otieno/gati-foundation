@@ -64,7 +64,7 @@ const Footer = () => {
             <li><a href="/volunteer">Volunteer</a></li>
             <li><a href="/partners">Partner</a></li>
             <li><a href="/donate">Donate</a></li>
-            <li><a href="/#journey/#journey">Stories</a></li>
+            {/* <li><a href="/journey">Stories</a></li> */}
           </ul>
 
         </div>
