@@ -83,18 +83,18 @@ export const list = [
   },
   {
     id: 4,
-    cover: "../images/list/girlsg.JPG",
+    cover: "../images/list/all.jpeg",
     name: "",
   },
   {
     id: 5,
-    cover: "../images/list/full-team.jpeg",
-    name: "",
+    cover: "../images/list/all.jpeg",
+    name: "Small acts of dignity support. Lifelong impact.",
   },
   {
     id: 6,
-    cover: "../images/list/all.jpeg",
-    name: "",
+    cover: "../images/list/full-team.jpeg",
+    name: "We don't just believe in change. We become part of it.",
   },
 ]
 

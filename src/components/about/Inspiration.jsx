@@ -38,7 +38,7 @@ const Inspiration = () => {
 
           <p>
             Margaret Robi's life is a testament to the transformative power of
-            courage, compassion, and education. Her unwavering belief in the
+            courage, compassion, and education. Her belief in the
             potential of every girl continues to inspire the Foundation's
             mission today.
           </p>

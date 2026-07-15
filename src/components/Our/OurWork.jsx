@@ -25,10 +25,13 @@ const Work = () => {
           </h1>
 
           <p>
-            Every girl's voice matters. Every story deserves to be heard.
-            Through mentorship, dignity support and community engagement,
-            we create opportunities for girls and young mothers, to discover their strength,
-            build confidence and shape their future.
+            Where Every Voice Shapes the Future
+            Every girl and young woman's voice matters. Every 
+            story deserves to be heard. Through mentorship, 
+            dignity support, and community engagement, we create 
+            opportunities for girls and young women to shape their 
+            own future and rise above the interconnected realities 
+            of conflict, harmful cultural practices, and inequality.
           </p>
 
           <div className="heroButtons">

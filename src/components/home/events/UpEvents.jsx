@@ -5,12 +5,12 @@ import "./UpEvents.css";
 const events = [
   {
     id: 1,
-    title: "Community Awareness Forum",
-    date: "25 July 2026",
-    location: "Migori County",
-    image: "/images/four.JPG",
+    title: "Women, Peace & Community Dialogue",
+    date: "26 August 2026",
+    location: "Gwitembe, Kuria East,Migori County",
+    image: "/images/mikono.jpeg",
     description:
-      "Bringing together parents, community leaders and young women to discuss ending FGM and child marriage.",
+      "Bringing together young conflict-affected widowed women and community leaders to address the impact of conflict on young women and ensure their voices are heard.",
     featured: true,
   },
   {
@@ -62,8 +62,10 @@ const UpcomingEvents = () => {
           </h2>
 
           <p>
-           Every event creates new opportunities for girls and young women 
-           to learn, heal, grow, and build a brighter future for themselves, 
+           Join Us As We Create Lasting Change
+           Every event creates new opportunities for 
+           girls and young women to learn, heal, grow, 
+           and build a brighter future for themselves, 
            their families, and their community.
           </p>
 

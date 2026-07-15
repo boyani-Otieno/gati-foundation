@@ -27,7 +27,7 @@ const Footer = () => {
               <FaFacebookSquare />
             </a>
 
-            <a href="https://https://x.com/MargaretRobiFdn" target="_blank" rel="noreferrer">
+            <a href="https://x.com/MargaretRobiFdn" target="_blank" rel="noreferrer">
               <FaXTwitter />
             </a>
 
