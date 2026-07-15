@@ -44,7 +44,7 @@ const events = [
 
 const UpcomingEvents = () => {
   const featured = events.find((event) => event.featured);
-  const others = events.filter((event) => !event.featured);
+  // const others = events.filter((event) => !event.featured);
 
   return (
     <section className="eventsSection">
@@ -62,9 +62,9 @@ const UpcomingEvents = () => {
           </h2>
 
           <p>
-            Every event creates another opportunity for girls,
-            families and communities to come together,
-            learn, grow and inspire change.
+           Every event creates new opportunities for girls and young women 
+           to learn, heal, grow, and build a brighter future for themselves, 
+           their families, and their community.
           </p>
 
         </div>
@@ -109,7 +109,7 @@ const UpcomingEvents = () => {
 
         {/* Other Events */}
 
-        <div className="eventsGrid">
+        {/* <div className="eventsGrid">
 
           {others.map((event) => (
 
@@ -147,14 +147,12 @@ const UpcomingEvents = () => {
                 >
                   Learn More →
                 </Link>
-
               </div>
-
             </div>
 
           ))}
 
-        </div>
+        </div> */}
 
         <div className="eventsFooter">
 

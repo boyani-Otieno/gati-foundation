@@ -1,5 +1,5 @@
 import React from "react";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./OurWork.css";
 
 const Work = () => {
@@ -12,47 +12,34 @@ const Work = () => {
 
       <section className="workHero">
 
-        <video
-          className="heroVideo"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source
-            src="/images/vida.mp4"
-            type="video/mp4"
-          />
-        </video>
-
         <div className="heroOverlay"></div>
 
         <div className="container heroContent">
 
-          {/* <span>OUR WORK</span> */}
+          <span>OUR WORK</span>
 
-          {/* <h1>
+          <h1>
             Every Conversation
             <br />
             Begins With Hope
-          </h1> */}
+          </h1>
 
-          {/* <p>
+          <p>
             Every girl's voice matters. Every story deserves to be heard.
             Through mentorship, dignity support and community engagement,
             we create opportunities for girls and young mothers, to discover their strength,
             build confidence and shape their future.
-          </p> */}
+          </p>
 
           <div className="heroButtons">
 
-            {/* <a href="about" className="primaryBtn">
+            <a href="about" className="primaryBtn">
               Explore Our Journey
             </a>
 
             <Link to="/volunteer" className="secondaryBtn">
               Get Involved
-            </Link> */}
+            </Link>
 
           </div>
 

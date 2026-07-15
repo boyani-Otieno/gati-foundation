@@ -61,10 +61,10 @@ const Footer = () => {
           <h4>Our Impact</h4>
 
           <ul>
-            <li><a href="/programs">Programs</a></li>
-            <li><a href="/the-need">The Need</a></li>
-            <li><a href="/monitoring">Monitoring & Evaluation</a></li>
-            <li><a href="/stories">Stories</a></li>
+            <li><a href="/volunteer">Volunteer</a></li>
+            <li><a href="/partners">Partner</a></li>
+            <li><a href="/donate">Donate</a></li>
+            <li><a href="/#journey/#journey">Stories</a></li>
           </ul>
 
         </div>
