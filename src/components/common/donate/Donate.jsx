@@ -475,8 +475,8 @@ Every contribution strengthens local leadership, community resilience and lastin
         Every contribution is carefully directed to where it can create
         the greatest difference. Guided by deep local knowledge,
         trusted community relationships, and responsible stewardship,
-        we ensure your generosity helps girls and young women build
-        safer, stronger, and more independent futures.
+        we ensure your generosity helps girls and young women build a
+        safer, stronger, and more independent future.
 
       </p>
 
