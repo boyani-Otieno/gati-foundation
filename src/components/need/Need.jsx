@@ -108,7 +108,7 @@ export default function Need() {
       <section className={styles.cta}>
         <div className="container">
           <h2>Together We Can Change This Story</h2>
-          <p>Every girl and young woman deserves the opportunity to learn, lead and thrive. Together we can build safer communities, expand opportunities and create lasting change for generations to come.</p>
+          <p>Every girl and young woman deserves the opportunity to learn, lead and thrive. Together we can build safer communities, create opportunities and create lasting change for generations to come.</p>
           <a href="/donate" className={styles.ctaButton}>Support Our Work</a>
         </div>
       </section>

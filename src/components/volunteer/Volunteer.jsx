@@ -62,8 +62,8 @@ const Volunteer = () => {
             Every girl deserves someone who believes in her.
             By volunteering with Margaret Robi Foundation,
             you become part of a community creating safe spaces,
-            inspiring hope, and empowering young women to build
-            brighter futures.
+            inspiring hope, and empowering young women to build a
+            brighter future.
           </p>
 
         </div>
