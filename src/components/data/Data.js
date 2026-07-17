@@ -73,23 +73,23 @@ export const list = [
   },
   {
     id: 2,
-    cover: "../images/list/jeda.jpeg",
-    name: "Changing lives",
+    cover: "../images/list/all.jpeg",
+    name: "Small acts of dignity support. Lifelong impact.",
   },
   {
     id: 3,
-    cover: "../images/list/kits.JPG",
+    cover: "../images/list/jeda.jpeg",
     name: "Dignity Support",
   },
   {
     id: 4,
-    cover: "../images/list/all.jpeg",
-    name: "",
+    cover: "../images/list/Aroom.jpeg",
+    name: "A room full of girls. A future full of possibility.",
   },
   {
     id: 5,
-    cover: "../images/list/all.jpeg",
-    name: "Small acts of dignity support. Lifelong impact.",
+    cover: "../images/list/herVoice.jpeg",
+    name: "When a girl finds her voice, others find the courage to speak.",
   },
   {
     id: 6,

@@ -70,7 +70,7 @@ const About = () => {
               <p>
                 The Margaret Robi Foundation is a community-led organisation
                 dedicated to advancing gender equality and creating opportunities
-                for girls and young women throughout Kuria. Inspired by the enduring
+                for girls and young women throughout Kuria. Inspired by the
                 legacy of Margaret Robi, our work seeks to transform harmful
                 cultural practices, expand educational opportunities, strengthen
                 leadership, and empower communities to create lasting change.
