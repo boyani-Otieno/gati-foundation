@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import "./footer.css";
 
 const Footer = () => {
@@ -30,6 +31,10 @@ const Footer = () => {
             <a href="https://x.com/MargaretRobiFdn" target="_blank" rel="noreferrer">
               <FaXTwitter />
             </a>
+
+             <a href="https://www.instagram.com/margaret_robi_foundation?igsh=enBmanQxN3M5ZjVh&utm_source=qr" target="_blank" rel="noopener noreferrer">
+              <FaInstagram />
+             </a>
 
             <a href="https://www.linkedin.com/company/margaret-robi-foundation/" target="_blank" rel="noreferrer">
               <FaLinkedin />
