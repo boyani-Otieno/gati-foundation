@@ -360,6 +360,7 @@ SMALL TABLETS
 header .container{
 width:94%;
 height:80px;
+margin-top: 10px;
 }
 
 .logoImage{
@@ -391,6 +392,7 @@ PHONES
 
 header .container{
 height:75px;
+margin-top: 20px;
 }
 
 .logoImage{
