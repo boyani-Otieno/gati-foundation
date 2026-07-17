@@ -78,8 +78,8 @@ export const list = [
   },
   {
     id: 3,
-    cover: "../images/list/jeda.jpeg",
-    name: "Dignity Support",
+    cover: "../images/list/lessons.jpeg",
+    name: "Some of the most important lessons are shared, not taught.",
   },
   {
     id: 4,
