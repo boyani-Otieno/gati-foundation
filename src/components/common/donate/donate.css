@@ -15,6 +15,7 @@ PAGE
     background:var(--cream);
     color:var(--green);
     font-family:'Inter',sans-serif;
+    z-index: 9;
 }
 
 /*==================================
@@ -31,6 +32,7 @@ HERO
     linear-gradient(rgba(23,63,53,.72),rgba(23,63,53,.72)),
     url("../../images/wote.jpeg") center/cover;
     overflow:hidden;
+    z-index: 9;
 }
 
 .donate-hero-overlay{
