@@ -28,7 +28,7 @@ const About = () => {
       name: "Jerida Gati",
       title: "Founder & Director",
       image: "/images/jeda.jpeg",
-      text: "Jerida holds a Master of Arts in Co-operative and Community Development and a Master of Arts in Gender and Development Studies from Egerton University, alongside a Bachelor of Arts in Education. This interdisciplinary academic background directly informs her leadership at the Foundation, where she bridges community development with advocacy to drive systemic change. Through her experience as a former Community Coordinator in the Mathare slums, Jerida actively oversees the Foundation’s strategic direction, leading initiatives that promote education, gender equality, leadership development, and lasting social transformation.",
+      text: "Jerida holds a Master of Arts in Co-operative and Community Development from Moshi Co-operative University in Tanzania and a Master of Arts in Gender and Development Studies from Egerton University, alongside a Bachelor of Arts in Education. This interdisciplinary academic background directly informs her leadership at the Foundation, where she bridges community development with advocacy to drive systemic change. Through her experience as a former Community Coordinator in the Mathare slums, Jerida actively oversees the Foundation’s strategic direction, leading initiatives that promote education, gender equality, leadership development, and lasting social transformation.",
     },
     {
       id: 2,

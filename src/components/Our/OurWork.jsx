@@ -102,7 +102,7 @@ const Work = () => {
             <div className="storyImage">
 
               <img
-                src="/images/puru.jpeg"
+                src="/images/puru2.jpeg"
                 alt="Mentorship conversations"
               />
 
@@ -320,7 +320,7 @@ const Work = () => {
               <p>
                 Every act of support reminds girls that they are
                 valued, capable and never alone as they continue
-                building brighter futures.
+                building a brighter future.
               </p>
 
             </div>
@@ -334,7 +334,7 @@ const Work = () => {
             <div className="storyImage">
 
               <img
-                src="/images/puru2.jpeg"
+                src="/images/puru.jpeg"
                 alt="Supporting girls"
               />
 
