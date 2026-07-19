@@ -82,7 +82,7 @@ transition={{duration:.8}}
 
 <span className="badge">
 
-SUPPORT GIRLS. STRENGTHEN COMMUNITIES.
+SUPPORT GIRLS AND YOUNG WOMEN. STRENGTHEN COMMUNITIES.
 
 </span>
 
