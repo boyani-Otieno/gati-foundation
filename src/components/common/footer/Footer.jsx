@@ -82,7 +82,7 @@ const Footer = () => {
 
           <p>Email:</p>
           <span>
-            margaretrobifoundation@gmail.com
+            info@margaretrobifoundation.org
           </span>
 
 
